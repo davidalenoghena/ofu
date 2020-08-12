@@ -19,9 +19,9 @@
                     <li class="nav-item dropdown ml">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opportunites</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
-                        <a class="dropdown-item" href="#">Blog</a>
-                        <a class="dropdown-item" href="#"> action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Scholarships</a>
+                        <a class="dropdown-item" href="#">Internships</a>
+                        <a class="dropdown-item" href="#">Grants</a>
                         </div>
                     </li>
                     <li class="nav-item active">
@@ -33,8 +33,8 @@
                     <li class="nav-item mr">
                         <a class="nav-link " href="#" >Contact</a>
                     </li>
-                    <li class = "nav-item"><a class = "nav-link" href="#">Login</a></li>
-                    <li class = "nav-item btn-blue"><a class = "nav-link" href="#" >Get Started</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="{{ route('login') }}">Login</a></li>
+                    <li class = "nav-item btn-blue"><a class = "nav-link" href="{{ route('register') }}" >Register</a></li>
                 </ul>
             </div>
         </div>
