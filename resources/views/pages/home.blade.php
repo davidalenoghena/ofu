@@ -1,66 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/9b1c8d52ed.js" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
-    <!-- FLickity CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href='{{asset('css/home.css')}}'>
-
-    <title>Opportunites For Undergraduates - Home</title>
-</head>
-<body>
 
     <!-- Nabar Section -->
-    <nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top">
-    <button class="navbar-toggler collapsed"type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="one"></span>
-              <span class="two"></span>
-              <span class="three"></span>
-    </button>
-          
+    <!-- <nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top">
+        
+        <button class="navbar-toggler collapsed"type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+        </button>
+            
 
-    <div class="container">
-    <div class="navbar-collapse collapse" id="navbarmenu">
-        <div class="navbar-brand">
-        <span><strong>opportunities for undergraduates <span class = "nav-span">.</span></strong></span>
-        </div>
+        <div class="container">
+        <div class="navbar-collapse collapse" id="navbarmenu">
+            <div class="navbar-brand">
+            <span><strong>opportunities for undergraduates <span class = "nav-span">.</span></strong></span>
+            </div>
 
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown ml">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opportunites</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown08">
-                    <a class="dropdown-item" href="#">Blog</a>
-                    <a class="dropdown-item" href="#"> action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item mr">
-                    <a class="nav-link " href="#" >Contact</a>
-                </li>
-                <li class = "nav-item"><a class = "nav-link" href="#">Login</a></li>
-                <li class = "nav-item btn-blue"><a class = "nav-link" href="#" >Get Started</a></li>
-            </ul>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown ml">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opportunites</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown08">
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="#"> action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item mr">
+                        <a class="nav-link " href="#" >Contact</a>
+                    </li>
+                    <li class = "nav-item"><a class = "nav-link" href="#">Login</a></li>
+                    <li class = "nav-item btn-blue"><a class = "nav-link" href="#" >Get Started</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    </div>
-    </nav>
+        </div>
+    </nav> -->
     
     <!-- Hero Section -->
     <section id="hero">
@@ -247,56 +228,6 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <section id="footer">
-        <div class="container d-flex footer-sect">
-            <div>
-                <div>
-                    <div class="navbar-brand">
-                        <span><strong>opportunities for undergraduates <span class = "nav-span">.</span></strong></span>
-                    </div>
-                    <p class="yellow-text">Never Miss An Opportunity</p>
-                </div>
-                 <div>
-                 <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script></p>
-                 <p> All Rights Reserved.</p>
-                 </div>  
-            </div>
-
-            <div class="row">
-            <div class = "col-md-4">
-                <ul>
-                    <li><strong>HELP AND SUPPORT</strong></li>
-                    <li>FAQ</li>
-                    <li>Live Support</li>
-                    <li>Terms Of Service</li>
-                    <li>Privacy Policy</li>
-                </ul>
-            </div>
-
-            <div class = "col-md-4">
-                <ul>
-                    <li><strong>FEATURES</strong></li>
-                    <li><a href = "#">Scholarships</a></li>
-                    <li><a href = "#">Internships</a></li>
-                </ul>
-            </div>
-
-            <div class = "col-md-4">
-                <ul>
-                    <li><strong>COMPANY</strong></li>
-                    <li><a href = "#">About</a></li>
-                    <li><a href = "#">Contact</a></li>
-                    <li><a href = "#">Careers</a></li>
-                    <li><strong>CONTACT US</strong></li>
-                    <li>hr@opportunitiesforundergraduates.com</li>
-                    <li>(907)-555-0101</li>
-                </ul>
-            </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Bootstrap JS, PopperJS, jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="{{asset('js/home.js')}}"></script>
@@ -307,5 +238,3 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
