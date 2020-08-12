@@ -6,9 +6,9 @@
     @include('partials.navbar')
 
     <!-- Content -->
-    @include('pages.home')
+    @yield('content')
 
-    @yield('js')
     <!-- Footer -->
     @include('partials.footer')
+    @yield('js')
 </body>
