@@ -11,30 +11,30 @@
         <div class="container">
         <div class="navbar-collapse collapse" id="navbarmenu">
             <div class="navbar-brand">
-            <span><strong>opportunities for undergraduates <span class = "nav-span">.</span></strong></span>
+            <span><strong>OFU<span class = "nav-span">||||</span></strong></span>
             </div>
 
             <div>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown ml">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opportunites</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
-                        <a class="dropdown-item" href="#">Blog</a>
-                        <a class="dropdown-item" href="#"> action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">SCHOLARSHIPS</a>
+                        <a class="dropdown-item" href="#">INTERNSHIPS</a>
+                        <a class="dropdown-item" href="#">GRANTS</a>
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item mr">
-                        <a class="nav-link " href="#" >Contact</a>
+                        <a class="nav-link " href="#" >CONTACT</a>
                     </li>
-                    <li class = "nav-item"><a class = "nav-link" href="#">Login</a></li>
-                    <li class = "nav-item btn-blue"><a class = "nav-link" href="#" >Get Started</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="{{ route('login') }}">LOGIN</a></li>
+                    <li class = "nav-item btn-blue"><a class = "nav-link" href="{{ route('register') }}" >REGISTER</a></li>
                 </ul>
             </div>
         </div>
