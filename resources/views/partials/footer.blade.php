@@ -42,7 +42,7 @@
                         <li><a href = "#">Contact</a></li>
                         <li><a href = "#">Careers</a></li>
                         <li><strong>CONTACT US</strong></li>
-                        <li>hr@opportunitiesforundergraduates.com</li>
+                        <li>hr@ofu.com</li>
                         <li>(907)-555-0101</li>
                     </ul>
                 </div>
