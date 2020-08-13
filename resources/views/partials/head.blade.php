@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href='{{asset('css/home.css')}}'>
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
 
     <title>Opportunites For Undergraduates - Home</title>
 </head>
