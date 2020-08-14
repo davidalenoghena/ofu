@@ -13,6 +13,9 @@
         </div>
         <div class="navbar-collapse collapse" id="navbarmenu">
                 <ul class="navbar-nav">
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{ route('home') }}">HOME</a>
+                    </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
@@ -49,7 +52,7 @@
                             <a class="nav-link transparent-btn px-3" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item btn-blue">
+                            <li class="nav-item btn-reg">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             </li>
                         @endif
