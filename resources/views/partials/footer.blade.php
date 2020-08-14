@@ -6,7 +6,7 @@
                 <div>
                     <div>
                         <div class="navbar-brand">
-                            <span><strong>opportunities for undergraduates <span class = "nav-span">.</span></strong></span>
+                        <a href="{{ route('home') }}"><span><strong>OFU<span class = "nav-span">||||</span></strong></span></a>
                         </div>
                         <p class="yellow-text">Never Miss An Opportunity</p>
                     </div>
