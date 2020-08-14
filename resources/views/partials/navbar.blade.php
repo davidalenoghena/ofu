@@ -1,5 +1,5 @@
 <header>
-<nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top">
+<nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top bg-primary">
         
         <button class="navbar-toggler collapsed"type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="one"></span>
@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="{{ route ('about')}}">ABOUT</a>
                     </li>
                     <li class="nav-item mr">
                         <a class="nav-link " href="#" >CONTACT</a>
