@@ -95,7 +95,7 @@ a:hover{
 .navbar{
     display: flex;
     align-items: center;
-    background: transparent;
+    background: #151b25;
     transition: transparent 1s ease 0s;
     box-shadow: 0 0 4px grey;
 }
