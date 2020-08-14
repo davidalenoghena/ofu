@@ -52,7 +52,7 @@
                             <a class="nav-link transparent-btn px-3" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item btn-blue">
+                            <li class="nav-item btn-reg">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             </li>
                         @endif

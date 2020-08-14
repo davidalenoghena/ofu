@@ -199,14 +199,14 @@ a:hover{
     padding: 0 1rem;
 }
 
-.btn-blue{
-    background-color: #3c64b1;
+.btn-reg{
+    background-color: #e59500;
     border-radius: 8px;
     margin-left: 1rem;
 }
 
-.btn-blue:hover{
-    background-color: #23488d;
+.btn-reg:hover{
+    background-color: #171f2d;
 }
 
 .btn-blue a{
