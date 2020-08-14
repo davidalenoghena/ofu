@@ -16,7 +16,7 @@
                     </div>  
                 </div>
 
-                <div class="row">
+                <div class="row ">
                 <div class = "col-md-4">
                     <ul>
                         <li><strong>HELP AND SUPPORT</strong></li>

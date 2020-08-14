@@ -9,7 +9,7 @@
          
         <div class = "navbanner">
         <div class="navbar-brand ml">
-            <span><strong>OFU<span class = "nav-span">||||</span></strong></span>
+            <a href="/" class = "text-white"><span><strong>OFU<span class = "nav-span">||||</span></strong></span></a>
         </div>
         <div class="navbar-collapse collapse" id="navbarmenu">
                 <ul class="navbar-nav">

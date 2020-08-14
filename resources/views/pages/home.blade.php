@@ -1,6 +1,7 @@
-@extends('layouts.home')
+@extends('layouts.home') 
 @section('content')
     <!-- Hero Section -->
+    <div class = "content">
     <section id="hero">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -184,6 +185,7 @@
             </div>
         </div>
     </section>
+</div>
 @endsection
 @section('js')
     <!-- Bootstrap JS, PopperJS, jQuery -->
