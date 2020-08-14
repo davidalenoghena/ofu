@@ -9,10 +9,13 @@
          
         <div class = "navbanner">
         <div class="navbar-brand ml">
-            <a href="{{ route('home') }}"><span><strong>OFU<span class = "nav-span">||||</span></strong></span></a>
+            <a href="{{ route('home') }}"><span><strong><u>OFU</u><span class = "nav-span">||||</span></strong></span></a>
         </div>
         <div class="navbar-collapse collapse" id="navbarmenu">
                 <ul class="navbar-nav">
+                <li class="nav-item active">
+                        <a class="nav-link" href="{{ route('home') }}">HOME</a>
+                    </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
