@@ -28,4 +28,4 @@
 <h4>-Run 'git pull origin master' to ensure your local repository is up-to-date</h4>
 <h4>-After making your changes locally, run 'git add .'</h4>
 <h4>-Run 'git commit -m "Description of the change you made"</h4>
-<h4>Run 'git push origin your-branch-name (e.g david-test)</h4>
+<h4>-Run 'git push origin your-branch-name (e.g david-test)</h4>
