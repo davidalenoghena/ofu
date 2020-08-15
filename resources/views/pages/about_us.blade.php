@@ -1,5 +1,9 @@
 @extends('layouts.home')
 
+@push('css')
+<title>Opportunites for Undergraduates - About</title>
+@endpush
+
  <section id="opportunities" style="background-color: white; color: black;">
         <div class="container">
             <div class="opportunities-heading text-center">
