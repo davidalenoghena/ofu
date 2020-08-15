@@ -20,3 +20,12 @@
 <h4>-Create a new database and name it 'ofu'</h4>
 <h4>-Run 'php artisan migrate' in terminal</h4>
 <h4>-Run 'php artisan db:seed' in terminal</h4>
+<br />
+<br />
+<i>How to contribute:</i>
+<h4>-Run 'git switch -C yourname-test (e.g david-test) if it's your first time</h4>
+<h4>-Create a branch in the repository with the same same you used above e.g 'david-test'</h4>
+<h4>-Run 'git pull origin master' to ensure your local repository is up-to-date</h4>
+<h4>-After making your changes locally, run 'git add .'</h4>
+<h4>-Run 'git commit -m "Description of the change you made"</h4>
+<h4>Run 'git push origin your-branch-name (e.g david-test)</h4>
