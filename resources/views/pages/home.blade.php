@@ -1,4 +1,9 @@
 @extends('layouts.home')
+
+@push('css')
+<title>Opportunites for Undergraduates - Home</title>
+@endpush
+
 @section('content')
     <!-- Hero Section -->
     <section id="hero">

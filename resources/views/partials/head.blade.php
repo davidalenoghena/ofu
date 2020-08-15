@@ -15,6 +15,4 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
-
-    <title>Opportunites For Undergraduates - Home</title>
 </head>
