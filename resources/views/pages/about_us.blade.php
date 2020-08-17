@@ -42,7 +42,6 @@
 @section('js')
     <!-- Bootstrap JS, PopperJS, jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="{{asset('js/home.js')}}"></script>
     
     <!-- Flickity JS -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
