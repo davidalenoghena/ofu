@@ -582,3 +582,33 @@ li>strong{
 }
 
 }
+
+.register{
+    width: 91px;
+    height: 50px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #30015B;
+    margin-left: 250px;
+   
+}
+
+.register-name{
+margin-bottom: -50px;
+width: 77.97px;
+height: 190px;
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+color: #400A71;
+margin-left: 155px;
+margin-bottom: -170px;
+}
+
+.input1 {
+margin-left: 143px;
+width: 233px;
+}

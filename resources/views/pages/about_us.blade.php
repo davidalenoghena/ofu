@@ -1,5 +1,9 @@
 @extends('layouts.home')
 
+@push('css')
+<title>Opportunites for Undergraduates - About</title>
+@endpush
+
  <section id="opportunities" style="background-color: white; color: black;">
         <div class="container">
             <div class="opportunities-heading text-center">
@@ -38,7 +42,6 @@
 @section('js')
     <!-- Bootstrap JS, PopperJS, jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    
     
     <!-- Flickity JS -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
