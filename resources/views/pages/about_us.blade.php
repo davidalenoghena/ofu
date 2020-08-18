@@ -11,7 +11,7 @@
                 <div class="opportunities-content-body">
                     <h3>Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem blanditiis, neque distinctio eaque praesentium quasi?</p> 
-                    <button class="btn p-0"><a class = "nav-link transparent-btn" href="#">Learn More</a></button>  
+                    <button class="btn p-0"><a class = "nav-link text-body transparent-btn" href="#">Learn More</a></button>  
                 </div>
                 <div class="opportunities-content-img-container">
                     <div class="opportunities-content-img">
@@ -29,7 +29,7 @@
                 <div class="opportunities-content-body ml-5">
                     <h3>Mission</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem blanditiis, neque distinctio eaque praesentium quasi?</p> 
-                    <button class="btn p-0"><a class = "nav-link transparent-btn" href="#">Learn More</a></button>  
+                    <button class="btn p-0"><a class = "nav-link text-body transparent-btn" href="#">Learn More</a></button>  
                 </div>
             </div>
         </div>
