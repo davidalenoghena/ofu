@@ -33,7 +33,7 @@
                         <a class="nav-link" href="{{ route ('about')}}">ABOUT</a>
                     </li>
                     <li class="nav-item mr">
-                        <a class="nav-link " href="#" >CONTACT</a>
+                        <a class="nav-link " href="{{ route('contact') }}" >CONTACT</a>
                     </li>
 
 
