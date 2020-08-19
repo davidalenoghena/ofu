@@ -61,29 +61,43 @@
       <br />
       <div class="container-login100">
         <div class="wrap-login100">
-          <form class="login100-form validate-form" action="{{ route('login') }}">
+          <form class="login100-form validate-form" action="{{ route('register') }}">
           @csrf
             <span class="login100-form-title p-b-26">
-              Register
+              Join Us
             </span>
             <span class="login100-form-title p-b-48">
-              <i class="zmdi zmdi-font"></i>
+              <img src="{{ asset('images/logo.png') }} ">
             </span>
 
             <div
               class="wrap-input100 validate-input"
               data-validate="Name is: David"
             >
-              <input class="input100" type="text" name="name" />
+              <input class="input100 @error('name') is-invalid @enderror" type="text" name="name" id="name" value="{{ old('name') }}" required autocomplete="name" />
               <span class="focus-input100" data-placeholder="Name"></span>
+              @error('email')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
             </div>
+
+
             <div
               class="wrap-input100 validate-input"
               data-validate="Valid email is: a@b.c"
             >
-              <input class="input100" type="text" name="email" />
+              <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email"/>
               <span class="focus-input100" data-placeholder="Email"></span>
+              @error('email')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+
             </div>
+                                
             <div
               class="wrap-input100 validate-input"
               data-validate="Enter password"
@@ -91,7 +105,7 @@
               <span class="btn-show-pass">
                 <i class="zmdi zmdi-eye"></i>
               </span>
-              <input class="input100" type="password" name="pass" />
+              <input id="password" class="input100 @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="new-password"/>
               <span class="focus-input100" data-placeholder="Password"></span>
             </div>
             <div
@@ -101,27 +115,31 @@
               <span class="btn-show-pass">
                 <i class="zmdi zmdi-eye"></i>
               </span>
-              <input class="input100" type="password" name="pass" />
+              <input id="password-confirm" class="input100" type="password" name="password_confirmation" required autocomplete="new-password" />
               <span class="focus-input100" data-placeholder="Confirm Password"></span>
+              @error('password')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
             </div>
-
 
             <div class="container-login100-form-btn">
               <div class="wrap-login100-form-btn">
                 <div class="login100-form-bgbtn"></div>
                 <button class="login100-form-btn">
-                  Login
+                  Register
                 </button>
               </div>
             </div>
 
-            <div class="text-center p-t-115">
+            <div class="text-center p-t-50">
               <span class="txt1">
-                Don’t have an account?
+                Already have an account?
               </span>
 
-              <a class="txt2" href="#">
-                Sign Up
+              <a class="txt2" href="{{ route('login') }} ">
+                Signin
               </a>
             </div>
           </form>
@@ -226,11 +244,7 @@
                 </div>
             </div>
         </div>
-
-            
-
-        </div>
-        
+        </div>      
     </div>
 <br>
 <br> -->
