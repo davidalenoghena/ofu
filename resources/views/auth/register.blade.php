@@ -74,15 +74,27 @@
               class="wrap-input100 validate-input"
               data-validate="Name is: David"
             >
-              <input class="input100 @error('name') is-invalid @enderror" type="text" name="name" id="name" value="{{ old('name') }}" required autocomplete="name" />
-              <span class="focus-input100" data-placeholder="Name"></span>
-              @error('email')
+              <input class="input100 @error('fname') is-invalid @enderror" type="text" name="fname" id="fname" value="{{ old('fname') }}" required autocomplete="fname" />
+              <span class="focus-input100" data-placeholder="First Name"></span>
+              @error('fname')
                   <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
                   </span>
               @enderror
             </div>
 
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Name is: David"
+            >
+              <input class="input100 @error('lname') is-invalid @enderror" type="text" name="lname" id="lname" value="{{ old('lname') }}" required autocomplete="fname" />
+              <span class="focus-input100" data-placeholder="Last Name"></span>
+              @error('lname')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+            </div>
 
             <div
               class="wrap-input100 validate-input"
@@ -91,6 +103,20 @@
               <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email"/>
               <span class="focus-input100" data-placeholder="Email"></span>
               @error('email')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Valid Phone Number is: 080******88"
+            >
+              <input id="phone" class="input100 @error('phone') is-invalid @enderror" type="number" name="phone" value="{{ old('phone') }}" required autocomplete="number"/>
+              <span class="focus-input100" data-placeholder="Phone Number"></span>
+              @error('phone')
                   <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
                   </span>
