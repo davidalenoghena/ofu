@@ -9,7 +9,7 @@
          
         <div class = "navbanner">
         <div class="navbar-brand ml">
-            <a href="/" class = "text-white"><span><strong>OFU<span class = "nav-span">||||</span></strong></span></a>
+            <a href="/" class = "text-white"><span><strong>Opportunities for Undergraduates<span class = "nav-span"></span></strong></span></a>
         </div>
         <div class="navbar-collapse " id="navbarmenu">
                 <ul class="navbar-nav nav-links">
