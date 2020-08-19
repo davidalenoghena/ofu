@@ -1,18 +1,18 @@
 <header>
 <nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top" id = "ofu-navbar">
         
-        <button class="navbar-toggler collapsed"type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler">
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
-        </button>
+        </div>
          
         <div class = "navbanner">
         <div class="navbar-brand ml">
             <a href="/" class = "text-white"><span><strong>OFU<span class = "nav-span">||||</span></strong></span></a>
         </div>
-        <div class="navbar-collapse collapse" id="navbarmenu">
-                <ul class="navbar-nav">
+        <div class="navbar-collapse " id="navbarmenu">
+                <ul class="navbar-nav nav-links">
                 <li class="nav-item active">
                         <a class="nav-link" href="{{ route('home') }}">HOME</a>
                     </li>
