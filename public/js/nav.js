@@ -1,0 +1,28 @@
+const burger = document.querySelector('.navbar-toggler');
+const navLinks1 = document.querySelector('.nav-links');
+const navLinks2 = document.querySelector('.login-btns');
+const body = document.querySelector('.content');
+
+const navSlide = () => {
+    // Toggle Nav
+    burger.addEventListener('click' , () => {
+        navLinks1.classList.toggle('nav-active');
+        navLinks2.classList.toggle('nav-active');
+
+        burger.classList.toggle('toggle');
+    });  
+};
+
+const navClose = () => {
+    // Toggle Nav
+    body.addEventListener('click' , () => {
+        navLinks1.classList.remove('nav-active');
+        navLinks2.classList.remove('nav-active');
+
+        burger.classList.remove('toggle');
+    });
+
+}
+
+navSlide();
+navClose();

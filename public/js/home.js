@@ -1,10 +1,11 @@
-$(document).ready(function() {
-    $(".navbar").css("background", "transparent");
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 10) {
-            $(".navbar").css("background", "#151b25");
+$(document).ready(function() {    
+    $(window).scroll(function () {
+        if ($(window).scrollTop() < 10) {
+        $('#ofu-navbar').css('background','transparent');
         } else {
-            $(".navbar").css("background", "transparent");
+        $('#ofu-navbar').css('background','#151b25');
         }
     });
 });
+
+

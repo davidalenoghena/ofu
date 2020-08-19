@@ -16,7 +16,7 @@
                     </div>  
                 </div>
 
-                <div class="row">
+                <div class="row ">
                 <div class = "col-md-4">
                     <ul>
                         <li style="color: #e59500;"><strong>HELP AND SUPPORT</strong></li>

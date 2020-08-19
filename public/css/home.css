@@ -7,6 +7,8 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
 }
 
 body{
@@ -14,7 +16,13 @@ body{
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
     color: white;
+}
+
+.content{
+    flex: 1 0 auto;
 }
 
 h1,
@@ -27,6 +35,9 @@ h5{
 
 li{
     list-style-type: none;
+}
+#ofu-navbar{
+    min-height: 8vh;
 }
 .navbar-dark .navbar-nav .nav-link,.nav-item > a.nav-link{
     color: #ffffff;
@@ -99,6 +110,9 @@ a:hover{
     transition: transparent 1s ease 0s;
     box-shadow: 0 0 4px grey;
 }
+a.text-white>span>strong:hover{
+    color: #fff;
+}
 .solid{
   transition: blue 1s ease 0s;
   box-shadow: 0 0 4px grey;
@@ -119,11 +133,7 @@ a:hover{
     flex-direction: row;
 }
 
-.one{
-    width: 18px !important;
-}
-
-.one,.three{
+.one,.two,.three{
     width: 25px;
     height: 3px;
     margin: 3px 0;
@@ -139,44 +149,16 @@ a:hover{
     left: 0;
     opacity: 1;
     display: block;
+    transition: all 0.4s ease;
 }
-
-
-.navbar-toggler span:nth-child(1),
-.navbar-toggler span:nth-child(3) {
-   -webkit-transition: transform .35s ease-in-out;
-   -moz-transition: transform .35s ease-in-out;
-   -o-transition: transform .35s ease-in-out;
-   transition: transform .35s ease-in-out;
+.toggle .one{
+    transform: rotate(-45deg) translate(-4px,4px);
 }
-
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-    position: relative;
-    right: 11px;
-    top: 7px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
-    opacity: 0.9;
-    width: 25px !important;
+.toggle .two{
+    opacity: 0;
 }
-
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-    height: 12px;
-    visibility: hidden;
-    background-color: transparent;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-    position: relative;
-    right: 12px;
-    top: 0px;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-    opacity: 0.9;
+.toggle .three{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
 
@@ -211,6 +193,11 @@ a:hover{
 
 .btn-blue a{
     color: #ffffff;
+}
+
+.btn-blue{
+    background-color: #3c64b1;
+    border-radius: 8px;
 }
 
 /* Hero-Section */
@@ -438,9 +425,15 @@ a:hover{
     margin-top: -1rem;
 }
 
-#footer{
+footer{
     background-color: #151b25;
+    flex-shrink: 0;
 }
+
+/* .gridd{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
 
 #footer > .container{
     padding-top: 3rem;
@@ -458,13 +451,39 @@ li>strong{
     font-size: 17px;
 }
 
+/* Login Section */
+.login{
+    margin: 5rem 0;
+}
+
+
 /* Media Queries */
 @media only screen and (max-width : 768px){
 .ml{
     margin-left: 0;
 }
+.mobile-left{
+    margin-left: 3rem !important;
+}
 .login-btns{
-    flex-direction: row;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh;
+    background-color: #151b25;
+    right: 0;
+    width: 50%;
+    height: 14vh;
+    text-align: center;
+    z-index: 2;
+    border-bottom: 1px solid rgb(118, 118, 118);
+    transform: translateX(100%);
+    transition: transform .5s ease-in;
+}
+.login-btns li{
+    margin: .5rem 0;
+}
+.login-btns > .btn-reg{
+    margin: 0.5rem 1rem 1.5rem 1rem;
 }
 .navbar-toggler{
     order: 1;
@@ -588,4 +607,49 @@ margin-bottom: -170px;
 .input1 {
 margin-left: 143px;
 width: 233px;
+}
+
+
+/* Navbar Mobile Styling */
+@media screen and (max-width : 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        top: 22vh;
+        right: 0;
+        height: 80vh;
+        background-color: #151b25;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+    }
+    .dropdown-menu.show {
+        display: block !important; 
+        margin-top: 0; 
+        /* // remove the gap so it doesn't close */
+     }
+     .dropdown:hover .dropdown-menu {
+        display: none;
+        margin-top: 0; 
+        /* // remove the gap so it doesn't close */
+     }
+     .dropdown-menu ul > li:after{
+         top: 2em;
+     }
+    .mr{
+        margin-right: 0;
+    }
+    .nav-links li{
+        padding: 1rem 1rem;
+    }
+}
+
+
+.nav-active{
+    transform: translateX(0%);
 }
