@@ -23,5 +23,6 @@ const navClose = () => {
     });
 
 }
+
 navSlide();
 navClose();
