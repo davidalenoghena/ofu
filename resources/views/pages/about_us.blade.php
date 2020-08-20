@@ -1,13 +1,13 @@
 @extends('layouts.home')
 
 @push('css')
-<title>Opportunites for Undergraduates - About</title>
+<title>OFU - About</title>
 @endpush
 
  <section id="opportunities" style="background-color: white; color: black;">
         <div class="container">
             <div class="opportunities-heading text-center">
-                <h2>About <span class = "underline-span">Us</span></h2>
+                <h2>ABOUT <span class = "underline-span">US</span></h2>
                 <p class = "grey-text mt-4">We help the world’s leading organizations follow their shipping </p>
             </div> 
 
