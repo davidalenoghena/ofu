@@ -648,8 +648,10 @@ width: 233px;
         padding: 1rem 1rem;
     }
 }
-
-
 .nav-active{
     transform: translateX(0%);
+}
+
+.bright{
+    color: red !important;;
 }
