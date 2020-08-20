@@ -27,7 +27,7 @@
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="{{ route ('blog')}}">BLOG</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route ('about')}}">ABOUT</a>
