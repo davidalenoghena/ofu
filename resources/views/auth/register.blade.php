@@ -59,7 +59,7 @@
       <br />
       <div class="container-login100">
         <div class="wrap-login100">
-          <form class="login100-form validate-form" action="{{ route('register') }}">
+          <form method="POST" class="login100-form validate-form" action="{{ route('register') }}">
           @csrf
             <span class="login100-form-title p-b-26">
               Join Us
@@ -72,7 +72,7 @@
               class="wrap-input100 validate-input"
               data-validate="Name is: David"
             >
-              <input class="input100 @error('fname') is-invalid @enderror" type="text" name="fname" id="fname" value="{{ old('fname') }}" required autocomplete="fname" />
+              <input class="input100" type="text" name="fname" id="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus/>
               <span class="focus-input100" data-placeholder="First Name"></span>
               @error('fname')
                   <span class="invalid-feedback" role="alert">
@@ -85,7 +85,7 @@
               class="wrap-input100 validate-input"
               data-validate="Name is: David"
             >
-              <input class="input100 @error('lname') is-invalid @enderror" type="text" name="lname" id="lname" value="{{ old('lname') }}" required autocomplete="fname" />
+              <input class="input100" type="text" name="lname" id="lname" value="{{ old('lname') }}" required autocomplete="fname" autofocus/>
               <span class="focus-input100" data-placeholder="Last Name"></span>
               @error('lname')
                   <span class="invalid-feedback" role="alert">
@@ -152,7 +152,7 @@
               <div class="wrap-login100-form-btn">
                 <div class="login100-form-bgbtn"></div>
                 <button class="login100-form-btn">
-                  Register
+                  {{ __('Register') }}
                 </button>
               </div>
             </div>

@@ -58,26 +58,26 @@
       <br />
       <div class="container-login100">
         <div class="wrap-login100">
-          <form class="login100-form validate-form" action="{{ route('login') }}">
-          @csrf
             <span class="login100-form-title p-b-26">
               Login
             </span>
             <span class="login100-form-title p-b-48">
              <img src="{{ asset('images/logo.png') }} ">
             </span>
-
+            <div class="login100 validate-input" align="center">
+              @if(session()->get('error'))
+              <code>{{ session()->get('error') }} </code>
+              @endif
+            </div>
+            <br>
+            <form method="POST" class="login100-form validate-form" action="{{ route('login') }}">
+            @csrf
             <div
               class="wrap-input100 validate-input"
               data-validate="Valid email is: a@b.c"
             >
-              <input class="input100 @error('email') is-invalid @enderror" type="email" name="email" id="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
+              <input class="input100" type="email" name="email" id="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
               <span class="focus-input100" data-placeholder="Email"></span>           
-                  @error('email')
-                      <span class="invalid-feedback" role="alert">
-                          <strong>{{ $message }}</strong>
-                      </span>
-                  @enderror
             </div>
 
             <div
@@ -87,13 +87,8 @@
               <span class="btn-show-pass">
                 <i class="zmdi zmdi-eye"></i>
               </span>
-              <input class="input100 @error('password') is-invalid @enderror" type="password" name="pass" id="password"required autocomplete="current-password"/>
+              <input class="input100" type="password" name="password" id="password" required autocomplete="current-password" required autocomplete="current-password"/>
               <span class="focus-input100" data-placeholder="Password"></span>
-                @error('password')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
             </div>
             <div class="form-group">
                     <div class="form-check">
@@ -110,7 +105,7 @@
               <div class="wrap-login100-form-btn">
                 <div class="login100-form-bgbtn"></div>
                 <button class="login100-form-btn">
-                  Login
+                   {{ __('Login') }}
                 </button>
               </div>
             </div>
