@@ -18,9 +18,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('is_admin');
-Route::get('/user', 'UserController@index')->name('user.home');
+//Route::get('/user', 'UserController@index')->name('user.home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about_us')->name('about');
 Route::get('/contact', 'HomeController@contact_us')->name('contact');
 Route::get('/blog', 'HomeController@blog')->name('blog');
-Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
