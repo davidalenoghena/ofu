@@ -51,7 +51,7 @@
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="#header">Home</a></li>
+              <li class="active"><a href="{{ route('home') }}">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
@@ -340,7 +340,7 @@
               <div class="sidebar-item search-form">
                 <form action="">
                   <input type="text">
-                  <button type="submit"><i class="icofont-search"></i></button>
+                  <button type="submit" style="background: #007bff !important;"><i class="icofont-search"></i></button>
                 </form>
               </div><!-- End sidebar search formn-->
 
