@@ -36,7 +36,7 @@ h5{
 li{
     list-style-type: none;
 }
-#ofu-navbar{
+/* #ofu-navbar{
     min-height: 8vh;
 }
 .navbar-dark .navbar-nav .nav-link,.nav-item > a.nav-link{
@@ -52,7 +52,7 @@ li{
     display: block;
     margin-top: 0; 
     /* // remove the gap so it doesn't close */
- }
+ /* }
  .dropdown-menu li{
         margin: 0;
         margin-bottom: 1em;
@@ -179,7 +179,7 @@ a.text-white>span>strong:hover{
 
 .navbar-nav li{
     padding: 0 1rem;
-}
+}*/
 
 .btn-reg{
     background-color: #e59500;
@@ -198,7 +198,7 @@ a.text-white>span>strong:hover{
 .btn-blue{
     background-color: #3c64b1;
     border-radius: 8px;
-}
+}  
 
 /* Hero-Section */
 .carousel{
@@ -425,36 +425,7 @@ a.text-white>span>strong:hover{
     margin-top: -1rem;
 }
 
-footer{
-    background-color: #151b25;
-    flex-shrink: 0;
-}
 
-/* .gridd{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
-
-#footer > .container{
-    padding-top: 3rem;
-}
-
-.footer-sect{
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.footer-sect li{
-    padding: .5rem 0;
-}
-li>strong{
-    font-size: 17px;
-}
-
-/* Login Section */
-.login{
-    margin: 5rem 0;
-}
 
 
 /* Media Queries */

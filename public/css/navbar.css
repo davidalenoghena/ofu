@@ -1,0 +1,144 @@
+#ofu-navbar{
+    min-height: 8vh;
+}
+.navbar-dark .navbar-nav .nav-link,.nav-item > a.nav-link{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.dropdown-menu{
+    background-color: #151b25;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+    /* // remove the gap so it doesn't close */
+ }
+ .dropdown-menu li{
+        margin: 0;
+        margin-bottom: 1em;
+        padding: .75rem;
+        position: relative;    
+ }
+ .dropdown-item:visited{
+     background-color: #151b25;
+ }
+ .dropdown-menu ul{
+     padding-left: .5rem;
+ }
+ .dropdown-li{
+     padding: .5rem;
+     font-size: 14px;
+     
+ }
+ .dropdown-li > .dropdown-item{
+     color: #fff;
+ }
+ .dropdown-menu ul > li:after {
+    content: '';
+    height: .4em;
+    width: .4em;
+    background: #e59500;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 1em;
+    left: 1em;
+}
+
+.dropdown-item:hover{
+    background-color: transparent;
+}
+  
+a{
+    color: #ffffff ;
+}
+a:hover{
+    color: #e59500 !important;;
+    text-decoration: none;
+}
+
+.ml{
+    margin-left: 3rem;
+}
+.mr{
+    margin-right: 2rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background: #151b25;
+    transition: transparent 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+a.text-white>span>strong:hover{
+    color: #fff;
+}
+.solid{
+  transition: blue 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler{
+    border: 0 ;
+}
+
+.navbanner{
+    display: flex;
+    flex-direction: row;
+}
+
+.one,.two,.three{
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #fff;
+    align-self: flex-end;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    left: 0;
+    opacity: 1;
+    display: block;
+    transition: all 0.4s ease;
+}
+.toggle .one{
+    transform: rotate(-45deg) translate(-4px,4px);
+}
+.toggle .two{
+    opacity: 0;
+}
+.toggle .three{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+.collapse{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-brand span{
+    font-size: 24px;
+}
+
+.nav-span{
+    color: #e59500;
+}
+
+.navbar-nav li{
+    padding: 0 1rem;
+}
