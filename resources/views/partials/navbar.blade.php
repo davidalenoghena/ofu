@@ -1,4 +1,6 @@
 <header>
+<link rel="stylesheet" href="{{asset('css/navbar.css')}}">
+
 <nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top" id = "ofu-navbar">
         
         <div class="navbar-toggler">
