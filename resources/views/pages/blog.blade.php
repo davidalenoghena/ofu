@@ -100,20 +100,35 @@
 
           <div class="col-lg-8 entries">
 
-            <article class="entry">
+          <div class='row'>
+
+            <article class="entry col-7">
 
               <div class="entry-img">
                 
                 <img src="{{ asset('blog_assets/img/blog/blog-1.jpg') }}" alt="" class="img-fluid">
-               
-                
+                              
               </div>
+                 
+            </article><!-- End blog entry -->
 
+                        
+
+            <article class="entry col-5">
+
+           
               <h2 class="entry-title">
                 <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
               </h2>
 
-              <div class="entry-meta">
+
+              <div class="entry-content">
+                <p>
+                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                </p>
+
+                <div class="entry-meta">
                 <ul>
                   <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John Doe</a></li>
                   <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
@@ -121,17 +136,16 @@
                 </ul>
               </div>
 
-              <div class="entry-content">
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-                </p>
                 <div class="read-more">
                   <a href="blog-single.html">Read More</a>
                 </div>
               </div>
-
+           </div>
+                 
             </article><!-- End blog entry -->
+
+       
+
               <div class='row'>
                <div class="col-md-6 d-flex align-items-stretch">
                 <article class="entry">
