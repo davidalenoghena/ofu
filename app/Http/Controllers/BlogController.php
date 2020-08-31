@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\blog;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
 {
@@ -14,9 +16,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = blog::where('status', 1)->orderBy('created at', 'desc');
-        return view('pages.blog', compact('blog'));
-        //
+        $blogs = DB::table('blogs')->get();
+        return view('pages.blog', ['blogs' => $blogs]);
     }
 
     /**
