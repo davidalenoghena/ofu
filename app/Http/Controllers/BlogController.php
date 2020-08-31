@@ -14,6 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
+        $blog = blog::where('status', 1)->orderBy('created at', 'desc');
+        return view('pages.blog', compact('blog'));
         //
     }
 
