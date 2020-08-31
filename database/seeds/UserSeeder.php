@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use App\blog;
+use App\User;
 
-class BlogSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +12,6 @@ class BlogSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\blog::class, 10)->create();
+        factory(App\User::class, 10)->create();
     }
 }

@@ -67,7 +67,7 @@
 
               <div class="_entry-img">
                 
-                <img src="{{ asset('blog_assets/img/blog/blog-1.jpg') }}" style="height: 500px width: 500px" alt="" class="img-fluid">
+                <img src="{{ asset('blog_assets/img/blog/') }}" style="height: 500px width: 500px" alt="" class="img-fluid">
                               
               </div>
                  
