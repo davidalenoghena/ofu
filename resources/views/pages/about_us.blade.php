@@ -1,45 +1,128 @@
 @extends('layouts.home')
 
-@push('css')
 <title>OFU - About</title>
-@endpush
 
- <section id="opportunities" style="background-color: white; color: black;">
-        <div class="container">
-            <div class="opportunities-heading text-center">
-                <h2>ABOUT <span class = "underline-span">US</span></h2>
-                <p class = "grey-text mt-4">We help the world’s leading organizations follow their shipping </p>
-            </div> 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-            <div class="opportunities-content content-1 py-4">
-                <div class="opportunities-content-body">
-                    <h3>Vision</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem blanditiis, neque distinctio eaque praesentium quasi?</p> 
-                    <button class="btn p-0"><a class = "nav-link text-body transparent-btn" href="#">Learn More</a></button>  
-                </div>
-                <div class="opportunities-content-img-container">
-                    <div class="opportunities-content-img">
-                        <img src="{{asset('images/vision-statement-blog-11041.jpg')}}" alt="">
+  <title>OFU - About Us</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ asset('about_assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('about_assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ asset('about_assets/css/style.css') }}" rel="stylesheet">
+
+</head>
+<section class="general">
+    <header class="section-header">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+</header>
+
+ <section id="about">
+            <div class="container" data-aos="fade-up">
+                <div class="row about-cols">
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="about-col">
+                            <div class="img">
+                                <img
+                                    src='{{asset('images/about-mission.jpg')}}'
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                                <div class="icon">
+                                    <i class="ion-ios-speedometer-outline"></i>
+                                </div>
+                            </div>
+                            <h2 class="title"><a href="#">Our Mission</a></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur elit,
+                                sed do eiusmod tempor ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div class="about-col">
+                            <div class="img">
+                                <img
+                                    src='{{asset('images/about-plan.jpg')}}'
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                                <div class="icon">
+                                    <i class="ion-ios-list-outline"></i>
+                                </div>
+                            </div>
+                            <h2 class="title"><a href="#">Our Plan</a></h2>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error
+                                sit voluptatem doloremque laudantium, totam rem
+                                aperiam, eaque ipsa quae ab illo inventore
+                                veritatis et quasi architecto beatae vitae dicta
+                                sunt explicabo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <div class="about-col">
+                            <div class="img">
+                                <img
+                                    src='{{asset('images/about-vision.jpg')}}'
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                                <div class="icon">
+                                    <i class="ion-ios-eye-outline"></i>
+                                </div>
+                            </div>
+                            <h2 class="title"><a href="#">Our Vision</a></h2>
+                            <p>
+                                Nemo enim ipsam voluptatem quia voluptas sit aut
+                                odit aut fugit, sed quia magni dolores eos qui
+                                ratione voluptatem sequi nesciunt Neque porro
+                                quisquam est, qui dolorem ipsum quia dolor sit
+                                amet.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="opportunities-content pb-5 py-4">
-                <div class="opportunities-content-img-container ">
-                    <div class="opportunities-content-img-2">
-                        <img src="{{asset('images/our-mission.png')}}" alt="">
-                    </div>
-                </div>
-                <div class="opportunities-content-body ml-5">
-                    <h3>Mission</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem blanditiis, neque distinctio eaque praesentium quasi?</p> 
-                    <button class="btn p-0"><a class = "nav-link text-body transparent-btn" href="#">Learn More</a></button>  
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+        <!-- End About Us Section -->
 @section('js')
+</section>
+
     <!-- Bootstrap JS, PopperJS, jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     

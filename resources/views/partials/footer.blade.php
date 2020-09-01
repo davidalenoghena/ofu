@@ -1,6 +1,7 @@
 <!-- Footer Section Begins Here -->
 
 <footer>
+    <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <section id="footer">
             <div class="container d-flex footer-sect">
                 <div>

@@ -22,4 +22,4 @@ Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('i
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about_us')->name('about');
 Route::get('/contact', 'HomeController@contact_us')->name('contact');
-Route::get('/blog', 'HomeController@blog')->name('blog');
+Route::get('/blog', 'BlogController@index')->name('blog');
