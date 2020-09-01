@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
-use App\Post;
 
 class DatabaseSeeder extends Seeder
 {
