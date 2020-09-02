@@ -17,7 +17,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = DB::table('blogs')->get();
-        return view('pages.blog', ['blogs' => $blogs]);
+        return view('admin.blog', ['blogs' => $blogs]);
     }
 
     /**
@@ -27,7 +27,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create_blog');
     }
 
     /**
@@ -81,8 +81,37 @@ class BlogController extends Controller
      * @param  \App\blog  $blog
      * @return \Illuminate\Http\Response
      */
+
+    public function disableBlogs(Request $request, $id)
+    {
+        $blogs = blog::find($id);
+        $blogs->status = 0;
+        $blogs->save();
+
+        $request->session()->flash('success', 'Blog Post unpublished');
+        return redirect()->back();
+    }
+
+    public function enableBlogs(Request $request, $id)
+    {
+        $blogs = blog::find($id);
+        $blogs->status = 1;
+        $blogs->save();
+
+        $request->session()->flash('success', 'BLog Post published');
+        return redirect()->back();
+    }
+
+    public function disabledBlogsList()
+    {
+        $blogs = blog::where('status', 0)->orderBy('created_at', 'desc')->get();
+        $active_menu = 'disabled-blogs';
+        return view('admin.disabled-blogs', compact('blogs', 'active_menu'));
+    }
+
     public function destroy(blog $blog)
     {
         //
     }
+
 }
