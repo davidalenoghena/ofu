@@ -35,7 +35,7 @@ class HomeController extends Controller
     public function blog()
     {
         $blogs = DB::table('blogs')->get();
-        return view('pages.blog', ['blogs' => $blogs]);
+        return view('pages.blog2', ['blogs' => $blogs]);
     }
     public function dashboard()
     {
