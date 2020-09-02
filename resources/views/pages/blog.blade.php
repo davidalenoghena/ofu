@@ -1,7 +1,5 @@
 @include('partials.navbar')
 
- 
-
 <!DOCTYPE html>
 <html lang="en">
 
