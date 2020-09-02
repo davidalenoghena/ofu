@@ -34,8 +34,21 @@ class HomeController extends Controller
     }
     public function blog()
     {
-        $blogs = DB::table('blogs')->get();
-        return view('pages.blog2', ['blogs' => $blogs]);
+        $blog_count = DB::table('blogs')->count();
+        $blogs = DB::table('blogs')
+                            ->inRandomOrder()
+                            ->get();
+        $blog1 = DB::table('blogs')->find(($blog_count));
+        $blog2 = DB::table('blogs')->find(($blog_count - 1));
+        $blog3 = DB::table('blogs')->find(($blog_count - 2));
+        return view('pages.blog2',
+        [
+            'blogs' => $blogs,
+            'blog1' => $blog1,
+            'blog2' => $blog2,
+            'blog3' => $blog3
+        ]
+    );
     }
     public function dashboard()
     {

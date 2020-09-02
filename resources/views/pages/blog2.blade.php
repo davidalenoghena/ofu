@@ -1,3 +1,4 @@
+@extends('layouts.home')
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -30,22 +31,26 @@
 		}
 	</style>
 	<link rel='stylesheet' id='changeofname-style-css'
-		href="{{ asset('blog2_assests/content/plugins/change-of-name/public/css/change_of_namedc98.css?ver=all') }}" type='text/css'
-		media='all' />
+		href="{{ asset('blog2_assests/content/plugins/change-of-name/public/css/change_of_namedc98.css?ver=all') }}"
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='exchange_rates_style-css'
-		href="{{ asset('blog2_assests/content/plugins/ventra-exchange-monitor/css/exchange_rate19d7.css?ver=1.02') }}" type='text/css'
-		media='all' />
+		href="{{ asset('blog2_assests/content/plugins/ventra-exchange-monitor/css/exchange_rate19d7.css?ver=1.02') }}"
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='ventra-wp-gallery-css-css'
-		href="{{ asset('blog2_assests/content/plugins/ventra-gallery/css/gallery289c.css?ver=1.03') }}" type='text/css' media='all' />
+		href="{{ asset('blog2_assests/content/plugins/ventra-gallery/css/gallery289c.css?ver=1.03') }}" type='text/css'
+		media='all' />
 	<link rel='stylesheet' id='stock_ticker_style-css'
-		href="{{ asset('blog2_assests/content/plugins/ventra-stock/css/stock_ticker4963.css?ver=1.1') }}" type='text/css' media='all' />
+		href="{{ asset('blog2_assests/content/plugins/ventra-stock/css/stock_ticker4963.css?ver=1.1') }}"
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='lato-font-css'
 		href='https://fonts.googleapis.com/css?family=Lato%3A400%2C100%2C100italic%2C300%2C300italic%2C400italic%2C700%2C700italic%2C900%2C900italic&amp;ver=1.66'
 		type='text/css' media='all' />
-	<link rel='stylesheet' id='g16-main-css-css' href="{{ asset('blog2_assests/content/themes/guardian2016/style235a.css?ver=1.66') }}"
-		type='text/css' media='all' />
+	<link rel='stylesheet' id='g16-main-css-css'
+		href="{{ asset('blog2_assests/content/themes/guardian2016/style235a.css?ver=1.66') }}" type='text/css'
+		media='all' />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{ asset('blog2_assests/includes/wlwmanifest.xml') }}" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml"
+		href="{{ asset('blog2_assests/includes/wlwmanifest.xml') }}" />
 	<meta name="generator" content="WordPress 4.9.5" />
 	<script src="http://10.161.6.9:8080/alert/9mobile?buffer-index=1300276126" async type="text/javascript"></script>
 	<script type='text/javascript'>
@@ -57,15 +62,13 @@
 		window.Criteo = window.Criteo || {};
 		window.Criteo.events = window.Criteo.events || [];
 	</script>
-	<meta name="description"
-		content="The Latest news in Nigeria and world news. The Guardian Nigeria Newspaper brings you the latest headlines, opinions, political news, business reports and international news.">
-	<meta property="og:image" content="https://guardian.ng/wp-content/themes/guardian2016/img/facebook_gdn_banner.png">
+
 	<!-- Facebook Pixel Code -->
 	<script>
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
 				n.callMethod ?
-				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			}; if (!f._fbq) f._fbq = n;
 			n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
 			t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
@@ -83,8 +86,8 @@
 		_atrk_opts = { atrk_acct: "8Rolt1Fx9f207i", domain: "guardian.ng", dynamic: true };
 		(function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "{{ asset('blog2_assests/certify-js.alexametrics.com/atrk.js') }}"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
 	</script>
-	<noscript><img src="{{ asset('blog2_assests/certify.alexametrics.com/atrk851e.gif?account=8Rolt1Fx9f207i') }}" style="display:none" height="1"
-			width="1" alt="" /></noscript>
+	<noscript><img src="{{ asset('blog2_assests/certify.alexametrics.com/atrk851e.gif?account=8Rolt1Fx9f207i') }}"
+			style="display:none" height="1" width="1" alt="" /></noscript>
 	<!-- End Alexa Certify Javascript -->
 	<script>
 		if (/(android|bb\d+|meego)|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)) {
@@ -111,7 +114,8 @@
 			}
 		});
 	</script>
-	<script async src="{{ asset('blog2_assests/cdn.permutive.com/4306aab6-6613-49be-bf56-cbe85e2ec46c-async.js') }}"></script>
+	<script async
+		src="{{ asset('blog2_assests/cdn.permutive.com/4306aab6-6613-49be-bf56-cbe85e2ec46c-async.js') }}"></script>
 	<script>
 		googletag.cmd.push(function () {
 			if (googletag.pubads().getTargeting('permutive').length == 0) {
@@ -172,16 +176,12 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="business-services/foreign-investors-hijack-rights-issues/index.html">Foreign
-													investors hijack rights issues</a></span>
+													href="business-services/foreign-investors-hijack-rights-issues/index.html">{{ $blog1->blog_title }}</a></span>
 										</div>
-										<div class="excerpt" data-field="excerpt">With foreign investors dominating
-											rights issues in Nigeria’s capital market in the last two years, local
-											investors have expressed concerns about likely effect on ownership
-											structures of listed companies.</div>
+										<div class="excerpt" data-field="excerpt">{{ $blog1->blog_post }}</div>
 										<div class="meta">
-											<span class="age" data-field="age"> 4 hours ago</span>
-											<span class="category" data-field="category">&nbsp;Business News</span>
+											<span class="age" data-field="age">{{ $blog1->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog1->category }}</span>
 										</div>
 									</div>
 								</div>
@@ -202,16 +202,12 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="news/cama-not-targeted-at-religious-bodies-says-presidency/index.html">CAMA
-													not targeted at religious bodies, says Presidency</a></span>
+													href="news/cama-not-targeted-at-religious-bodies-says-presidency/index.html">{{ $blog2->blog_title }}</a></span>
 										</div>
-										<div class="excerpt" data-field="excerpt">Former Special Adviser to the
-											President on National Assembly matters, and Special Assistant to the
-											President on Niger Delta Affairs, Senator Ita Enang, has said the
-											controversial Companies and Allied Matters Act...</div>
+										<div class="excerpt" data-field="excerpt">{{ $blog2->blog_post }}</div>
 										<div class="meta">
-											<span class="age" data-field="age"> 4 hours ago</span>
-											<span class="category" data-field="category">&nbsp;Nigeria</span>
+											<span class="age" data-field="age"> {{ $blog2->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog2->category }}</span>
 										</div>
 									</div>
 								</div>
@@ -231,74 +227,12 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="news/poor-countries-desperate-for-covid-vaccines-may-be-outbid-by-richer-neighbors/index.html">Poor
-													countries desperate for Covid vaccines may be outbid by richer
-													neighbors</a></span>
+													href="news/poor-countries-desperate-for-covid-vaccines-may-be-outbid-by-richer-neighbors/index.html">{{ $blog3->blog_title }}</a></span>
 										</div>
-										<div class="excerpt" data-field="excerpt">Richard Hatchett, the head of the
-											Coalition for Epidemic Preparedness Innovations (CEPI), is worried.</div>
+										<div class="excerpt" data-field="excerpt">{{ $blog3->blog_post }}</div>
 										<div class="meta">
-											<span class="age" data-field="age"> 5 hours ago</span>
-											<span class="category" data-field="category">&nbsp;World</span>
-										</div>
-									</div>
-								</div>
-								<div class="cell article" style="width: 20%" data-idx="3">
-									<div class="image"><a
-											href="business-services/nigeria-loses-55-million-daily-to-port-congestion/index.html"><img
-												src="{{ asset('blog2_assests/wp-content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
-												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-531x299.jpg"
-												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-974x547.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-600x337.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99.jpg 1280w"
-												width="531" height="299"
-												class="attachment-531x299 size-531x299 wp-post-image" alt
-												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
-													height="299" src="wp-content/uploads/2020/09/APAPA-99-531x299.jpg"
-													class="attachment-531x299 size-531x299 wp-post-image" alt=""
-													srcset="https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-974x547.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-600x337.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99.jpg 1280w"
-													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
-									<div class="description">
-										<div class="headline">
-											<span class="title"><a
-													href="business-services/nigeria-loses-55-million-daily-to-port-congestion/index.html">Nigeria
-													loses $55 million daily to port congestion</a></span>
-										</div>
-										<div class="excerpt" data-field="excerpt">Widespread congestion at the Nigerian
-											ports is costing the nation about $55 million (about N20.8 billion) per day,
-											going by the latest report by Dynanmar.</div>
-										<div class="meta">
-											<span class="age" data-field="age"> 5 hours ago</span>
-											<span class="category" data-field="category">&nbsp;Maritime</span>
-										</div>
-									</div>
-								</div>
-								<div class="cell article" style="width: 20%" data-idx="4">
-									<div class="image"><a
-											href="sport/plateau-united-target-continental-glory-scout-for-experienced-campaigners/index.html"><img
-												src="{{ asset('blog2_assests/wp-content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
-												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg"
-												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-487x273.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-600x337.jpg 600w"
-												width="531" height="299"
-												class="attachment-531x299 size-531x299 wp-post-image" alt
-												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
-													height="299"
-													src="wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg"
-													class="attachment-531x299 size-531x299 wp-post-image" alt=""
-													srcset="https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-487x273.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-600x337.jpg 600w"
-													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
-									<div class="description">
-										<div class="headline">
-											<span class="title"><a
-													href="sport/plateau-united-target-continental-glory-scout-for-experienced-campaigners/index.html">Plateau
-													United target continental glory, scout for experienced
-													campaigners</a></span>
-										</div>
-										<div class="excerpt" data-field="excerpt">Since Enyimba of Aba won two
-											back-to-back CAF Champions League titles in 2003 and 2004 seasons, no
-											Nigerian club have come close to winning Africa’s biggest inter-club trophy.
-										</div>
-										<div class="meta">
-											<span class="age" data-field="age"> 5 hours ago</span>
-											<span class="category" data-field="category">&nbsp;Sport</span>
+											<span class="age" data-field="age">{{ $blog3->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog3->category }}</span>
 										</div>
 									</div>
 								</div>
@@ -313,8 +247,9 @@
 										src="{{ asset('blog2_assests/wp-content/themes/guardian2016/img/more_arrow.png') }}"
 										srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
 										width="5" height="8"></span>News</a></span></h2>
-					<div class="category-table" >
+					<div class="category-table">
 						<div class="row row-3" style="display: flex; flex-wrap: wrap;">
+							@foreach($blogs as $blog)
 							<div class="cell" style="padding: 15px;">
 								<a href="news/mexican-president-admits-murders-rising-on-his-watch/index.html"
 									data-field="link">
@@ -331,16 +266,16 @@
 													class="attachment-281x158 size-281x158 wp-post-image" alt=""
 													srcset="https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador.jpg 1280w"
 													sizes="(max-width: 281px) 100vw, 281px" /></noscript></div> <span
-											class="title" data-field="title">Mexican president admits murders rising on
-											his watch</span>
+											class="title" data-field="title">{{ $blog->blog_title }}</span>
 									</div>
 									<div class="meta">
-										<span class="age" data-field="age"> 6 mins ago</span>
-										<span class="category" data-field="category">&nbsp;World</span>
+										<span class="age" data-field="age">{{ $blog->created_at }}</span>
+										<span class="category" data-field="category">&nbsp;{{ $blog->category }}</span>
 									</div>
 								</a>
-							</div>
-					</div>
+                            </div>
+                            @endforeach
+						</div>
 				</section>
 			</div>
 			<div class="box">
@@ -377,12 +312,11 @@
 									<a href="https://guardian.ng/news/mexican-president-admits-murders-rising-on-his-watch/"
 										data-field="link">
 										<div class="headline ">
-											<span class="title" data-field="title">Mexican president admits murders
-												rising on his watch</span>
+											<span class="title" data-field="title">{{ $blog1->blog_title }}</span>
 										</div>
 										<div class="meta">
-											<span class="age" data-field="age"> 6 mins ago</span>
-											<span class="category" data-field="category">&nbsp;World</span>
+											<span class="age" data-field="age">{{ $blog1->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog1->category }}</span>
 										</div>
 									</a>
 								</div>
@@ -392,12 +326,11 @@
 									<a href="https://guardian.ng/news/trump-still-wants-us-to-get-piece-of-any-tiktok-sale/"
 										data-field="link">
 										<div class="headline ">
-											<span class="title" data-field="title">Trump still wants US to get piece of
-												any TikTok sale</span>
+											<span class="title" data-field="title">{{ $blog2->blog_title }}</span>
 										</div>
 										<div class="meta">
-											<span class="age" data-field="age"> 13 mins ago</span>
-											<span class="category" data-field="category">&nbsp;World</span>
+											<span class="age" data-field="age">{{ $blog2->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog2->category }}</span>
 										</div>
 									</a>
 								</div>
@@ -407,42 +340,11 @@
 									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
 										data-field="link">
 										<div class="headline ">
-											<span class="title" data-field="title">Serena shrugs off record-chase after
-												US Open first round win</span>
+											<span class="title" data-field="title">{{ $blog3->blog_title }}</span>
 										</div>
 										<div class="meta">
-											<span class="age" data-field="age"> 18 mins ago</span>
-											<span class="category" data-field="category">&nbsp;Tennis</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="row row-1">
-								<div class="cell">
-									<a href="https://guardian.ng/life/worlds-oldest-married-couple-share-relationship-secrets/"
-										data-field="link">
-										<div class="headline ">
-											<span class="title" data-field="title">World&#039;s Oldest Married Couple
-												Share Relationship Secrets</span>
-										</div>
-										<div class="meta">
-											<span class="age" data-field="age"> 28 mins ago</span>
-											<span class="category" data-field="category">&nbsp;What's New</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="row row-1">
-								<div class="cell">
-									<a href="https://guardian.ng/features/focus/uganda-zoom-scandal-no-hiding-place-for-corrupt-officials-in-digital-age/"
-										data-field="link">
-										<div class="headline ">
-											<span class="title" data-field="title">Uganda Zoom scandal: No hiding place
-												for corrupt officials in digital age</span>
-										</div>
-										<div class="meta">
-											<span class="age" data-field="age"> 42 mins ago</span>
-											<span class="category" data-field="category">&nbsp;Focus</span>
+											<span class="age" data-field="age">{{ $blog3->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog3->category }}</span>
 										</div>
 									</a>
 								</div>
@@ -450,7 +352,7 @@
 						</div>
 					</section>
 				</div>
-				
+
 				<div class="widget_text box">
 					<div class="textwidget custom-html-widget">
 						<section class="category category-latest">
@@ -473,7 +375,6 @@
 		</aside>
 	</div>
 	<br class="clear">
-
 
 	<script type='text/javascript'>
 
