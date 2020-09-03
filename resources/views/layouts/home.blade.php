@@ -1,14 +1,15 @@
 @include('partials.head')
 @stack('css')
-
 <body>
-    <!-- Navbar -->
-    @include('partials.navbar')
+    <div id = "app">
+        <!-- Navbar -->
+        @include('partials.navbar')
 
-    <!-- Content -->
-    @yield('content')
+        <!-- Content -->
+        @yield('content')
 
-    <!-- Footer -->
-    @include('partials.footer')
-    @yield('js')
+        <!-- Footer -->
+        @include('partials.footer')
+    </div>
 </body>
+    @yield('js')
