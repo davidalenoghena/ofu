@@ -2,13 +2,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
 	<meta property="fb:pages" content="176502461635" />
 	<meta charset="UTF-8" />
-	<title>OFU - Blog</title>
+	<title>OFU &#8211; Blog</title>
 	<link rel='dns-prefetch' href='http://api.ravepay.co/' />
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 	<link rel='dns-prefetch' href='http://s.w.org/' />
@@ -62,8 +61,6 @@
 		window.Criteo = window.Criteo || {};
 		window.Criteo.events = window.Criteo.events || [];
 	</script>
-
-	<!-- Facebook Pixel Code -->
 	<script>
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
@@ -73,7 +70,7 @@
 			n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
 			t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
 		}(window,
-			document, 'script', '../connect.facebook.net/en_US/fbevents.js');
+			document, 'script', '{{ asset("blog2_assests/connect.facebook.net/en_US/fbevents.js") }}');
 		fbq('init', '247107802609931');
 		fbq('track', 'PageView');
 	</script>
@@ -153,7 +150,7 @@
 		</div>
 	</div>
 	<div class="content page-content ">
-		<main class="page-main">
+		<main class="page-main" >
 			<div class="headline-holder">
 				<section class="category category-latest">
 					<div class="news-headlines">
@@ -162,14 +159,14 @@
 								<div class="cell article" style="width: 20%" data-idx="0">
 									<div class="image"><a
 											href="business-services/foreign-investors-hijack-rights-issues/index.html"><img
-												src="{{ asset('blog2_assestswp-content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
+												src="{{ asset('blog2_assests/content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
 												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-531x299.jpg"
 												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines.jpg 1280w"
 												width="531" height="299"
 												class="attachment-531x299 size-531x299 wp-post-image" alt
 												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
 													height="299"
-													src="{{ asset('blog2_assests/wp-content/uploads/2020/09/Inflation-declines-531x299.jpg') }}"
+													src="{{ asset('blog2_assests/content/uploads/2020/09/Inflation-declines-531x299.jpg') }}"
 													class="attachment-531x299 size-531x299 wp-post-image" alt=""
 													srcset="https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Inflation-declines.jpg 1280w"
 													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
@@ -188,14 +185,14 @@
 								<div class="cell article" style="width: 20%" data-idx="1">
 									<div class="image"><a
 											href="news/cama-not-targeted-at-religious-bodies-says-presidency/index.html"><img
-												src="{{ asset('blog2_assests/wp-content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
+												src="{{ asset('blog2_assests/content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
 												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-531x299.jpg"
 												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1.jpg 1280w"
 												width="531" height="299"
 												class="attachment-531x299 size-531x299 wp-post-image" alt
 												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
 													height="299"
-													src="wp-content/uploads/2020/09/Senator-Ita-Enang1-531x299.jpg"
+													src="{{ asset('blog2_assests/content/uploads/2020/09/Senator-Ita-Enang1-531x299.jpg') }}"
 													class="attachment-531x299 size-531x299 wp-post-image" alt=""
 													srcset="https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Senator-Ita-Enang1.jpg 1280w"
 													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
@@ -214,13 +211,13 @@
 								<div class="cell article" style="width: 20%" data-idx="2">
 									<div class="image"><a
 											href="news/poor-countries-desperate-for-covid-vaccines-may-be-outbid-by-richer-neighbors/index.html"><img
-												src="{{ asset('blog2_assests/wp-content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
+												src="{{ asset('blog2_assests/content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
 												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-531x299.jpg"
 												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU.jpg 1280w"
 												width="531" height="299"
 												class="attachment-531x299 size-531x299 wp-post-image" alt
 												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
-													height="299" src="wp-content/uploads/2020/09/000_1WV9ZU-531x299.jpg"
+													height="299" src="{{ asset('blog2_assests/content/uploads/2020/09/000_1WV9ZU-531x299.jpg') }}"
 													class="attachment-531x299 size-531x299 wp-post-image" alt=""
 													srcset="https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/000_1WV9ZU.jpg 1280w"
 													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
@@ -236,6 +233,58 @@
 										</div>
 									</div>
 								</div>
+								<div class="cell article" style="width: 20%" data-idx="3">
+									<div class="image"><a
+											href="business-services/nigeria-loses-55-million-daily-to-port-congestion/index.html"><img
+												src="{{ asset('blog2_assests/content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
+												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-531x299.jpg"
+												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-974x547.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-600x337.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99.jpg 1280w"
+												width="531" height="299"
+												class="attachment-531x299 size-531x299 wp-post-image" alt
+												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
+													height="299" src="{{ asset('blog2_assests/content/uploads/2020/09/APAPA-99-531x299.jpg') }}"
+													class="attachment-531x299 size-531x299 wp-post-image" alt=""
+													srcset="https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-974x547.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99-600x337.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/APAPA-99.jpg 1280w"
+													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
+									<div class="description">
+										<div class="headline">
+											<span class="title"><a
+													href="business-services/nigeria-loses-55-million-daily-to-port-congestion/index.html">{{ $blog4->blog_title }}</a></span>
+										</div>
+										<div class="excerpt" data-field="excerpt">{{ $blog4->blog_post }}</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog4->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog4->category }}</span>
+										</div>
+									</div>
+								</div>
+								<div class="cell article" style="width: 20%" data-idx="4">
+									<div class="image"><a
+											href="sport/plateau-united-target-continental-glory-scout-for-experienced-campaigners/index.html"><img
+												src="{{ asset('blog2_assests/content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
+												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg"
+												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-487x273.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-600x337.jpg 600w"
+												width="531" height="299"
+												class="attachment-531x299 size-531x299 wp-post-image" alt
+												sizes="(max-width: 531px) 100vw, 531px"><noscript><img width="531"
+													height="299"
+													src="{{ asset('blog2_assests/content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg') }}"
+													class="attachment-531x299 size-531x299 wp-post-image" alt=""
+													srcset="https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-487x273.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/plateau-united_10gijaqzfpo3n1lax6ajn68a51-600x337.jpg 600w"
+													sizes="(max-width: 531px) 100vw, 531px" /></noscript></a></div>
+									<div class="description">
+										<div class="headline">
+											<span class="title"><a
+													href="sport/plateau-united-target-continental-glory-scout-for-experienced-campaigners/index.html">{{ $blog5->blog_title }}</a></span>
+										</div>
+										<div class="excerpt" data-field="excerpt">{{ $blog5->blog_post }}
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog5->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog5->category }}</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 				</section>
@@ -244,7 +293,7 @@
 				<section class="category  design-article">
 					<h2 style="border-bottom-color: #072247"><span><a href="category/news/index.html"
 								style="position:relative"><span class="view-more-link">More &nbsp; <img
-										src="{{ asset('blog2_assests/wp-content/themes/guardian2016/img/more_arrow.png') }}"
+										src="{{ asset('blog2_assests/content/themes/guardian2016/img/more_arrow.png') }}"
 										srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
 										width="5" height="8"></span>News</a></span></h2>
 					<div class="category-table">
@@ -277,6 +326,50 @@
                             @endforeach
 						</div>
 				</section>
+			</div>
+			<!-- <div class="d-flex justify-content-center">
+				{{ $blogs->links() }}
+			</div> -->
+			<div class="box">
+				<section class="category  design-article">
+					<h2 style="border-bottom-color: #072247"><span><a href="category/news/index.html"
+								style="position:relative"><span class="view-more-link">More &nbsp; <img
+										src="{{ asset('blog2_assests/content/themes/guardian2016/img/more_arrow.png') }}"
+										srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
+										width="5" height="8"></span>Others</a></span></h2>
+					<div class="category-table">
+						<div class="row row-3" style="display: flex; flex-wrap: wrap;">
+							@foreach($ran_blogs as $blog)
+							<div class="cell" style="padding: 15px;">
+								<a href="news/mexican-president-admits-murders-rising-on-his-watch/index.html"
+									data-field="link">
+									<div class="headline ">
+										<div class="image" data-field="thumb"><img
+												src="{{ asset('blog2_assests/wp-content/plugins/ventra-lazy-load/images/1x1.trans.gif') }}"
+												data-lazy-src="https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-281x158.jpg"
+												data-lazy-srcset="https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador.jpg 1280w"
+												width="281" height="158"
+												class="attachment-281x158 size-281x158 wp-post-image" alt
+												sizes="(max-width: 281px) 100vw, 281px"><noscript><img width="281"
+													height="158"
+													src="wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-281x158.jpg"
+													class="attachment-281x158 size-281x158 wp-post-image" alt=""
+													srcset="https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador-600x338.jpg 600w,https://guardian.ng/wp-content/uploads/2020/09/Andres-Manuel-Lopez-Obrador.jpg 1280w"
+													sizes="(max-width: 281px) 100vw, 281px" /></noscript></div> <span
+											class="title" data-field="title">{{ $blog->blog_title }}</span>
+									</div>
+									<div class="meta">
+										<span class="age" data-field="age">{{ $blog->created_at }}</span>
+										<span class="category" data-field="category">&nbsp;{{ $blog->category }}</span>
+									</div>
+								</a>
+							</div>
+							@endforeach
+						</div>
+				</section>
+			</div>
+			<div class="d-flex justify-content-center">
+				{{ $blogs->links() }}
 			</div>
 			<div class="box">
 				<div class="textwidget">
