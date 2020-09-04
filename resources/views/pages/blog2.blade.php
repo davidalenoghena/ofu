@@ -1,4 +1,3 @@
-@extends('layouts.home')
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -137,8 +136,6 @@
 		})(window, document, 'script', 'dataLayer', 'GTM-M9K22G');</script>
 	<!-- End Google Tag Manager -->
 	<div style="position: absolute; top: -100px; left: 0"><a name="top">&nbsp;</a></div>
-	<header>
-	</header>
 
 	<div id="adspace-top" class="no-mobile">
 		<div class="box">
@@ -291,7 +288,7 @@
 			</div>
 			<div class="box">
 				<section class="category  design-article">
-					<h2 style="border-bottom-color: #072247"><span><a href="category/news/index.html"
+					<h2 style="border-bottom-color: #00adee"><span><a href="category/news/index.html"
 								style="position:relative"><span class="view-more-link">More &nbsp; <img
 										src="{{ asset('blog2_assests/content/themes/guardian2016/img/more_arrow.png') }}"
 										srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
@@ -332,7 +329,7 @@
 			</div> -->
 			<div class="box">
 				<section class="category  design-article">
-					<h2 style="border-bottom-color: #072247"><span><a href="category/news/index.html"
+					<h2 style="border-bottom-color: #00adee"><span><a href="category/news/index.html"
 								style="position:relative"><span class="view-more-link">More &nbsp; <img
 										src="{{ asset('blog2_assests/content/themes/guardian2016/img/more_arrow.png') }}"
 										srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
@@ -438,6 +435,34 @@
 										<div class="meta">
 											<span class="age" data-field="age">{{ $blog3->created_at }}</span>
 											<span class="category" data-field="category">&nbsp;{{ $blog3->category }}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog4->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog4->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog4->category }}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog5->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog5->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog5->category }}</span>
 										</div>
 									</a>
 								</div>
