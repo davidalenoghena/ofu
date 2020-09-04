@@ -198,20 +198,18 @@
 	<div class="content page-content  single-article-section">
 		<div class="single-post-header flex-container">
 			<div class="category-header single-article-category flex-item"><a
-					href="https://guardian.ng/category/sport/football/">Football</a> &nbsp;</div>
-			<h1 class="after-category single-article-title flex-item">Messi release clause not valid, Jorge Messi tells
-				La Liga</h1>
+					href="https://guardian.ng/category/sport/football/">{{ $blog_data->category }}</a> &nbsp;</div>
+			<h1 class="after-category single-article-title flex-item">{{ $blog_data->blog_title }}</h1>
 		</div>
 		<main class="page-main">
 			<div class="single-main flex-container">
 				<div class="single-article-aside">
 					<div class="meta">
 						<div class="single-article-author">
-							By <strong>AFP</strong>
+							By <strong>{{ $blog_data->author }}</strong>
 						</div>
 						<div class="manual-age single-article-datetime">
-							04 September 2020 &nbsp; | &nbsp;
-							1:20 pm </div>
+                        {{ $blog_data->created_at }} </div>
 					</div>
 					<div class="social-share clearfix">
 						<a class="facebook"
@@ -335,63 +333,8 @@
 									height="720" class="size-full wp-image-1211535 lazyload"
 									srcset="https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1.jpg 1280w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-640x360.jpg 640w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-1062x598.jpg 1062w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-320x180.jpg 320w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-281x158.jpg 281w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-562x316.jpg 562w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-531x299.jpg 531w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-487x274.jpg 487w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-974x548.jpg 974w,https://guardian.ng/wp-content/uploads/2020/09/Jorge-Messi-1-600x338.jpg 600w"
 									sizes="(max-width: 1280px) 100vw, 1280px" /></noscript>
-							<p class="wp-caption-text">Jorge Messi, father and agent of soccer player Lionel Messi,
-								arrives at Josep Tarradellas Barcelona-El Prat airport for a meeting with Barcelona
-								President Josep Maria Bartomeu, in Barcelona, Spain September 2, 2020. REUTERS/Nacho
-								Doce</p>
 						</div>
-						<p>Jorge Messi, the father and agent of Lionel Messi, published a response to La Liga on Friday,
-							insisting the Barcelona striker&#8217;s 700-million-euro release clause no longer applies.
-						</p>
-						<p>Messi senior claims the release clause is removed once the player takes up the option in his
-							contract to leave for free, which Messi&#8217;s side believe he did when he notified Barca
-							by burofax on August 25. </p>
-						<p>In the letter addressed to La Liga president Javier Tevas, Jorge Messi claims to quote a
-							clause in Messi&#8217;s contract that says: &#8220;This release clause will not apply when
-							the player’s decision to unilaterally rescind the contract takes effect from the end of the
-							2019-2020 season.&#8221; </p>
-						<div class="ad-align-none">
-							<div class="box">
-								<div style="width: 100%; overflow: hidden">
-									<div id='ventra-dfp-2' class='dfp-ad ad-container'
-										style='margin: 15px auto; height:250px; width: 700px;'>
-									</div>
-								</div>
-							</div>
-						</div>
-						<p>La Liga had backed up Barcelona&#8217;s position last weekend by announcing that
-							Messi&#8217;s release clause remains valid. </p>
-						<p>And the Spanish league reacted almost immediately by reiterating their stance and saying
-							Jorge Messi&#8217;s interpretation of the contract was &#8220;out of context&#8221; and
-							&#8220;far removed&#8221; from its wording. </p>
-						<p>Jorge Messi&#8217;s bullish statement indicates his son remains committed to leaving Barca
-							this summer, despite suggestions the 33-year-old&#8217;s stance could be softening. </p>
-						<p>However, there has been no overt declaration that Messi will still depart, perhaps offering
-							some hope to Barcelona supporters.</p>
-						<p>The validity of the release clause in Messi&#8217;s contract is important because its
-							existence means Messi could be liable to pay the amount himself if he joined another club
-							but lost a subsequent legal battle in court. </p>
-						<p>Barcelona believe the option in the player&#8217;s contract that allowed him to leave for
-							free expired on June 10. </p>
-						<div class="ad-align-none">
-							<div class="box">
-								<div style="width: 100%; overflow: hidden">
-									<div id='ventra-dfp-3' class='dfp-ad ad-container'
-										style='margin: 15px auto; height:250px; width: 700px;'>
-									</div>
-								</div>
-							</div>
-						</div>
-						<p>Messi&#8217;s side insist the deadline was the end of the season, which was extended into
-							August due to the pandemic. </p>
-						<p>Notably, Jorge Messi did not mention a specific date when quoting that clause in his
-							statement. </p>
-						<p>&#8220;We do not know which contract you have analysed and what is the basis that leads you
-							to conclude there was an applicable release clause if the player decided to unilaterally end
-							his contract at the end of the 19-20 season,&#8221; he wrote. </p>
-						<p>He adds that it was an &#8220;obvious error on your part&#8221;. </p>
-						<p>Messi&#8217;s father had held talks with Barcelona president Josep Maria Bartomeu on Thursday
-							but both sides reiterated their arguments and no agreement was reached. </p>
+						<p>{{ $blog_data->blog_post }}</p>
 						<div class="ad-align-none">
 							<div class="box">
 								<div style="width: 100%; overflow: hidden">
@@ -418,222 +361,113 @@
 		</main>
 		<aside>
 			<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-				<div class="grid">
-					<div class="widget widget_ventra_dfp_widget" id="widget-1">
-						<div class="content">
-							<div style="width: 100%; overflow: hidden">
-								<div id='ventra-dfp-6' class='dfp-ad ad-container'
-									style='margin: 15px auto; height:250px; width: 300px;'>
+				<div class="box">
+					<div style="width: 100%; overflow: hidden">
+						<div id='ventra-dfp-6' class='dfp-ad ad-container'
+							style='margin: 15px auto; height:250px; width: 300px;'>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="box">
+					<section class="category  design-article">
+						<h2 style="border-bottom-color: #00adee"><span><a href="https://guardian.ng/latest/"
+									style="position:relative"><span class="view-more-link">More &nbsp; <img
+											src="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png"
+											srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
+											width="5" height="8"></span>Latest</a></span></h2>
+						<div class="category-table">
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/news/mexican-president-admits-murders-rising-on-his-watch/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog1->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog1->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog1->category }}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/news/trump-still-wants-us-to-get-piece-of-any-tiktok-sale/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog2->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog2->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog2->category }}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog3->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog3->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog3->category }}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog4->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog4->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog4->category }}</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row row-1">
+								<div class="cell">
+									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+										data-field="link">
+										<div class="headline ">
+											<span class="title" data-field="title">{{ $blog5->blog_title }}</span>
+										</div>
+										<div class="meta">
+											<span class="age" data-field="age">{{ $blog5->created_at }}</span>
+											<span class="category" data-field="category">&nbsp;{{ $blog5->category }}</span>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="widget widget_guardian_latest_widget" id="widget-2">
-						<div class="content">
-							<section class="category  design-article" data-base-category="23">
-								<h2 style="border-bottom-color: #00adee"><span><a href="https://guardian.ng/latest/"
-											style="position:relative"><span class="view-more-link">More &nbsp; <img
-													src="../../wp-content/themes/guardian2016/img/more_arrow.png"
-													srcset="https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow.png 1x,https://guardian.ng/wp-content/themes/guardian2016/img/more_arrow@2x.png 2x"
-													width="5" height="8"></span>Latest</a></span></h2>
-								<div class="category-table">
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/ghana-to-revisit-1-million-trade-levy-on-nigerians-others/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Ghana to revisit $1 million
-														trade levy on Nigerians, others</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 14 mins ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/edo-2020-we-will-bury-dictatorship-obaseki/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Edo 2020: We will bury
-														dictatorship — Obaseki</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 28 mins ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/ondo-election-buhari-tasks-apc-to-return-akeredolu-governor/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Ondo election: Buhari tasks
-														APC to return Akeredolu governor</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 2 hours ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/efcc-hands-over-n147m-looted-from-kwara-treasury/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">EFCC hands over N147m looted
-														from Kwara treasury</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 2 hours ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/petrol-may-cost-more-in-south-east-unless-fg-fixes-enugu-depot-ipman/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Petrol may cost more in
-														South-East unless FG fixes Enugu depot — IPMAN</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 2 hours ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-					<div class="widget widget_ventra_dfp_widget" id="widget-3">
-						<div class="content">
-							<div style="width: 100%; overflow: hidden">
-								<div id='ventra-dfp-7' class='dfp-ad ad-container'
-									style='margin: 15px auto; height:250px; width: 300px;'>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="widget widget_text" id="widget-4">
-						<div class="content">
-							<div class="textwidget">
-								<script
-									src="../../wp-content/themes/guardian2016-tv/js/widget.min0a34.js?sz=4"></script>
-							</div>
-						</div>
-					</div>
-					<div class="widget widget_ventra_dfp_widget" id="widget-5">
-						<div class="content">
-							<div style="width: 100%; overflow: hidden">
-								<div id='ventra-dfp-8' class='dfp-ad ad-container'
-									style='margin: 15px auto; height:250px; width: 300px;'>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="widget widget_guardian_trending_widget" id="widget-6">
-						<div class="content">
-							<section class="category  design-article" data-base-category="23">
-								<h2 style="border-bottom-color: #00adee"><span>Trending</span></h2>
-								<div class="category-table">
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/nigeria-releases-names-of-approved-airlines-for-international-flights/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Nigeria releases names of
-														approved airlines for international flights</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 1 day ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/n-power-farouq-speaks-on-selection-of-new-beneficiaries/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">N-Power: Farouq speaks on
-														selection of new beneficiaries</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 1 day ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/nigeria-reviews-curfew-hours-to-curb-coronavirus/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Nigeria reviews curfew hours
-														to curb coronavirus</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 1 day ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/news/nigeria-seeing-rise-in-rape-incest-ipas/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">Nigeria seeing rise in rape,
-														incest – IPAS</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 3 days ago</span>
-													<span class="category" data-field="category">&nbsp;Nigeria</span>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row row-1">
-										<div class="cell">
-											<a href="https://guardian.ng/issue/national-assembly-members-curious-pay/"
-												data-field="link">
-												<div class="headline ">
-													<span class="title" data-field="title">National Assembly members’
-														curious pay</span>
-												</div>
-												<div class="meta">
-													<span class="age" data-field="age"> 16 hours ago</span>
-													<span class="category" data-field="category">&nbsp;Issues</span>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-					<div class="widget widget_ventra_dfp_widget" id="widget-7">
-						<div class="content">
-							<div style="width: 100%; overflow: hidden">
-								<div id='ventra-dfp-9' class='dfp-ad ad-container'
-									style='margin: 15px auto; height:250px; width: 300px;'>
-								</div>
-							</div>
-						</div>
+					</section>
+				</div>
+
+				<div class="widget_text box">
+					<div class="textwidget custom-html-widget">
+						<section class="category category-latest">
+
+							<h2 style="border-bottom-color: #4BB5E2">
+							</h2>
+
+							<a target="_blank" href="https://epaper.guardian.ng/">
+
+								<img alt="Guardian ePaper"
+									src="https://guardian.ng/wp-content/uploads/2020/06/G_SUBCRIBE_ART_NEW_UPDATE.png"
+									width="300px" />
+
+							</a>
+
+						</section>
 					</div>
 				</div>
 			</div>

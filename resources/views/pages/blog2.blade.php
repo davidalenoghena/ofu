@@ -338,7 +338,7 @@
 						<div class="row row-3" style="display: flex; flex-wrap: wrap;">
 							@foreach($ran_blogs as $blog)
 							<div class="cell" style="padding: 15px;">
-								<a href="news/mexican-president-admits-murders-rising-on-his-watch/index.html"
+								<a href="{{ route('blog.single', $blog->id) }}"
 									data-field="link">
 									<div class="headline ">
 										<div class="image" data-field="thumb"><img
@@ -360,6 +360,7 @@
 										<span class="category" data-field="category">&nbsp;{{ $blog->category }}</span>
 									</div>
 								</a>
+
 							</div>
 							@endforeach
 						</div>
