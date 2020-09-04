@@ -170,7 +170,7 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="business-services/foreign-investors-hijack-rights-issues/index.html">{{ $blog1->blog_title }}</a></span>
+													href="{{ route('blog.single', $blog1->id) }}">{{ $blog1->blog_title }}</a></span>
 										</div>
 										<div class="excerpt" data-field="excerpt">{{ $blog1->blog_post }}</div>
 										<div class="meta">
@@ -196,7 +196,7 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="news/cama-not-targeted-at-religious-bodies-says-presidency/index.html">{{ $blog2->blog_title }}</a></span>
+													href="{{ route('blog.single', $blog2->id) }}">{{ $blog2->blog_title }}</a></span>
 										</div>
 										<div class="excerpt" data-field="excerpt">{{ $blog2->blog_post }}</div>
 										<div class="meta">
@@ -221,7 +221,7 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="news/poor-countries-desperate-for-covid-vaccines-may-be-outbid-by-richer-neighbors/index.html">{{ $blog3->blog_title }}</a></span>
+													href="{{ route('blog.single', $blog3->id) }}">{{ $blog3->blog_title }}</a></span>
 										</div>
 										<div class="excerpt" data-field="excerpt">{{ $blog3->blog_post }}</div>
 										<div class="meta">
@@ -246,7 +246,7 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="business-services/nigeria-loses-55-million-daily-to-port-congestion/index.html">{{ $blog4->blog_title }}</a></span>
+													href="{{ route('blog.single', $blog4->id) }}">{{ $blog4->blog_title }}</a></span>
 										</div>
 										<div class="excerpt" data-field="excerpt">{{ $blog4->blog_post }}</div>
 										<div class="meta">
@@ -272,7 +272,7 @@
 									<div class="description">
 										<div class="headline">
 											<span class="title"><a
-													href="sport/plateau-united-target-continental-glory-scout-for-experienced-campaigners/index.html">{{ $blog5->blog_title }}</a></span>
+													href="{{ route('blog.single', $blog5->id) }}">{{ $blog5->blog_title }}</a></span>
 										</div>
 										<div class="excerpt" data-field="excerpt">{{ $blog5->blog_post }}
 										</div>
@@ -297,7 +297,7 @@
 						<div class="row row-3" style="display: flex; flex-wrap: wrap;">
 							@foreach($blogs as $blog)
 							<div class="cell" style="padding: 15px;">
-								<a href="news/mexican-president-admits-murders-rising-on-his-watch/index.html"
+								<a href="{{ route('blog.single', $blog->id) }}"
 									data-field="link">
 									<div class="headline ">
 										<div class="image" data-field="thumb"><img
@@ -400,7 +400,7 @@
 						<div class="category-table">
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/news/mexican-president-admits-murders-rising-on-his-watch/"
+									<a href="{{ route('blog.single', $blog1->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog1->blog_title }}</span>
@@ -414,7 +414,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/news/trump-still-wants-us-to-get-piece-of-any-tiktok-sale/"
+									<a href="{{ route('blog.single', $blog2->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog2->blog_title }}</span>
@@ -428,7 +428,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+									<a href="{{ route('blog.single', $blog3->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog3->blog_title }}</span>
@@ -442,7 +442,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+									<a href="{{ route('blog.single', $blog4->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog4->blog_title }}</span>
@@ -456,7 +456,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+									<a href="{{ route('blog.single', $blog5->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog5->blog_title }}</span>

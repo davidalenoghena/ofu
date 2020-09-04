@@ -380,7 +380,7 @@
 						<div class="category-table">
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/news/mexican-president-admits-murders-rising-on-his-watch/"
+									<a href="{{ route('blog.single', $blog1->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog1->blog_title }}</span>
@@ -394,7 +394,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/news/trump-still-wants-us-to-get-piece-of-any-tiktok-sale/"
+									<a href="{{ route('blog.single', $blog2->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog2->blog_title }}</span>
@@ -408,7 +408,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+									<a href="{{ route('blog.single', $blog3->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog3->blog_title }}</span>
@@ -422,7 +422,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+									<a href="{{ route('blog.single', $blog4->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog4->blog_title }}</span>
@@ -436,7 +436,7 @@
 							</div>
 							<div class="row row-1">
 								<div class="cell">
-									<a href="https://guardian.ng/sport/serena-shrugs-off-record-chase-after-us-open-first-round-win/"
+									<a href="{{ route('blog.single', $blog5->id) }}"
 										data-field="link">
 										<div class="headline ">
 											<span class="title" data-field="title">{{ $blog5->blog_title }}</span>
