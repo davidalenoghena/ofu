@@ -25,9 +25,9 @@
             <div class="filter select">
                 <select name="filter" id="filter">
                     <option selected disabled>Choose an option</option>
-                    <option value="1">Pure CSS</option>
-                    <option value="2">No JS</option>
-                    <option value="3">Nice!</option>
+                    <option value="1">Scholarships</option>
+                    <option value="2">Internships</option>
+                    <option value="3">Grants</option>
                 </select>
             </div>
 
@@ -39,6 +39,99 @@
                     </button>
                 </div>
             </div>
+        </section>
+
+        <section class="table">
+            <div class="table-header">
+                <p>Name</p>
+                <p>Worth</p>
+                <p>Eligibility</p>
+                <p>Status</p>
+            </div>
+            <div class = " table-bg">
+                <div class="table-main">
+                        <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                        <p>$20000</p>
+                        <p>All Levels</p>
+                        <p class = "yellow-text">Available</p>
+                </div>
+                <div class = "table-main-2">
+                    <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a class="btn-link" href="#">See Full Details</a>
+                    </div>
+                </div>
+                
+            </div>
+           
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text text-muted">Not Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>200 Level</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text text-muted">Not Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>All Levels</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+            <div class="table-data">
+                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                <p>$20000</p>
+                <p>200, 300, 400 Levels</p>
+                <p class = "yellow-text">Available</p>
+            </div>
+        </section>
+
+        <section >
+        <nav aria-label="Page navigation example" class="pagination-body">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
         </section>
 
         
