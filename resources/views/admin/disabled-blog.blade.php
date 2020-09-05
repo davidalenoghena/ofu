@@ -22,7 +22,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Blog Posts</strong>
+                            <strong class="card-title">Unpublished Posts</strong>
                         </div>
                         <div class="card-body">
                             @if(Session::has('success'))
@@ -48,15 +48,15 @@
                                     @php
                                      $count = 1;
                                     @endphp
-                                    @foreach($blogs as $blog_item)
+                                    @foreach($blogs as $blogx)
                                     <tr>
                                         <th scope="row">{{ $count++ }}</th>
-                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_title, 24, $end='...') }}</td>
-                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_post, 34, $end='...') }}</td>
-                                        <td>{{ $blog_item->created_at }}</td>
-                                        <td><a href="{{ route('show.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Read</a></td>
-                                        <td><a href="{{ route('edit.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Edit</a></td>
-                                        <td><a href="{{ route('disable.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-danger">Unpublish</a></td>
+                                        <td>{{ \Illuminate\Support\Str::limit($blogx->blog_title, 24, $end='...') }}</td>
+                                        <td>{{ \Illuminate\Support\Str::limit($blogx->blog_post, 34, $end='...') }}</td>
+                                        <td>{{ $blogx->created_at }}</td>
+                                        <td><a href="{{ route('show.blog', ['id' => $blogx->id]) }}" class="btn btn-link text-info">Read</a></td>
+                                        <td><a href="" class="btn btn-link text-info">Edit</a></td>
+                                        <td><a href="{{ route('enable.blog', ['id' => $blogx->id]) }}" class="btn btn-link text-danger">publish</a></td>
                                     </tr>
                                     @endforeach
                                 </tbody>

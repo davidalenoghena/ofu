@@ -26,3 +26,9 @@ const navClose = () => {
 
 navSlide();
 navClose();
+
+require('summernote');
+
+$(document).ready(function() {
+  $('#blog_post').summernote();
+});
