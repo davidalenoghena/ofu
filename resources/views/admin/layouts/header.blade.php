@@ -20,7 +20,7 @@
 
                     <h3 class="menu-title"><a href="{{ route('admin.blog') }}"> Blog</a></h3>
                     <li>
-                        <a href="widgets.html"> <i class="menu-icon fa fa-book"></i> Unposted Blog</a>
+                        <a href="{{ route('admin.unpublish') }} "> <i class="menu-icon fa fa-book"></i> Unposted Blog</a>
                     </li>
                     <li>
                         <a href=" {{ route('admin.blog.create') }} "> <i class="menu-icon fa fa-book"></i> Create New Blog</a>
