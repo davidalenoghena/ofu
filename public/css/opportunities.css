@@ -32,6 +32,42 @@ body{
     border: 1px solid #3c64b1 !important;
 }
 
+.login-btns> .nav-item > .transparent-btn{
+  border:  1px solid #3c64b1 ;
+}
+
+.card{
+  border: 0;
+  width: 100%;
+}
+.btn-drop{
+  border: 0;
+  width: 100%;
+}
+.btn-drop:focus{
+  border: 0;
+  box-shadow: none;
+}
+
+.card-header{
+  padding: 0;
+  border-bottom: 0;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.card-header > .btn{
+  padding: 0;
+}
+
+.btn-drop:hover{
+  background-color: #f3f6fa;
+  border-radius: 10px;
+  border: 0px solid #3c65b100;
+}
+.accordion-show{
+  background-color: #f3f6fa;
+}
 #search{
     display: flex;
     justify-content: space-between;
@@ -141,6 +177,10 @@ body{
     padding: .375rem .75rem;
 }
 
+footer li > a{
+  color: #3c64b1;
+}
+
 .table-data{
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr;
@@ -178,10 +218,9 @@ strong > a{
 }
 
 .table-bg{
-  background: #F3F6FA;
-  padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #3c64b1;
+  margin: 2rem 0;
 }
 
 .table-main-2{

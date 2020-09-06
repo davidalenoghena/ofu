@@ -41,14 +41,14 @@
             </div>
         </section>
 
-        <section class="table">
+        <section id = "accordion" class="table">
             <div class="table-header">
                 <p>Name</p>
                 <p>Worth</p>
                 <p>Eligibility</p>
                 <p>Status</p>
             </div>
-            <div class = " table-bg">
+            <!-- <div class = " table-bg">
                 <div class="table-main">
                         <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
                         <p>$20000</p>
@@ -64,63 +64,261 @@
                     </div>
                 </div>
                 
+            </div> -->
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#one" aria-expanded="false" aria-controls="five">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Andela Scholarship</a></strong></p>
+                                <p>$7000</p>
+                                <p>All Levels</p>
+                                <p class = "text-danger">Expiring Soon</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="one" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-           
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#two" aria-expanded="false" aria-controls="five">
+                        <div class="table-main">
+                                <p><strong><a href = "#">AGIP JV Scholarship</a></strong></p>
+                                <p>$20000</p>
+                                <p>All Levels</p>
+                                <p class = "text-muted">Not Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="two" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text text-muted">Not Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#three" aria-expanded="false" aria-controls="five">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                                <p>$20000</p>
+                                <p>All Levels</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="three" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#four" aria-expanded="false" aria-controls="five">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Delta State Bursary</a></strong></p>
+                                <p>$500</p>
+                                <p>Delta State Students</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="four" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#five" aria-expanded="false" aria-controls="five">
+                        <div class="table-main">
+                                <p><strong><a href = "#">NLNG Scholarship</a></strong></p>
+                                <p>$5000</p>
+                                <p>100 Level</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="five" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>200 Level</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#six" aria-expanded="false" aria-controls="six">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Chevron Scholarship</a></strong></p>
+                                <p>$10000</p>
+                                <p>All Levels</p>
+                                <p class = "text-danger">Expiring Soon</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="six" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text text-muted">Not Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#seven" aria-expanded="false" aria-controls="seven">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                                <p>$20000</p>
+                                <p>All Levels</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="seven" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#eight" aria-expanded="false" aria-controls="eight">
+                        <div class="table-main">
+                                <p><strong><a href = "#">MTN Scholarship</a></strong></p>
+                                <p>$20000</p>
+                                <p>200 Level</p>
+                                <p class = "text-muted">Not Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="eight" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>All Levels</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#nine" aria-expanded="false" aria-controls="nine">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
+                                <p>$20000</p>
+                                <p>All Levels</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="nine" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="table-data">
-                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                <p>$20000</p>
-                <p>200, 300, 400 Levels</p>
-                <p class = "yellow-text">Available</p>
+
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#ten" aria-expanded="false" aria-controls="ten">
+                        <div class="table-main">
+                                <p><strong><a href = "#">Jim Ovia Scholarship</a></strong></p>
+                                <p>$2000</p>
+                                <p>100 Level</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="ten" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a class="btn-link" href="#">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
+            
         </section>
+
+        
 
         <section >
         <nav aria-label="Page navigation example" class="pagination-body">
