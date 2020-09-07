@@ -36,7 +36,8 @@
     
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Post</label></div>
-                            <div class="col-12 col-md-9"><textarea name="blog_post" id="blog_post" rows="5" placeholder="Blog Post" class="form-control"></textarea required></div>
+                            <div class="col-12 col-md-9">
+                                <textarea name="blog_post" id="elm1" rows="5" placeholder="Blog Post" class="form-control"></textarea required></div>
                     </div>
 
                     <div class="row form-group">
