@@ -23,6 +23,14 @@ body{
     color: #3c64b1 !important;
 }
 
+span > strong:hover{
+  color: #e59500 !important;
+}
+
+ul > .dropdown-li > .dropdown-item{
+  color: #3c64b1;
+}
+
 .one,.two,.three{
     background-color: #3c64b1 !important;
 }
