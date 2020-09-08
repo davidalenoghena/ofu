@@ -14,19 +14,12 @@
         </div>
 
         <div class="content mt-3">
-
-            <div class="col-sm-12">
-                <br>
-                <br>
-            </div>
-
-
+            <br>
+            <br>
             <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-1">
                     <div class="card-body pb-0">
                         <div class="dropdown float-right">
-   
-                            
                         </div>
                         <h4 class="mb-0">
                             <span class="count">104</span>

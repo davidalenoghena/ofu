@@ -23,13 +23,23 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about_us')->name('about');
 Route::get('/contact', 'HomeController@contact_us')->name('contact');
 Route::get('/blog', 'HomeController@blog')->name('blog');
+Route::get('/blog/{id}', 'HomeController@singleblog')->name('blog.single');
+Route::get('/opportunities', 'HomeController@opportunities')->name('opportunities');
 
 //Admin section
 Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('is_admin');
 Route::get('/admin/users', 'AdminController@users')->name('admin.users');
+
 //Admin.Blog
 Route::get('/admin/blog', 'BlogController@index')->name('admin.blog');
 Route::get('/admin/blog/create', 'BlogController@create')->name('admin.blog.create');
+Route::post('admin/store', 'BlogController@store')->name('store.blog');
+Route::get('/admin/blog/{id}', 'BlogController@show')->name('show.blog');
+Route::get('admin/blog/edit/{id}', 'BlogController@edit')->name('edit.blog');
+Route::post('admin/blog/update/{id}', 'BlogController@update')->name('update.blog');
+Route::get('admin/blog/disable/{id}', 'BlogController@disableBlog')->name('disable.blog');
+Route::get('admin/blog/enable/{id}', 'BlogController@enableBlog')->name('enable.blog');
+Route::get('/admin/blog_unpublished', 'BlogController@disabledBlogList')->name('admin.unpublish');
 //Admin.opportunities 
 Route::get('/admin/opportunities', 'OpportunityController@index')->name('admin.opportunity'); 
 Route::get('/admin/opportunities/create', 'OpportunityController@create')->name('admin.opportunity.create'); 

@@ -17,7 +17,7 @@ class CreateBlogsTable extends Migration
             $table->id();
             $table->string('img');
             $table->string('blog_title');
-            $table->string('blog_post');
+            $table->text('blog_post');
             $table->string('author');
             $table->boolean('status');
             $table->string('category');

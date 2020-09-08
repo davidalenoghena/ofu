@@ -2,91 +2,76 @@
 
 @section ('content')
 
-        <div class="breadcrumbs">
-            <div class="col-sm-4">
-                <div class="page-header float-left">
-                    <div class="page-title">
-                        <h1>Dashboard</h1>
-                    </div>
-                </div>
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Dashboard</h1>
             </div>
-           
         </div>
-
-        <div class="content mt-3">
-
-            <div class="col-sm-12">
-                <br>
-                <br>
-            </div>
-
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-1">
-                    <div class="card-body pb-0">
-                        <div class="dropdown float-right">
+    </div>
    
-                            
-                        </div>
-                        <h4 class="mb-0">
-                            <span class="count">104</span>
-                        </h4>
-                        <p class="text-light">Number of Users</p>
+</div>
 
-                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                            <canvas id="widgetChart1"></canvas>
+<div class="content mt-3">
+    <br>
+    <br>
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">Blog Posts</strong>
                         </div>
+                        <div class="card-body">
+                            @if(Session::has('success'))
+                            <div class="alert alert-success">
+                                {{ Session::get('success') }}
+                            </div>
+                            @endif
 
+                            @if($blogs->count() > 0)
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Blog Post</th>
+                                        <th scope="col">Created</th>
+                                        <th></th>
+                                        <th scope="col">Actions</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @php
+                                     $count = 1;
+                                    @endphp
+                                    @foreach($blogs as $blog_item)
+                                    <tr>
+                                        <th scope="row">{{ $count++ }}</th>
+                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_title, 24, $end='...') }}</td>
+                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_post, 34, $end='...') }}</td>
+                                        <td>{{ $blog_item->created_at }}</td>
+                                        <td><a href="{{ route('show.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Read</a></td>
+                                        <td><a href="{{ route('edit.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Edit</a></td>
+                                        <td><a href="{{ route('disable.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-danger">Unpublish</a></td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                            @else
+                                <h6 class="text-center text-danger">0 BLog in this category</h6>
+                            @endif
+                        </div>
                     </div>
-
                 </div>
             </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-2">
-                    <div class="card-body pb-0">
-                        
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Number of Blog Posts</p>
-
-                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                            <canvas id="widgetChart2"></canvas>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-3">
-                    <div class="card-body pb-0">
-                        
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Number of Opportunities</p>
-
-                    </div>
-
-                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                        <canvas id="widgetChart3"></canvas>
-                    </div>
-                </div>
-            </div>
-            <!--/.col-->
-
-            
-            <!--/.col-->
-
-            
-                <!--/social-box-->
-            </div>
-            <!--/.col-->
-            @endsection
+        </div>
+    </div>
+</div>
+@endsection
 
 
        

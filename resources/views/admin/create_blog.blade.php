@@ -2,91 +2,75 @@
 
 @section ('content')
 
-        <div class="breadcrumbs">
-            <div class="col-sm-4">
-                <div class="page-header float-left">
-                    <div class="page-title">
-                        <h1>Dashboard</h1>
-                    </div>
-                </div>
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Dashboard</h1>
             </div>
-           
         </div>
+    </div>
+</div>
 
-        <div class="content mt-3">
-
-            <div class="col-sm-12">
-                <br>
-                <br>
+<div class="content mt-3">
+    <br>
+    <br>
+    <div class="col-md-11">
+        <div class="card">
+            <div class="card-header">
+                <strong>Create New Blog</strong>
             </div>
-
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-1">
-                    <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-   
-                            
-                        </div>
-                        <h4 class="mb-0">
-                            <span class="count">104</span>
-                        </h4>
-                        <p class="text-light">Number of Users</p>
-
-                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                            <canvas id="widgetChart1"></canvas>
-                        </div>
-
+            <div class="card-body card-block">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+                <form action="{{ route('store.blog') }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                    @csrf
+                    <br>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Title</label></div>
+                            <div class="col-12 col-md-9"><input type="text" id="blog_title" name="blog_title" placeholder="Blog Title" class="form-control" required></div>
+                    </div>
+    
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Post</label></div>
+                            <div class="col-12 col-md-9">
+                                <textarea name="blog_post" id="elm1" rows="5" placeholder="Blog Post" class="form-control"></textarea required></div>
                     </div>
 
-                </div>
-            </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-2">
-                    <div class="card-body pb-0">
-                        
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Number of Blog Posts</p>
-
-                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                            <canvas id="widgetChart2"></canvas>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-3">
-                    <div class="card-body pb-0">
-                        
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Number of Opportunities</p>
-
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Author</label></div>
+                            <div class="col-12 col-md-9"><input type="text" id="author" name="author" placeholder="Blog Author" class="form-control" required></div>
                     </div>
 
-                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                        <canvas id="widgetChart3"></canvas>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="select" class=" form-control-label">Category</label></div>
+                            <div class="col-12 col-md-9">
+                                <select name="category" id="category" class="form-control">
+                                    <option value="0">Please select</option>
+                                    <option value="1">Option #1</option>
+                                    <option value="2">Option #2</option>
+                                    <option value="3">Option #3</option>
+                                </select>
+                            </div>
                     </div>
-                </div>
+                
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label for="file-input" class=" form-control-label">Image</label></div>
+                        <div class="col-12 col-md-9"><input type="file" id="img" name="img" class="form-control-file" required></div>
+                    </div>
+                    <br>
+                    <div align="center">
+                        <button type="submit" class="btn btn-success btn-md">
+                            <i class="fa fa-dot-circle-o"></i> Submit
+                        </button>
+                    </div>
+                </form>
             </div>
-            <!--/.col-->
+        </div>
+    </div>
+</div>
 
-            
-            <!--/.col-->
-
-            
-                <!--/social-box-->
-            </div>
-            <!--/.col-->
-            @endsection
-
-
-       
+@endsection
