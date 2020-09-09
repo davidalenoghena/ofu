@@ -48,29 +48,13 @@
                 <p>Eligibility</p>
                 <p>Status</p>
             </div>
-            <!-- <div class = " table-bg">
-                <div class="table-main">
-                        <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                        <p>$20000</p>
-                        <p>All Levels</p>
-                        <p class = "yellow-text">Available</p>
-                </div>
-                <div class = "table-main-2">
-                    <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <a class="btn-link" href="#">See Full Details</a>
-                    </div>
-                </div>
-                
-            </div> -->
-
+         
+            @foreach ($opportunities as $opportunity)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
                     <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#one" aria-expanded="false" aria-controls="five">
                         <div class="table-main">
-                                <p><strong><a href = "#">Andela Scholarship</a></strong></p>
+                                <p><strong><a href = "#">{{ $opportunities->details }}</a></strong></p>
                                 <p>$7000</p>
                                 <p>All Levels</p>
                                 <p class = "text-danger">Expiring Soon</p>
@@ -90,7 +74,7 @@
                     </div>
                 </div> 
             </div>
-
+            @endforeach
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
                     <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#two" aria-expanded="false" aria-controls="five">
