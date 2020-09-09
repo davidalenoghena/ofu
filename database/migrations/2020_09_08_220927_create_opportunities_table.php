@@ -18,7 +18,6 @@ class CreateOpportunitiesTable extends Migration
             $table->string('scholarship_name');
             $table->string('image');
             $table->text('details');
-            $table->number('worth');
             $table->boolean('status');
             $table->string('category');
             $table->timestamps();

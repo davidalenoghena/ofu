@@ -7,12 +7,11 @@ use Faker\Generator as Faker;
 
 $factory->define(Opportunity::class, function (Faker $faker) {
     return [
-        'scholarshipname' => $faker->name,
+        'scholarship_name' => $faker->name,
+        'image' => $faker->name,
         'details' => $faker->name,
-        'phone' => $faker->randomNumber(3),
-        'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'is_admin' => $faker->boolean()
+        'status' => $faker->boolean(),
+        'category' => $faker->name()
         //image?
         //Eligibility?
     ];
