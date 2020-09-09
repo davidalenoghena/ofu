@@ -19,7 +19,7 @@
                         <a class="nav-link" href="{{ route('home') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
+                        <a class="nav-link dropdown-toggle text-white" id="dropdown08" href = "{{ route ('opportunities') }}" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
                             <ul>
                             <li class = "dropdown-li"><a class="dropdown-item" href="#">SCHOLARSHIPS</a></li>

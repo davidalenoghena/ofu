@@ -23,6 +23,14 @@ background-color: transparent !important;
   color: #3c64b1 !important;
 }
 
+span > strong:hover{
+  color: #e59500 !important;
+}
+
+ul > .dropdown-li > .dropdown-item{
+  color: #3c64b1;
+}
+
 .one,.two,.three{
   background-color: #3c64b1 !important;
 }
@@ -36,37 +44,41 @@ background-color: transparent !important;
 border:  1px solid #3c64b1 ;
 }
 
+.login-btns> .nav-item > .transparent-btn{
+  border:  1px solid #3c64b1 ;
+}
+
 .card{
-border: 0;
-width: 100%;
+  border: 0;
+  width: 100%;
 }
 .btn-drop{
-border: 0;
-width: 100%;
+  border: 0;
+  width: 100%;
 }
 .btn-drop:focus{
-border: 0;
-box-shadow: none;
+  border: 0;
+  box-shadow: none;
 }
 
 .card-header{
-padding: 0;
-border-bottom: 0;
-text-decoration: none;
-background-color: transparent;
+  padding: 0;
+  border-bottom: 0;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .card-header > .btn{
-padding: 0;
+  padding: 0;
 }
 
 .btn-drop:hover{
-background-color: #f3f6fa;
-border-radius: 10px;
-border: 0px solid #3c65b100;
+  background-color: #f3f6fa;
+  border-radius: 10px;
+  border: 0px solid #3c65b100;
 }
 .accordion-show{
-background-color: #f3f6fa;
+  background-color: #f3f6fa;
 }
 #search{
   display: flex;
@@ -181,6 +193,10 @@ footer li > a{
 color: #3c64b1;
 }
 
+footer li > a{
+  color: #3c64b1;
+}
+
 .table-data{
 display: grid;
 grid-template-columns:  1fr 1fr 1fr 1fr;
@@ -218,9 +234,9 @@ font-weight: 600;
 }
 
 .table-bg{
-border-radius: 10px;
-border: 1px solid #3c64b1;
-margin: 2rem 0;
+  border-radius: 10px;
+  border: 1px solid #3c64b1;
+  margin: 2rem 0;
 }
 
 .table-main-2{
