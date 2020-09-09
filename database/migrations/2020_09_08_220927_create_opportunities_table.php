@@ -15,6 +15,12 @@ class CreateOpportunitiesTable extends Migration
     {
         Schema::create('opportunities', function (Blueprint $table) {
             $table->id();
+            $table->string('scholarship_name');
+            $table->string('image');
+            $table->text('details');
+            $table->number('worth');
+            $table->boolean('status');
+            $table->string('category');
             $table->timestamps();
         });
     }
