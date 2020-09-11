@@ -17,7 +17,7 @@ class CreateOpportunitiesTable extends Migration
             $table->id();
             $table->string('img');
             $table->string('name');
-            $table->int('worth');
+            $table->string('worth');
             $table->string('eligibility_slug');
             $table->string('status_slug');
             $table->string('detail_1');

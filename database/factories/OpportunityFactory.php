@@ -9,7 +9,7 @@ $factory->define(Opportunity::class, function (Faker $faker) {
     return [
         'img' => $faker->text(5),
         'name' => $faker->name(6),
-        'worth' => $faker->int(6),
+        'worth' => $faker->randomNumber(6),
         'eligibility_slug' => $faker->text(10),
         'status_slug' => $faker->text(10),
         'detail_1' => $faker->text(20),
