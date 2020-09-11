@@ -15,6 +15,19 @@ class CreateOpportunitiesTable extends Migration
     {
         Schema::create('opportunities', function (Blueprint $table) {
             $table->id();
+            $table->string('img');
+            $table->string('name');
+            $table->int('worth');
+            $table->string('eligibility_slug');
+            $table->string('status_slug');
+            $table->string('detail_1');
+            $table->string('detail_2');
+            $table->text('about');
+            $table->string('status');
+            $table->string('eligibility');
+            $table->text('how_to_apply');
+            $table->text('requirements');
+            $table->text('note');
             $table->timestamps();
         });
     }

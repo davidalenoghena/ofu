@@ -11,6 +11,6 @@ class OpportunitySeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Opportunity::class, 10)->create();
+        factory(App\Opportunity::class, 20)->create();
     }
 }
