@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use App\Opportunity;
 
 class OpportunitySeeder extends Seeder
 {
@@ -11,6 +13,6 @@ class OpportunitySeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Opportunity::class, 10)->create();
+        factory(App\Opportunity::class, 20)->create();
     }
 }
