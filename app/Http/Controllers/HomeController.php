@@ -88,6 +88,33 @@ class HomeController extends Controller
     }
     public function opportunities()
     {
-        return view('pages.opportunities');
+        // $opportunities_data = blog::find($opportunities);
+        $opportunites_count = DB::table('opportunities')->count();
+        $ran_opportunities = DB::table('opportunities')
+                            ->inRandomOrder()
+                            ->paginate(6);
+        $opportunities = DB::table('opportunities')
+                            ->paginate(6);
+                            // ->get();
+        $opportunities1 = DB::table('opportunities')->find(($opportunites_count));
+        $opportunities2 = DB::table('opportunities')->find(($opportunites_count - 1));
+        $opportunities3 = DB::table('opportunities')->find(($opportunites_count - 2));
+        $opportunities4 = DB::table('opportunities')->find(($opportunites_count - 3));
+        $opportunities5 = DB::table('opportunities')->find(($opportunites_count - 4));
+        return view('pages.opportunities',
+        [
+            // 'opportunites_data' => $opportunites_data,
+            'opportunities' =>  $opportunities,
+            'opportunities1' => $opportunities1,
+            'opportunities2' => $opportunities2,
+            'opportunities3' => $opportunities3,
+            'opportunities4' => $opportunities4,
+            'opportunities5' => $opportunities5,
+            'ran_blogs' => $ran_opportunities 
+        ]
+    );
+    }
+    public function singleopportunities(){
+        return view("pages.single_opportunities");
     }
 }

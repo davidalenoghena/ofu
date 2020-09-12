@@ -1,20 +1,31 @@
 footer{
-    background-color: #151b25;
+    background-color: #f2f6fa;
     flex-shrink: 0;
 }
 
-/* .gridd{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
 
 #footer > .container{
     padding-top: 3rem;
 }
 
+#footer{
+    color: #3c64b1;
+}
+
+.underline{
+    color: #3c64b1;
+    text-decoration: underline;
+}
 .footer-sect{
     align-items: flex-start;
     justify-content: space-between;
+}
+#footer ul > li > a{
+    color: #3c64b1;
+}
+
+#footer ul > li:first-child{
+    color: #e59500;
 }
 
 .footer-sect li{
