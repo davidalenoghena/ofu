@@ -22,8 +22,8 @@
         <div id="scholarship">
             <section class="heading">
                 <!-- Heading -->
-                <h2>Stanbic IBTC Bank scholarship</h2>
-                <h6 class = "grey-text">September 7, 2020</h6>
+                <h2>{{ $op_data->name }}</h2>
+                <h6 class = "grey-text">{{ $op_data->updated_at }}</h6>
             </section>
 
        
@@ -40,7 +40,7 @@
 
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                            This scholarship is currently available and application would end on 12th September, 2020. 
+                            {{ $op_data->status }} 
                             </div>
                         </div>
                     </div>
@@ -56,11 +56,12 @@
 
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                <ul>
+                                {{ $op_data->eligibility }}
+                                <!-- <ul>
                                     <li>Reside in Nigeria and participated in the 2020 University Tertiary Matriculation Examinations (UTME) conducted by JAMB </li>
                                     <li>Have a JAMB score of 200 and above</li>
                                     <li>Have gained admission and have been properly enrolled in a Nigerian Federal or State University with relevant evidence</li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -76,9 +77,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                <ul>
-                                    <li>Proof of origin from local government or state government</li>
-                                </ul>
+                            {{ $op_data->requirements }}
                             </div>
                         </div>
                     </div>
@@ -93,10 +92,7 @@
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
-                                <ul>
-                                    <li>Visit <a href= "#">http://bit.ly/StanbicIBTCScholarship</a> </li>
-                                    <li>Fill the form</li>
-                                </ul>
+                                {{ $op_data->how_to_apply }}
                             </div>
                         </div>
                     </div>
@@ -111,11 +107,7 @@
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                             <div class="panel-body">
-                                <ul>
-                                    <li>The Scholarship will only be awarded to 100 Applicants spread across the 36 States of the federation and FCT with a minimum of 2 Applicants per State.</li>
-                                    <li>The Scholarship will be offered on a first come, first serve basis until the 100 slots are allocated.</li>
-                                    <li>Winners will only be contacted through the valid email address they provide. </li>
-                                </ul>
+                                {{ $op_data->note }}
                             </div>
                         </div>
                     </div>
@@ -125,18 +117,22 @@
             <div class = "navigate">
                 <div class = "navigate_text">
                     <div class="arrow-icon mr-4">
-                         <i class="fas fa-long-arrow-alt-left"></i>
+                        <a href = "{{ route('opportunities.single', $previous_data->id) }}">
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </a>
                     </div>
                     <div>
-                        <a href = "#">MTN Foundation Scholarship</a>
+                        <a href = "{{ route('opportunities.single', $previous_data->id) }}">{{ $previous_data->name }}</a>
                     </div>
                 </div>
                 <div class = "navigate_text">
                     <div>
-                        <a href = "#">Shell JV Scholarship</a>
+                        <a href = "{{ route('opportunities.single', $next_data->id) }}">{{ $next_data->name }}</a>
                     </div>
                     <div class="arrow-icon ml-4">
-                        <i class="fas fa-long-arrow-alt-right"></i>
+                        <a href = "{{ route('opportunities.single', $next_data->id) }}">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
                     </div>
                     
                 </div>
@@ -157,18 +153,26 @@
                     </div>
                 </div>
             </section>
-
+            @if (count($op_ex)>0)
             <section>
                 <ul class = "posts__list">
-                    <li>Recent Posts</li>
-                    <li>MTN Foundation Scholarship</li>
-                    <li>MTN Foundation Scholarship</li>
-                    <li>MTN Foundation Scholarship</li>
-                    <li>MTN Foundation Scholarship</li>
-                    <li>MTN Foundation Scholarship</li>
+                    <li>Expiring Scholarships</li>
+                    @foreach ($op_ex as $opportunity)
+                    <li><a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">{{ $opportunity->name }}</a></li>
+                    @endforeach
                 </ul>
             </section>
-
+            @endif
+            @if (count($op_av)>0)
+            <section>
+                <ul class = "posts__list">
+                    <li>Available Scholarships</li>
+                    @foreach ($op_av as $opportunity)
+                    <li><a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">{{ $opportunity->name }}</a></li>
+                    @endforeach
+                </ul>
+            </section>
+            @endif
         </div>
         
     </div>
