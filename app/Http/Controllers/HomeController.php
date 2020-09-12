@@ -88,29 +88,24 @@ class HomeController extends Controller
     }
     public function opportunities()
     {
-        // $opportunities_data = blog::find($opportunities);
-        $opportunites_count = DB::table('opportunities')->count();
-        $ran_opportunities = DB::table('opportunities')
-                            ->inRandomOrder()
-                            ->paginate(6);
-        $opportunities = DB::table('opportunities')
-                            ->paginate(6);
-                            // ->get();
-        $opportunities1 = DB::table('opportunities')->find(($opportunites_count));
-        $opportunities2 = DB::table('opportunities')->find(($opportunites_count - 1));
-        $opportunities3 = DB::table('opportunities')->find(($opportunites_count - 2));
-        $opportunities4 = DB::table('opportunities')->find(($opportunites_count - 3));
-        $opportunities5 = DB::table('opportunities')->find(($opportunites_count - 4));
+        $count = DB::table('opportunities')->count();
+        $op_ex = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $op_av = DB::table('opportunities')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $op_not_av = DB::table('opportunities')
+                            ->where('status_slug', 2)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(10);
         return view('pages.opportunities',
         [
-            // 'opportunites_data' => $opportunites_data,
-            'opportunities' =>  $opportunities,
-            'opportunities1' => $opportunities1,
-            'opportunities2' => $opportunities2,
-            'opportunities3' => $opportunities3,
-            'opportunities4' => $opportunities4,
-            'opportunities5' => $opportunities5,
-            'ran_blogs' => $ran_opportunities 
+            'op_ex' =>  $op_ex,
+            'op_av' => $op_av,
+            'op_not_av' => $op_not_av
         ]
     );
     }

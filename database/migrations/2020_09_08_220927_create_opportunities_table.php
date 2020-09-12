@@ -28,6 +28,7 @@ class CreateOpportunitiesTable extends Migration
             $table->text('how_to_apply');
             $table->text('requirements');
             $table->text('note');
+            $table->string('word')->unique();
             $table->timestamps();
         });
     }
