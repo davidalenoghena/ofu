@@ -23,7 +23,7 @@
             <section class="heading">
                 <!-- Heading -->
                 <h2>{{ $op_data->name }}</h2>
-                <h6 class = "grey-text">{{ $op_data->updated_at }}</h6>
+                <h6 class = "grey-text">Updated: {{ $op_data->updated_at }}</h6>
             </section>
 
        
