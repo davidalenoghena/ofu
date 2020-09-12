@@ -11,7 +11,7 @@ $factory->define(Opportunity::class, function (Faker $faker) {
         'name' => $faker->name(6),
         'worth' => $faker->randomNumber(6),
         'eligibility_slug' => $faker->text(10),
-        'status_slug' => $faker->text(10),
+        'status_slug' => $faker->numberBetween($min = 0, $max = 2),
         'detail_1' => $faker->text(20),
         'detail_2' => $faker->text(20),
         'about' => $faker->text(1000),
@@ -19,6 +19,7 @@ $factory->define(Opportunity::class, function (Faker $faker) {
         'eligibility' => $faker->text(50),
         'how_to_apply' => $faker->text(1000),
         'requirements' => $faker->text(500),
-        'note' => $faker->text(250)
+        'note' => $faker->text(250),
+        'word' => $faker->unique()->word(5)
     ];
 });
