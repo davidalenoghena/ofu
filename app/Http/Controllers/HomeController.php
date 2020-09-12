@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\blog;
+use App\Opportunity;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -106,10 +107,39 @@ class HomeController extends Controller
             'op_ex' =>  $op_ex,
             'op_av' => $op_av,
             'op_not_av' => $op_not_av
-        ]
-    );
+        ]);
     }
-    public function singleopportunities(){
-        return view("pages.single_opportunities");
+    public function singleopportunity($opportunity){
+        $op_data = Opportunity::find($opportunity);
+
+        $previous = Opportunity::where('id', '<', $opportunity)->max('id');
+        $previous_data = Opportunity::find($previous);
+        $next = Opportunity::where('id', '>', $opportunity)->min('id');
+        $next_data = Opportunity::find($next);
+
+        $op_ex_first = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $op_av_first = DB::table('opportunities')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $op_ex = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        $op_av = DB::table('opportunities')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        return view('pages.single_opportunity',
+        [
+            'previous_data' => $previous_data,
+            'next_data' => $next_data,
+            'op_data' =>  $op_data,
+            'op_ex' =>  $op_ex,
+            'op_av' => $op_av
+        ]);
     }
 }

@@ -67,7 +67,7 @@
                             <div>
                                 <p>{{ $opportunity->detail_1 }}</p>
                                 <p>{{ $opportunity->detail_2 }}</p>
-                                <a class="btn-link" href="#">See Full Details</a>
+                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                             <div>
                                 <p>{{ $opportunity->detail_1 }}</p>
                                 <p>{{ $opportunity->detail_2 }}</p>
-                                <a class="btn-link" href="#">See Full Details</a>
+                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                             <div>
                                 <p>{{ $opportunity->detail_1 }}</p>
                                 <p>{{ $opportunity->detail_2 }}</p>
-                                <a class="btn-link" href="#">See Full Details</a>
+                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
