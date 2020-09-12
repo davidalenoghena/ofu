@@ -65,24 +65,27 @@
         
         </div>
         </div>
-        <div class = "container m-top d-flex">
-            <div class="text-center px-5">
-                <h3>7200+</h3>
-                <p>Healthy and Happy Customers</p>
-            </div>
-            <div class="text-center px-5">
-                <h3>120+</h3>
-                <p>Professional Medical Specialists</p>
-            </div>
-            <div class="text-center px-5">
-                <h3>20+</h3>
-                <p>Years of Impeccable Services</p>
-            </div>
-            <div class="text-center px-5">
-                <h3>450+</h3>
-                <p>Local And International Awards For Our Clinic</p>
+        <div class="stats">
+            <div class = "container m-top d-flex">
+                <div class="text-center px-5">
+                    <h3>7200+</h3>
+                    <p>Healthy and Happy Customers</p>
+                </div>
+                <div class="text-center px-5">
+                    <h3>120+</h3>
+                    <p>Professional Medical Specialists</p>
+                </div>
+                <div class="text-center px-5">
+                    <h3>20+</h3>
+                    <p>Years of Impeccable Services</p>
+                </div>
+                <div class="text-center px-5">
+                    <h3>450+</h3>
+                    <p>Local And International Awards For Our Clinic</p>
+                </div>
             </div>
         </div>
+        
     </section>
 
 

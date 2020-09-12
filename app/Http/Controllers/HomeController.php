@@ -114,4 +114,7 @@ class HomeController extends Controller
         ]
     );
     }
+    public function singleopportunities(){
+        return view("pages.single_opportunities");
+    }
 }

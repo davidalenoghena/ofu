@@ -1,7 +1,7 @@
 <header>
 <link rel="stylesheet" href="{{asset('css/navbar.css')}}">
 
-<nav class="navbar  navbar-expand-lg text-white navbar-dark fixed-top" id = "ofu-navbar">
+<nav class="navbar  navbar-expand-lg navbar-dark fixed-top" id = "ofu-navbar">
         
         <div class="navbar-toggler">
                 <span class="one"></span>
@@ -19,12 +19,12 @@
                         <a class="nav-link" href="{{ route('home') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-white" id="dropdown08" href = "{{ route ('opportunities') }}" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
+                        <a href = "#" class="nav-link dropdown-toggle text-white" id="dropdown08" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
                             <ul>
-                            <li class = "dropdown-li"><a class="dropdown-item" href="#">SCHOLARSHIPS</a></li>
-                            <li class = "dropdown-li"><a class="dropdown-item" href="#">INTERNSHIPS</a></li>
-                            <li class = "dropdown-li"><a class="dropdown-item" href="#">GRANTS</a></li>
+                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >SCHOLARSHIPS</a></li>
+                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >INTERNSHIPS</a></li>
+                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >GRANTS</a></li>
                             </ul>
                         </div>
                     </li>
@@ -54,8 +54,8 @@
                             <a class="nav-link transparent-btn px-3" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item btn-reg">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
+                            <li class="nav-item ">
+                                <a class="nav-link btn-blue" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             </li>
                         @endif
                     @else
