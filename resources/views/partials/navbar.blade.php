@@ -10,16 +10,17 @@
         </div>
          
         <div class = "navbanner">
-        <div class="navbar-brand ml">
-            <a href="/" class = "text-white"><span><strong>Opportunities for Undergraduates<span class = "nav-span"></span></strong></span></a>
+        <div class="navbar-brand ml ">
+            <a href="/" ><span><strong class = "switch">Opportunities for Undergraduates</strong></span></a>
+            <div class="caption switch">NEVER MISS AN OPPORTUNITY</div>
         </div>
         <div class="navbar-collapse " id="navbarmenu">
                 <ul class="navbar-nav nav-links">
                 <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('home') }}">HOME</a>
+                        <a class="nav-link  switch" href="{{ route('home') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a href = "#" class="nav-link dropdown-toggle text-white" id="dropdown08" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
+                        <a href = "#" class="nav-link nav-grey dropdown-toggle " id="dropdown08" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
                             <ul>
                             <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >SCHOLARSHIPS</a></li>
@@ -28,14 +29,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ route ('blog')}}">BLOG</a>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-grey" href="{{ route ('blog')}}">BLOG</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route ('about')}}">ABOUT</a>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-grey" href="{{ route ('about')}}">ABOUT</a>
                     </li>
-                    <li class="nav-item mr">
-                        <a class="nav-link " href="{{ route('contact') }}" >CONTACT</a>
+                    <li class="nav-item mr ">
+                        <a class="nav-link nav-grey " href="{{ route('contact') }}" >CONTACT</a>
                     </li>
 
 
@@ -51,11 +52,11 @@
                 <ul class="navbar-nav login-btns">
                 @guest
                         <li class="nav-item">
-                            <a class="nav-link transparent-btn px-3" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                            <a class="nav-link  px-3 switch" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item ">
-                                <a class="nav-link btn-blue" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
+                            <li class="nav-item btn-blue ">
+                                <a class="nav-link " href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             </li>
                         @endif
                     @else
