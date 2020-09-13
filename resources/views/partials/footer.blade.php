@@ -18,12 +18,12 @@
                 </div>
                 <hr>
                 <div class="row ">
-                <div class = "col-md-4">
+                <div class = "col-md-4 ">
                     <ul class = "d-flex">
-                        <li><a href = "#">Home</a></li>
-                        <li><a href = "#">Opportunities</a></li>
-                        <li><a href = "#">Blog</a></li>
-                        <li><a href = "#">About</a></li>
+                        <li><a href = "{{ route('home') }}">Home</a></li>
+                        <li><a href = "{{ route('opportunities') }}">Opportunities</a></li>
+                        <li><a href = "{{ route('blog') }}">Blog</a></li>
+                        <li><a href = "{{ route('about') }}">About</a></li>
                         <li><a href = "#">Contact</a></li>
                     </ul>
                 </div>

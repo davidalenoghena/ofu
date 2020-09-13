@@ -1,3 +1,16 @@
+
+$(document).ready(function() {
+
+    $('#ofu-navbar').css('background','#E7ECFF');
+    $('.switch').css('color', '#3C64B1');
+    $('.nav-grey').css('color', '#373f41');
+    $('.one').css('background-color', '#3c64b1');
+    $('.two').css('background-color', '#3c64b1');
+    $('.three').css('background-color', '#3c64b1');
+  $('#blog_post').summernote();
+});
+
+
 const burger = document.querySelector('.navbar-toggler');
 const navLinks1 = document.querySelector('.nav-links');
 const navLinks2 = document.querySelector('.login-btns');
@@ -26,10 +39,6 @@ const navClose = () => {
 
 navSlide();
 navClose();
-
+console.log("Tes!t");
 
 require('summernote');
-
-$(document).ready(function() {
-  $('#blog_post').summernote();
-});
