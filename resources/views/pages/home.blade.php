@@ -33,7 +33,7 @@
                     
                     <div class="hero-btn">
                         <li class = "nav-item btn-blue"><a class = "nav-link" href="#" >Get Started</a></li>    
-                        <li class = "nav-item"><a class = "nav-link transparent-btn" href="#">Learn More</a></li>    
+                        <li class = "nav-item"><a class = "nav-link transparent-btn-3 " href="#">Learn More</a></li>    
                     </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
         </div>
 
         <div class="about-btn">
-        <button class="btn p-0"><a class = "nav-link transparent-btn" href="#">Learn More</a></button>
+        <button class="btn p-0"><a class = "nav-link transparent-btn-2" href="#">Contact Us</a></button>
         </div>
         
         </div>
@@ -128,7 +128,7 @@
     <section id="blog">
         <div class="container pt-5 pb-5">
             <div class="blog-heading text-center">
-                <h2>Your best value proposition</h2>
+                <h2>Blogs and Updates</h2>
                 <p class = "grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsa eos deleniti mollitia ab asperiores?</p>
             </div>
             <div class="blog-content   pt-4 row">
@@ -164,32 +164,132 @@
 
             <!-- Testimonial Carousel -->
             <div class="carousel mtop" data-flickity='{ "autoPlay": true }'>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+                <div class="carousel-cell">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat eget porttitor tempus sit quis morbi. 
+                            Pellentesque arcu sit maecenas tincidunt cras nullam mi. Tincidunt enim ipsum dictum habitasse varius sed. 
+                            Ullamcorper dictumst mattis integer nunc, enim, ullamcorper.
+                        </p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="d-flex profile">
+                        <img src="{{asset('images/profile.png')}}" class = "mr-3" alt="profile">
+                        <p> Mathilda <br>
+                            <span class = "grey">University Of Benin</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat eget porttitor tempus sit quis morbi. 
+                            Pellentesque arcu sit maecenas tincidunt cras nullam mi. Tincidunt enim ipsum dictum habitasse varius sed. 
+                            Ullamcorper dictumst mattis integer nunc, enim, ullamcorper.
+                        </p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="d-flex profile">
+                        <img src="{{asset('images/profile.png')}}" class = "mr-3" alt="profile">
+                        <p> Mathilda <br>
+                            <span class = "grey">University Of Benin</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat eget porttitor tempus sit quis morbi. 
+                            Pellentesque arcu sit maecenas tincidunt cras nullam mi. Tincidunt enim ipsum dictum habitasse varius sed. 
+                            Ullamcorper dictumst mattis integer nunc, enim, ullamcorper.
+                        </p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="d-flex profile">
+                        <img src="{{asset('images/profile.png')}}" class = "mr-3" alt="profile">
+                        <p> Mathilda <br>
+                            <span class = "grey">University Of Benin</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat eget porttitor tempus sit quis morbi. 
+                            Pellentesque arcu sit maecenas tincidunt cras nullam mi. Tincidunt enim ipsum dictum habitasse varius sed. 
+                            Ullamcorper dictumst mattis integer nunc, enim, ullamcorper.
+                        </p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="d-flex profile">
+                        <img src="{{asset('images/profile.png')}}" class = "mr-3" alt="profile">
+                        <p> Mathilda <br>
+                            <span class = "grey">University Of Benin</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat eget porttitor tempus sit quis morbi. 
+                            Pellentesque arcu sit maecenas tincidunt cras nullam mi. Tincidunt enim ipsum dictum habitasse varius sed. 
+                            Ullamcorper dictumst mattis integer nunc, enim, ullamcorper.
+                        </p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="d-flex profile">
+                        <img src="{{asset('images/profile.png')}}" class = "mr-3" alt="profile">
+                        <p> Mathilda <br>
+                            <span class = "grey">University Of Benin</span> 
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
     <section id="subscribe">
-        <div class="container d-flex">
-            <div class="about-video subscribe">
-                <i class="far fa-play-circle"></i>
-            </div>
-            <div class="subscribe-content">
-                <h3>Subscribe to daily updates on opportunities</h3>
-                <p class = "grey-text py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et unde maxime. Earum cupiditate quasi ullam laboriosam amet quae assumenda ut fugiat quaerat. Cum, tempora.</p>
-                <form action="#" class = "d-flex row">
-                    <div class = "form-group col-9">
+        <div class="container ">
+            <div class="subscribe-content d-flex">
+                <h3>Subscribe to our <span class = "yellow-text">daily updates</span></h3>
+                <form action="#" class = "d-flex ">
+                    <div class = "form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
-                    <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  btn-blue" href="#">Subscribe</a></button>
+                    <button class="p-0 btn"><a class = "nav-link ml-0 subscribe text-white btn-blue" href="#">Subscribe</a></button>
                 </form>
-                <p class = "grey-text">By clicking “Subscribe” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
             </div>
         </div>
     </section>

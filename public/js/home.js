@@ -3,8 +3,12 @@ $(document).ready(function() {
     $(window).scroll(function () {
         if ($(window).scrollTop() < 10) {
         $('#ofu-navbar').css('background','transparent');
+        $('.switch').css('color', '#fff');
+        $('.nav-grey').css('color', '#fff');
         } else {
-        $('#ofu-navbar').css('background','#f3f6fa');
+        $('#ofu-navbar').css('background','#E7ECFF');
+        $('.switch').css('color', '#3C64B1');
+        $('.nav-grey').css('color', '#373f41');
         }
     });
 });

@@ -27,6 +27,7 @@ const navClose = () => {
 navSlide();
 navClose();
 
+
 require('summernote');
 
 $(document).ready(function() {

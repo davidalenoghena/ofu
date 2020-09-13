@@ -1,12 +1,19 @@
 #ofu-navbar{
     min-height: 8vh;
 }
-.navbar-dark .navbar-nav .nav-link,.nav-item > a.nav-link{
+.nav-item{
     color: #fff;
     font-size: 14px;
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
 
-.navbar-brand{
+.navbar-brand a{
+    color: #fff;
+}
+
+.navbar-brand, .navbar-item.active{
     color: #3c64b1;
 }
 
@@ -17,7 +24,6 @@
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; 
-    /* // remove the gap so it doesn't close */
  }
  .dropdown-menu li{
         margin: 0;
@@ -37,7 +43,7 @@
      
  }
  .dropdown-li > .dropdown-item{
-     color: #fff;
+     color: #3c64b1;
  }
  .dropdown-menu ul > li:after {
     content: '';
@@ -51,12 +57,22 @@
     left: 1em;
 }
 
+.switch{
+    font-weight: 600;
+}
+
+.caption{
+    font-size: 0.6rem;
+    letter-spacing: .2em;
+}
+
 .dropdown-item:hover{
     background-color: transparent;
 }
   
 a{
-    color: #ffffff ;
+    color: #3c64b1 ;
+    line-height: 1.125rem;
 }
 a:hover{
     color: #e59500 !important;;
@@ -64,7 +80,7 @@ a:hover{
 }
 
 .ml{
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 .mr{
     margin-right: 2rem;
@@ -72,13 +88,11 @@ a:hover{
 .navbar{
     display: flex;
     align-items: center;
-    background: #151b25;
+    background: #E7ECFF;
     transition: transparent 1s ease 0s;
     box-shadow: 0 0 4px grey;
 }
-a.text-white>span>strong:hover{
-    color: #fff;
-}
+
 .solid{
   transition: blue 1s ease 0s;
   box-shadow: 0 0 4px grey;
@@ -97,6 +111,7 @@ a.text-white>span>strong:hover{
 .navbanner{
     display: flex;
     flex-direction: row;
+    color: #fff;
 }
 
 .one,.two,.three{

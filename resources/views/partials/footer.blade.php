@@ -3,51 +3,41 @@
 <footer>
     <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <section id="footer">
-            <div class="container d-flex footer-sect">
+            <div class="container  footer-sect">
                 <div>
-                    <div>
-                        <div class="navbar-brand">
-                        <a href="{{ route('home') }}"><span><strong class = "underline">OFU<span class = "nav-span">||||</span></strong></span></a>
+                    <div class = "text-center">
+                        <div class="navbar-brand ">
+                        <a href="{{ route('home') }}"><span><strong  class = "blue-text">Opportunities for undergraduates</strong></span></a>
                         </div>
                         <p class="nav-span">Never Miss An Opportunity</p>
                     </div>
-                    <div class = "mt-5">
-                    <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script></p>
+                    <!-- <div class = "mt-5">
+                    
                     <p> All Rights Reserved.</p>
-                    </div>  
+                    </div>   -->
                 </div>
-
+                <hr>
                 <div class="row ">
                 <div class = "col-md-4">
-                    <ul>
-                        <li><strong>HELP AND SUPPORT</strong></li>
-                        <li><a href = "#">FAQ</a></li>
-                        <li><a href = "#">LIVE SUPPORT</a></li>
-                        <li><a href = "#">TERMS OF SERVICE</a></li>
-                        <li><a href = "#">PRIVACY POLICY</a></li>
+                    <ul class = "d-flex">
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#">Opportunities</a></li>
+                        <li><a href = "#">Blog</a></li>
+                        <li><a href = "#">About</a></li>
+                        <li><a href = "#">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class = "col-md-4">
-                    <ul>
-                        <li><strong>FEATURES</strong></li>
-                        <li><a href = "#">SCHOLARSHIPS</a></li>
-                        <li><a href = "#">INTERNSHIPS</a></li>
-                        <li><a href = "#">GRANTS</a></li>
-                    </ul>
+                <div class = "col-md-4 copyright text-center">
+                <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script> OFU</p>
                 </div>
 
-                <div class = "col-md-4">
-                    <ul>
-                        <li><strong>COMPANY</strong></li>
-                        <li><a href = "#">ABOUT</a></li>
-                        <li><a href = "#">CONTACT</a></li>
-                        <li><a href = "#">CAREERS</a></li>
-                    </ul>
-                    <ul>
-                        <li><strong>CONTACT US</strong></li>
-                        <li>info@opportunitiesforundergraduates.com</li>
-                        <li>+234 (0)810-798-6162</li>
+                <div class = "col-md-4 links ">
+                    <ul class = "d-flex end">
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google-plus"></i></li>
+                        <li><i class="fa fa-linkedin"></i></li>
                     </ul>
                 </div>
                 </div>
