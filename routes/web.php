@@ -34,17 +34,22 @@ Route::get('/admin/users', 'AdminController@users')->name('admin.users');
 //Admin.Blog
 Route::get('/admin/blog', 'BlogController@index')->name('admin.blog');
 Route::get('/admin/blog/create', 'BlogController@create')->name('admin.blog.create');
-Route::post('admin/store', 'BlogController@store')->name('store.blog');
+Route::post('admin/blog/store', 'BlogController@store')->name('store.blog');
 Route::get('/admin/blog/{id}', 'BlogController@show')->name('show.blog');
 Route::get('admin/blog/edit/{id}', 'BlogController@edit')->name('edit.blog');
 Route::post('admin/blog/update/{id}', 'BlogController@update')->name('update.blog');
 Route::get('admin/blog/disable/{id}', 'BlogController@disableBlog')->name('disable.blog');
 Route::get('admin/blog/enable/{id}', 'BlogController@enableBlog')->name('enable.blog');
 Route::get('/admin/blog_unpublished', 'BlogController@disabledBlogList')->name('admin.unpublish');
-//Admin.opportunities 
+
+//Admin.Opportunities 
 Route::get('/admin/opportunities', 'OpportunityController@index')->name('admin.opportunity'); 
 Route::get('/admin/opportunities/create', 'OpportunityController@create')->name('admin.opportunity.create'); 
-
+Route::post('admin/opportunity/store', 'OpportunityController@store')->name('store.Opportunitiy');
+Route::get('/admin/opportunity/{id}', 'OpportunityController@show')->name('show.opportunity');
+Route::get('admin/opportunity/edit/{id}', 'OpportunityController@edit')->name('edit.opportunity');
+Route::post('admin/opportunity/update/{id}', 'OpportunityController@update')->name('update.opportunity');
+Route::get('/admin/opportunity/delete/{opportunity}', 'OpportunityController@destroy');
 
 
 //User section

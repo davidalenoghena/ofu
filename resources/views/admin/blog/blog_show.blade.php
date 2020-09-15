@@ -21,13 +21,13 @@
             </div>
             <div class="card-body">
                 <div class="mx-auto d-block" align="center">
-                    <img class="" src="{{ asset('images/'.$blog_data->img) }}" alt="Blog image" height="400" width="400">
+                    <img class="" src="{{ asset('images/blog/'.$blog_data->img) }}" alt="Blog image" height="400" width="400">
                     <h5 class="text-sm-center mt-2 mb-1">{{$blog_data->author}}</h5>
                     <div class="location text-sm-center"><i class="fa fa-map-marker"></i> {{$blog_data->category}}</div>
                 </div>
                 <hr>
                 <div class="card-text text-sm-center">
-                    {{ $blog_data->blog_post }}
+                    {!! $blog_data->blog_post !!}
                 </div>
             </div>
         </div>

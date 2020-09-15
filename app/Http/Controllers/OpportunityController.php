@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Opportunity;
+use Image;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class OpportunityController extends Controller
 {
@@ -14,8 +17,8 @@ class OpportunityController extends Controller
      */
     public function index()
     {
-        
-        return view('admin.opportunity');
+        $opportunity = DB::table('opportunities')->orderBy('created_at', 'desc')->get();
+        return view('admin.opportunity.opportunity', ['opportunity' => $opportunity]);
     }
 
     /**
@@ -25,7 +28,7 @@ class OpportunityController extends Controller
      */
     public function create()
     {
-        return view('admin.create_opportunity');
+        return view('admin.opportunity.create_opportunity');
     }
 
     /**
@@ -36,7 +39,51 @@ class OpportunityController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required',
+            'worth' => 'required',
+            'eligibility_slug' => 'required',
+            'status_slug' => 'required',
+            'detail_1' => 'required',
+            'detail_2' => 'required',
+            'about' => 'required',
+            'status' => 'required',
+            'eligibility' => 'required',
+            'how_to_apply' => 'required',
+            'requirements' => 'required',
+            'note' => 'required',
+            'word' => 'required',
+            'img' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        $path = public_path().'/images/opportunity/';      
+        $originalImage = $request->file('img');
+        $name = time().$originalImage->getClientOriginalName();
+        $image = Image::make($originalImage);
+        $image->resize(718, 486);
+        $image->save($path.$name); 
+        
+        $opportunity = new Opportunity();
+
+        $opportunity->name = $request->name;
+        $opportunity->worth = $request->worth;
+        $opportunity->eligibility_slug = $request->eligibility_slug;
+        $opportunity->status_slug = $request->status_slug;
+        $opportunity->detail_1 = $request->detail_1;
+        $opportunity->detail_2 = $request->detail_2;  
+        $opportunity->about = $request->about;
+        $opportunity->status = $request->status;
+        $opportunity->eligibility = $request->eligibility;
+        $opportunity->how_to_apply = $request->how_to_apply;
+        $opportunity->requirements = $request->requirements;
+        $opportunity->note = $request->note;
+        $opportunity->word = $request->word;
+        $opportunity->img = $name;
+
+        $opportunity->save(); 
+
+        $request->session()->flash('success', 'Opprotunity created successfully');
+        return redirect()->route('admin.opportunity');  
     }
 
     /**
@@ -45,9 +92,10 @@ class OpportunityController extends Controller
      * @param  \App\Opportunity  $opportunity
      * @return \Illuminate\Http\Response
      */
-    public function show(Opportunity $opportunity)
+    public function show($opportunity)
     {
-        //
+        $opportunity_data = Opportunity::find($opportunity);   
+        return view('admin.opportunity.opportunity_show', compact('opportunity_data'));
     }
 
     /**
@@ -56,9 +104,10 @@ class OpportunityController extends Controller
      * @param  \App\Opportunity  $opportunity
      * @return \Illuminate\Http\Response
      */
-    public function edit(Opportunity $opportunity)
+    public function edit($id)
     {
-        //
+        $opportunity = Opportunity::find($id);
+        return view('admin.opportunity.edit_opportunity', compact('opportunity'));
     }
 
     /**
@@ -68,9 +117,53 @@ class OpportunityController extends Controller
      * @param  \App\Opportunity  $opportunity
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Opportunity $opportunity)
+    public function update(Request $request, $id)
     {
-        //
+        $opportunity = Opportunity::find($id);
+
+        $this->validate($request, [
+            'name' => 'required',
+            'worth' => 'required',
+            'eligibility_slug' => 'required',
+            'status_slug' => 'required',
+            'detail_1' => 'required',
+            'detail_2' => 'required',
+            'about' => 'required',
+            'status' => 'required',
+            'eligibility' => 'required',
+            'how_to_apply' => 'required',
+            'requirements' => 'required',
+            'note' => 'required',
+            'word' => 'required',
+        ]);
+
+        if ($request->hasFile('img')){ 
+
+        $path = public_path().'/images/opportunity/';      
+        $originalImage = $request->file('img');
+        $name = time().$originalImage->getClientOriginalName();
+        $image = Image::make($originalImage);
+        $image->resize(718, 486);
+        $image->save($path.$name); 
+        $opportunity->img = $name; 
+        }
+
+        $opportunity->name = $request->name;
+        $opportunity->worth = $request->worth;
+        $opportunity->eligibility_slug = $request->eligibility_slug;
+        $opportunity->status_slug = $request->status_slug;
+        $opportunity->detail_1 = $request->detail_1;
+        $opportunity->detail_2 = $request->detail_2;  
+        $opportunity->about = $request->about;
+        $opportunity->status = $request->status;
+        $opportunity->eligibility = $request->eligibility;
+        $opportunity->how_to_apply = $request->how_to_apply;
+        $opportunity->requirements = $request->requirements;
+        $opportunity->note = $request->note;
+        $opportunity->word = $request->word;
+        $opportunity->save();
+
+        return redirect('/admin/opportunities')->with('success', 'Opportunity Updated successfully'); 
     }
 
     /**
@@ -79,8 +172,11 @@ class OpportunityController extends Controller
      * @param  \App\Opportunity  $opportunity
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Opportunity $opportunity)
+    public function destroy($id)
     {
-        //
+        opportunity::where('id', $id)->delete();   
+
+
+     return redirect('/admin/opportunities')->with('success', 'Opportunity Deleted successfully');
     }
 }
