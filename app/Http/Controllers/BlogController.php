@@ -18,7 +18,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = DB::table('blogs')->where('status', 1)->orderBy('created_at', 'desc')->get();
-        return view('admin.blog', ['blogs' => $blogs]);
+        return view('admin.blog.blog', ['blogs' => $blogs]);
     }
 
     /**
@@ -28,7 +28,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('admin.create_blog');
+        return view('admin.blog.create_blog');
     }
 
     /**
@@ -47,7 +47,7 @@ class BlogController extends Controller
             'img' => 'required|image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
-        $path = public_path().'/images/';      
+        $path = public_path().'/images/blog/';      
         $originalImage = $request->file('img');
         $name = time().$originalImage->getClientOriginalName();
         $image = Image::make($originalImage);
@@ -78,7 +78,7 @@ class BlogController extends Controller
     public function show($blog)
     {
         $blog_data = blog::find($blog);   
-        return view('admin.blog_show', compact('blog_data'));
+        return view('admin.blog.blog_show', compact('blog_data'));
     }
 
     /**
@@ -90,7 +90,7 @@ class BlogController extends Controller
     public function edit($id)
     {
         $blog = blog::find($id);
-        return view('admin.edit_blog', compact('blog'));
+        return view('admin.blog.edit_blog', compact('blog'));
     }
 
     /**
@@ -114,7 +114,7 @@ class BlogController extends Controller
 
         if ($request->hasFile('img')){ 
 
-        $path = public_path().'/images/';      
+        $path = public_path().'/images/blog/';      
         $originalImage = $request->file('img');
         $name = time().$originalImage->getClientOriginalName();
         $image = Image::make($originalImage);
@@ -163,7 +163,7 @@ class BlogController extends Controller
     public function disabledBlogList()
     {
         $blogs = DB::table('blogs')->where('status', 0)->orderBy('created_at', 'desc')->get();
-        return view('admin.disabled-blog', ['blogs' => $blogs]);
+        return view('admin.blog.disabled-blog', ['blogs' => $blogs]);
     }
 
 
