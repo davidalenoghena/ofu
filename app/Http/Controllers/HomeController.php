@@ -111,11 +111,17 @@ class HomeController extends Controller
     }
     public function singleopportunity($opportunity){
         $op_data = Opportunity::find($opportunity);
+        $count = DB::table('opportunities')->count();
 
         $previous = Opportunity::where('id', '<', $opportunity)->max('id');
         $previous_data = Opportunity::find($previous);
+        
         $next = Opportunity::where('id', '>', $opportunity)->min('id');
         $next_data = Opportunity::find($next);
+
+        $all_data = DB::table('opportunities')->get();
+
+        $last_data = DB::table('opportunities')->find($count+1);
 
         $op_ex_first = DB::table('opportunities')
                             ->where('status_slug', 0)
@@ -135,6 +141,8 @@ class HomeController extends Controller
                             ->get();
         return view('pages.single_opportunity',
         [
+            'all_data' => $all_data,
+            'last_data' => $last_data,
             'previous_data' => $previous_data,
             'next_data' => $next_data,
             'op_data' =>  $op_data,

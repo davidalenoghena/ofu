@@ -40,7 +40,7 @@
 
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                            {{ $op_data->status }} 
+                            {!! $op_data->status !!} 
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
 
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                {{ $op_data->eligibility }}
+                                {!! $op_data->eligibility !!}
                                 <!-- <ul>
                                     <li>Reside in Nigeria and participated in the 2020 University Tertiary Matriculation Examinations (UTME) conducted by JAMB </li>
                                     <li>Have a JAMB score of 200 and above</li>
@@ -77,7 +77,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                            {{ $op_data->requirements }}
+                                {!! $op_data->requirements !!}
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
-                                {{ $op_data->how_to_apply }}
+                                {!! $op_data->how_to_apply !!}
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                             <div class="panel-body">
-                                {{ $op_data->note }}
+                                {!! $op_data->note !!}
                             </div>
                         </div>
                     </div>
@@ -115,6 +115,7 @@
             </section>
 
             <div class = "navigate">
+                @if($op_data->id > 1)
                 <div class = "navigate_text">
                     <div class="arrow-icon mr-4">
                         <a href = "{{ route('opportunities.single', $previous_data->id) }}">
@@ -125,17 +126,31 @@
                         <a href = "{{ route('opportunities.single', $previous_data->id) }}">{{ $previous_data->name }}</a>
                     </div>
                 </div>
+                @else
+                <div class = "navigate_text">
+                    <div class="arrow-icon mr-4">
+                        <a href = "{{ route('opportunities.single', $last_data->id) }}">
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href = "{{ route('opportunities.single', $last_data->id) }}">{{ $last_data->name }}</a>
+                    </div>
+                </div>
+                @endif
+                @if($op_data->id < count($all_data))
                 <div class = "navigate_text">
                     <div>
                         <a href = "{{ route('opportunities.single', $next_data->id) }}">{{ $next_data->name }}</a>
                     </div>
+                    
                     <div class="arrow-icon ml-4">
                         <a href = "{{ route('opportunities.single', $next_data->id) }}">
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </a>
                     </div>
-                    
                 </div>
+                @endif
             </div>
         </div>
     
