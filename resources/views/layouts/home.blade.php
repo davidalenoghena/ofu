@@ -11,5 +11,6 @@
         <!-- Footer -->
         @include('partials.footer')
     </div>
-</body>
+
     @yield('js')
+    </body>

@@ -188,6 +188,7 @@
 <script src="{{asset('loging/vendor/countdowntime/countdowntime.js')}}"></script>
 <!--===============================================================================================-->
 <script src="{{asset('loging/js/main.js')}}"></script>
+<script src="{{asset('js/nav.js')}}"></script>
 </body>
 </html>
 <!-- <div class="container">

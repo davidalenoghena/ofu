@@ -1,5 +1,10 @@
 $(document).ready(function() {   
     $('#ofu-navbar').css('background','transparent'); 
+    $('.switch').css('color', '#fff');
+        $('.nav-grey').css('color', '#fff');
+        $('.one').css('background-color', '#fff');
+        $('.two').css('background-color', '#fff');
+        $('.three').css('background-color', '#fff');
     $(window).scroll(function () {
         if ($(window).scrollTop() < 10) {
         $('#ofu-navbar').css('background','transparent');

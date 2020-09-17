@@ -419,7 +419,8 @@ button > a.nav-link.subscribe{
     flex-direction: column-reverse;
 }
 .footer-sect ul, .navbar ul{
-    padding-left: 0;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 .collapse{
     align-items: flex-start;
