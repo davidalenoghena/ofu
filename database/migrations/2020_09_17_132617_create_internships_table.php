@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOpportunitiesTable extends Migration
+class CreateInternshipsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateOpportunitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('opportunities', function (Blueprint $table) {
+        Schema::create('internships', function (Blueprint $table) {
             $table->id();
             $table->string('img');
             $table->string('name');
-            $table->string('worth');
+            $table->string('location');
             $table->string('eligibility_slug');
             $table->string('status_slug');
             $table->string('detail');
@@ -25,7 +25,7 @@ class CreateOpportunitiesTable extends Migration
             $table->string('status');
             $table->string('eligibility');
             $table->text('how_to_apply');
-            $table->text('requirements');
+            $table->text('description');
             $table->text('note');
             $table->string('word')->unique();
             $table->timestamps();
@@ -39,6 +39,6 @@ class CreateOpportunitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('opportunities');
+        Schema::dropIfExists('internships');
     }
 }

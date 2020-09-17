@@ -22,14 +22,14 @@
         <div id="scholarship">
             <section class="heading">
                 <!-- Heading -->
-                <h2>{{ $op_data->name }}</h2>
-                <h6 class = "grey-text">Updated: {{ $op_data->updated_at }}</h6>
+                <h2>{{ $in_data->name }}</h2>
+                <h6 class = "grey-text">Updated: {{ $in_data->updated_at }}</h6>
             </section>
 
        
             <section id = "accordion" class="table">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
+                    <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -40,22 +40,7 @@
 
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                            {!! $op_data->about !!} 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Status
-                                </a>
-                            </h4>
-                        </div>
-
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                            {!! $op_data->status !!} 
+                                {!! $in_data->about !!}
                             </div>
                         </div>
                     </div>
@@ -64,35 +49,57 @@
                         <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Eligibility
+                                Eligibility
                             </a>
                         </h4>
                         </div>
 
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                {!! $op_data->eligibility !!}
-                                <!-- <ul>
-                                    <li>Reside in Nigeria and participated in the 2020 University Tertiary Matriculation Examinations (UTME) conducted by JAMB </li>
-                                    <li>Have a JAMB score of 200 and above</li>
-                                    <li>Have gained admission and have been properly enrolled in a Nigerian Federal or State University with relevant evidence</li>
-                                </ul> -->
+                                {!! $in_data->eligibility !!}
                             </div>
                         </div>
                     </div>
-
 
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Requirements
+                                    Status
                                 </a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                {!! $op_data->requirements !!}
+                                {!! $in_data->status !!}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Location
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                {!! $in_data->location !!}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Description
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                {!! $in_data->description !!}
                             </div>
                         </div>
                     </div>
@@ -101,13 +108,13 @@
                         <div class="panel-heading" role="tab" id="headingFour">
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                How To Apply
+                                    How To Apply
                                 </a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
-                                {!! $op_data->how_to_apply !!}
+                                {!! $in_data->how_to_apply !!}
                             </div>
                         </div>
                     </div>
@@ -116,13 +123,13 @@
                         <div class="panel-heading" role="tab" id="headingFive">
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                Note
+                                    Note
                                 </a>
                             </h4>
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                             <div class="panel-body">
-                                {!! $op_data->note !!}
+                                {!! $in_data->note !!}
                             </div>
                         </div>
                     </div>
@@ -130,37 +137,37 @@
             </section>
 
             <div class = "navigate">
-                @if($op_data->id > 1)
+                @if($in_data->id > 1)
                 <div class = "navigate_text">
                     <div class="arrow-icon mr-4">
-                        <a href = "{{ route('opportunities.single', $previous_data->id) }}">
+                        <a href = "{{ route('internships.single', $previous_data->id) }}">
                             <i class="fas fa-long-arrow-alt-left"></i>
                         </a>
                     </div>
                     <div>
-                        <a href = "{{ route('opportunities.single', $previous_data->id) }}">{{ $previous_data->name }}</a>
+                        <a href = "{{ route('internships.single', $previous_data->id) }}">{{ $previous_data->name }}</a>
                     </div>
                 </div>
                 @else
                 <div class = "navigate_text">
                     <div class="arrow-icon mr-4">
-                        <a href = "{{ route('opportunities.single', $last_data->id) }}">
+                        <a href = "{{ route('internships.single', $last_data->id) }}">
                             <i class="fas fa-long-arrow-alt-left"></i>
                         </a>
                     </div>
                     <div>
-                        <a href = "{{ route('opportunities.single', $last_data->id) }}">{{ $last_data->name }}</a>
+                        <a href = "{{ route('internships.single', $last_data->id) }}">{{ $last_data->name }}</a>
                     </div>
                 </div>
                 @endif
-                @if($op_data->id < count($all_data))
+                @if($in_data->id < count($all_data))
                 <div class = "navigate_text">
                     <div>
-                        <a href = "{{ route('opportunities.single', $next_data->id) }}">{{ $next_data->name }}</a>
+                        <a href = "{{ route('internships.single', $next_data->id) }}">{{ $next_data->name }}</a>
                     </div>
                     
                     <div class="arrow-icon ml-4">
-                        <a href = "{{ route('opportunities.single', $next_data->id) }}">
+                        <a href = "{{ route('internships.single', $next_data->id) }}">
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </a>
                     </div>
@@ -183,22 +190,22 @@
                     </div>
                 </div>
             </section>
-            @if (count($op_ex)>0)
+            @if (count($in_cl)>0)
             <section>
                 <ul class = "posts__list">
-                    <li>Expiring Scholarships</li>
-                    @foreach ($op_ex as $opportunity)
-                    <li><a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">{{ $opportunity->name }}</a></li>
+                    <li>closing Internships</li>
+                    @foreach ($in_cl as $internship)
+                    <li><a class="btn-link" href="{{ route('internships.single', $internship->id) }}">{{ $internship->name }}</a></li>
                     @endforeach
                 </ul>
             </section>
             @endif
-            @if (count($op_av)>0)
+            @if (count($in_av)>0)
             <section>
                 <ul class = "posts__list">
-                    <li>Available Scholarships</li>
-                    @foreach ($op_av as $opportunity)
-                    <li><a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">{{ $opportunity->name }}</a></li>
+                    <li>Available Internships</li>
+                    @foreach ($in_av as $internship)
+                    <li><a class="btn-link" href="{{ route('internships.single', $internship->id) }}">{{ $internship->name }}</a></li>
                     @endforeach
                 </ul>
             </section>

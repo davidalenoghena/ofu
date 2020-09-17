@@ -26,6 +26,8 @@ Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{id}', 'HomeController@singleblog')->name('blog.single');
 Route::get('/opportunities', 'HomeController@opportunities')->name('opportunities');
 Route::get('/opportunities/{name}', 'HomeController@singleopportunity')->name('opportunities.single');
+Route::get('/internships', 'HomeController@internships')->name('internships');
+Route::get('/internships/{name}', 'HomeController@singleinternship')->name('internships.single');
 
 //Admin section
 Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('is_admin');
