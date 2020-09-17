@@ -140,8 +140,8 @@
                     
                 </div>
                 <div>
-                <form action="#" class = "d-flex row">
-                    <div class = "form-group col-9">
+                <form action="#" class = "d-flex mb-3 row">
+                    <div class = "form-group mr-0 col-9">
                         <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
                     </div>
 
@@ -149,7 +149,7 @@
                 </form>
                 <p class = "">By clicking “Subscribe” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
            
-                </div>              
+                </div>                
              </div>
         </div>
     </section>
