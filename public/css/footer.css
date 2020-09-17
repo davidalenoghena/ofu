@@ -53,6 +53,9 @@ li>strong{
     .copyright{
         order: 2;
     }
+    #footer ul{
+        justify-content: center;
+    }
     .links ul{
         justify-content: center;
     }

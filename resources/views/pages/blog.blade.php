@@ -1,4 +1,4 @@
-@include('partials.navbar')
+@extends('partials.navbar')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,14 +19,14 @@
 
 
   <!-- Vendor CSS Files -->
-<link href="{{ asset('blog_assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<!-- <link href="{{ asset('blog_assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('blog_assets/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
 <link href="{{ asset('blog_assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
 <link href="{{ asset('blog_assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 <link href="{{ asset('blog_assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
 <link href="{{ asset('blog_assets/vendor/venobox/venobox.css') }}" rel="stylesheet">
 <link href="{{ asset('blog_assets/vendor/aos/aos.css') }}" rel="stylesheet">
-
+ -->
 
 
   <!-- Template Main CSS File -->

@@ -91,7 +91,7 @@
                   <div class="validate"></div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group my-4">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
@@ -114,17 +114,8 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
+     
     </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
   @section('js')
 
   <!-- Vendor JS Files -->
@@ -141,7 +132,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('contact_assets/js/main.js') }}"></script>
-
+  <script src= "{{asset('js/nav.js')}}"></script>
 </body>
 
 </html>
