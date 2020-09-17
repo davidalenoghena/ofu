@@ -24,8 +24,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown08">
                             <ul>
                             <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >SCHOLARSHIPS</a></li>
-                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >INTERNSHIPS</a></li>
-                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >GRANTS</a></li>
+                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('internships') }}" >INTERNSHIPS</a></li>
                             </ul>
                         </div>
                     </li>

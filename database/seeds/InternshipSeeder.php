@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Opportunity;
+use App\Internship;
 
-class OpportunitySeeder extends Seeder
+class InternshipSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class OpportunitySeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Opportunity::class, 20)->create();
+        factory(App\Internship::class, 20)->create();
     }
 }

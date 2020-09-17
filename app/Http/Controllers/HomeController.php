@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\blog;
 use App\Opportunity;
+use App\Internship;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -148,6 +149,69 @@ class HomeController extends Controller
             'op_data' =>  $op_data,
             'op_ex' =>  $op_ex,
             'op_av' => $op_av
+        ]);
+    }
+    public function internships()
+    {
+        $count = DB::table('internships')->count();
+        $in_cl = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $in_av = DB::table('internships')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $in_not_av = DB::table('internships')
+                            ->where('status_slug', 2)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(10);
+        return view('pages.internships',
+        [
+            'in_cl' =>  $in_cl,
+            'in_av' => $in_av,
+            'in_not_av' => $in_not_av
+        ]);
+    }
+    public function singleinternship($internship){
+        $in_data = Internship::find($internship);
+        $count = DB::table('internships')->count();
+
+        $previous = Internship::where('id', '<', $internship)->max('id');
+        $previous_data = Internship::find($previous);
+        
+        $next = Internship::where('id', '>', $internship)->min('id');
+        $next_data = Internship::find($next);
+
+        $all_data = DB::table('internships')->get();
+
+        $last_data = DB::table('internships')->find($count+1);
+
+        $in_cl_first = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $in_av_first = DB::table('internships')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $in_cl = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        $in_av = DB::table('internships')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        return view('pages.single_internship',
+        [
+            'all_data' => $all_data,
+            'last_data' => $last_data,
+            'previous_data' => $previous_data,
+            'next_data' => $next_data,
+            'in_data' =>  $in_data,
+            'in_cl' =>  $in_cl,
+            'in_av' => $in_av
         ]);
     }
 }

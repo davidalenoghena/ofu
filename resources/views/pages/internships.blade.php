@@ -1,7 +1,7 @@
 @extends('layouts.home')
 @push('css')
 <head>
-  <title>OFU - Opportunities</title>
+  <title>OFU - Internships</title>
 
   <!-- Favicons -->
   <link href="{{ asset('about_assets/img/favicon.png') }}" rel="icon">
@@ -19,7 +19,7 @@
     <div id="app" class = "container">
         <section class="heading">
             <!-- Heading -->
-            <h1>SCHOLARSHIPS</h1>
+            <h1>INTERNSHIPS</h1>
         </section>
         <section id="search" class = "my-5">
             <div class="filter select">
@@ -43,79 +43,79 @@
         <section id = "accordion" class="table">
             <div class="table-header">
                 <p>Name</p>
-                <p>Worth</p>
+                <p>Location</p>
                 <p>Eligibility</p>
                 <p>Status</p>
             </div>
-            @foreach($op_ex as $opportunity)
+            @foreach($in_cl as $internship)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $opportunity->word }}" aria-expanded="false" aria-controls="{{ $opportunity->word }}">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
                         <div class="table-main">
-                                <p><strong>{{ $opportunity->name }}</strong></p>
-                                <p>&#8358;{{ $opportunity->worth }}</p>
-                                <p>{{ $opportunity->eligibility_slug }}</p>
-                                <p class = "text-danger">Expiring Soon</p>
+                                <p><strong>{{ $internship->name }}</strong></p>
+                                <p>{{ $internship->location }}</p>
+                                <p>{{ $internship->eligibility_slug }}</p>
+                                <p class = "text-danger">Closing Soon</p>
                         </div>
                     </button>
                 </div>
-                <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
                             <img src='{{asset('images/shell.png')}}' alt="shell-logo">
                             <div>
-                                <p>{{ $opportunity->detail }}</p>
-                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
+                                <p>{{ $internship->detail }}</p>
+                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
                 </div> 
             </div> 
             @endforeach  
-            @foreach($op_av as $opportunity)
+            @foreach($in_av as $internship)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $opportunity->word }}" aria-expanded="false" aria-controls="{{ $opportunity->word }}">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
                         <div class="table-main">
-                                <p><strong>{{ $opportunity->name }}</strong></p>
-                                <p>&#8358;{{ $opportunity->worth }}</p>
-                                <p>{{ $opportunity->eligibility_slug }}</p>
+                                <p><strong>{{ $internship->name }}</strong></p>
+                                <p>{{ $internship->location }}</p>
+                                <p>{{ $internship->eligibility_slug }}</p>
                                 <p class = "yellow-text">Available</p>
                         </div>
                     </button>
                 </div>
-                <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
                             <img src='{{asset('images/shell.png')}}' alt="shell-logo">
                             <div>
-                                <p>{{ $opportunity->detail }}</p>
-                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
+                                <p>{{ $internship->detail }}</p>
+                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
                 </div> 
             </div> 
             @endforeach
-            @foreach($op_not_av as $opportunity)
+            @foreach($in_not_av as $internship)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $opportunity->word }}" aria-expanded="false" aria-controls="{{ $opportunity->word }}">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
                         <div class="table-main">
-                                <p><strong>{{ $opportunity->name }}</strong></p>
-                                <p>&#8358;{{ $opportunity->worth }}</p>
-                                <p>{{ $opportunity->eligibility_slug }}</p>
+                                <p><strong>{{ $internship->name }}</strong></p>
+                                <p>{{ $internship->location }}</p>
+                                <p>{{ $internship->eligibility_slug }}</p>
                                 <p class = "text-muted">Not Available</p>
                         </div>
                     </button>
                 </div>
-                <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
                             <img src='{{asset('images/shell.png')}}' alt="shell-logo">
                             <div>
-                                <p>{{ $opportunity->detail }}</p>
-                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
+                                <p>{{ $internship->detail }}</p>
+                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
 
         <section>
         <nav aria-label="Page navigation example" class="pagination-body">
-            {{ $op_not_av->links() }}
+            {{ $in_not_av->links() }}
         </nav>
         </section>
 
