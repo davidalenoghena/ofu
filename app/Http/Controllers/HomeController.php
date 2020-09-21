@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\blog;
 use App\Opportunity;
 use App\Internship;
+use App\Mail\SendMailable;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,6 +31,19 @@ class HomeController extends Controller
        public function about_us()
     {
         return view('pages.about_us');
+    }
+    public function mail(Request $request)
+    {
+        $data = request()->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone_number' => '',
+            'message' => 'required'
+        ]);
+
+        $admin_mail = 'ofuapp@gmail.com';
+        \Mail::to($admin_mail)->send(new SendMailable($data));
+        return redirect(route('contact'))->with('message', 'Thank You for your message. We will be in touch.');
     }
     public function contact_us()
     {
