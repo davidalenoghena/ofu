@@ -18,7 +18,7 @@
     <div class="col-md-11">
         <div class="card">
             <div class="card-header">
-                <strong>Create New Opportunitiy</strong>
+                <strong>Create New Intership</strong>
             </div>
             <div class="card-body card-block">
                 <ul>
@@ -26,17 +26,17 @@
                     <li>{{ $error }}</li>
                     @endforeach
                 </ul>
-                <form action="{{ route('store.Opportunitiy') }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                <form action="{{ route('store.intern') }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
                     @csrf
                     <br>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name</label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="name" name="name" placeholder="Opportunitiy Name" class="form-control" value="{{ old('name') }} " required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="name" name="name" placeholder="Internship Name" class="form-control" value="{{ old('name') }} " required></div>
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Worth</label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="worth" name="worth" placeholder="Opportunitiy Worth" class="form-control" value="{{ old('worth') }} " required></div>
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Location</label></div>
+                            <div class="col-12 col-md-9"><input type="text" id="location" name="location" placeholder="Intern location" class="form-control" value="{{ old('location') }} " required></div>
                     </div>
 
                     <div class="row form-group">
@@ -63,7 +63,7 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Details</label></div>
                             <div class="col-12 col-md-9">
-                                <textarea name="detail_1" id="elm1" rows="5" placeholder="Eligibility" class="form-control">{{ old('detail_1') }}</textarea required></div>
+                                <textarea name="detail" id="elm1" rows="5" placeholder="Eligibility" class="form-control">{{ old('detail') }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">
@@ -79,9 +79,9 @@
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Requirements</label></div>
+                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Description</label></div>
                             <div class="col-12 col-md-9">
-                                <textarea name="requirements" id="elm1" rows="5" placeholder="Requirements" class="form-control">{{ old('requirements') }}</textarea required></div>
+                                <textarea name="description" id="elm1" rows="5" placeholder="Requirements" class="form-control">{{ old('description') }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">

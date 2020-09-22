@@ -33,8 +33,13 @@
                     <li>
                         <a href="widgets.html"> <i class="menu-icon fa fa-laptop"></i>Scholarships</a>
                     </li>
-                    <li>
-                        <a href="widgets.html"> <i class="menu-icon fa fa-laptop"></i>Internship</a>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Internship</a>
+                        <ul class="sub-menu children dropdown-menu">
+
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('admin.intern') }}">Internships</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('admin.intern.create') }}">Create Internship</a></li>                          
+                        </ul>
                     </li>
                     <li>
                         <a href="widgets.html"> <i class="menu-icon fa fa-laptop"></i>Grants</a>
@@ -46,6 +51,25 @@
 
     
     <div id="right-panel" class="right-panel">
+         <header id="header" class="header">
 
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                       
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header><!-- /header -->
         <!-- Header-->
         
