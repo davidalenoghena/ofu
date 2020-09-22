@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="{{ asset('dashboard_assets/vendors/selectFX/css/cs-skin-elastic.css')}}">
     <link rel="stylesheet" href="{{ asset('dashboard_assets/vendors/jqvmap/dist/jqvmap.min.css') }}">
 
-
     <link rel="stylesheet" href="{{ asset('dashboard_assets/css/style.css') }}">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -58,18 +57,20 @@
     <script src="{{ asset('dashboard_assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
     <script src="{{ asset('dashboard_assets/vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
     
-   <script src="https://cdn.tiny.cloud/1/4o36oeh7zv84jjpd8e0zcqmoig1xd6875ya14g4mtb8hyla9/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/4o36oeh7zv84jjpd8e0zcqmoig1xd6875ya14g4mtb8hyla9/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
    <script>
     tinymce.init({
       selector: 'textarea',
-      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist   pageembed powerpaste table advtable tinycomments tinymcespellchecker link headingchange',
+      toolbar: 'casechange code formatpainter link checklist lists numlist bullist headingchange',
       toolbar_mode: 'floating',
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name',
-      menubar: false
     });
   </script>
+
+
+  
 
 </body>
 

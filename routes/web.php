@@ -53,6 +53,13 @@ Route::get('/admin/opportunity/{id}', 'OpportunityController@show')->name('show.
 Route::get('admin/opportunity/edit/{id}', 'OpportunityController@edit')->name('edit.opportunity');
 Route::post('admin/opportunity/update/{id}', 'OpportunityController@update')->name('update.opportunity');
 Route::get('/admin/opportunity/delete/{opportunity}', 'OpportunityController@destroy');
-
+// Admin.Internship
+Route::get('/admin/internship', 'InternshipController@index')->name('admin.intern'); 
+Route::get('/admin/internship/create', 'InternshipController@create')->name('admin.intern.create');
+Route::post('admin/internship/store', 'InternshipController@store')->name('store.intern');
+Route::get('/admin/internship/{id}', 'InternshipController@show')->name('show.intern');
+Route::get('admin/internship/edit/{id}', 'InternshipController@edit')->name('edit.intern');
+Route::post('admin/internship/update/{id}', 'InternshipController@update')->name('update.intern');
+Route::get('/admin/internship/delete/{internship}', 'InternshipController@destroy');
 
 //User section

@@ -18,70 +18,70 @@
     <div class="col-md-11">
         <div class="card">
             <div class="card-header">
-                <strong>Edit opportunity</strong>
+                <strong>Edit Internship</strong>
             </div>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
                 @endforeach
             <div class="card-body card-block">
-                <form action="{{ route('update.opportunity', ['id' => $opportunity->id]) }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                <form action="{{ route('update.intern', ['id' => $intern->id]) }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
                     @csrf
                     <br>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name
                         </label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="name" name="name" value="{{ $opportunity->name }}" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="name" name="name" value="{{ $intern->name }}" class="form-control" required></div>
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Worth
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Location
                         </label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="worth" name="worth" value="{{ $opportunity->worth }}" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="location" name="location" value="{{ $intern->location }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status Slug
                         </label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="status_slug" name="status_slug" value="{{ $opportunity->status_slug }}" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="status_slug" name="status_slug" value="{{ $intern->status_slug }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility Slug
                         </label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="eligibility" name="eligibility_slug" value="{{ $opportunity->eligibility_slug }}" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="eligibility" name="eligibility_slug" value="{{ $intern->eligibility_slug }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Word
                         </label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="word" name="word" value="{{ $opportunity->word }}" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="word" name="word" value="{{ $intern->word }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Eligibility</label></div>
-                            <div class="col-12 col-md-9"><textarea name="eligibility" id="elm1" rows="5" class="form-control">{{ $opportunity->eligibility }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="eligibility" id="elm1" rows="5" class="form-control">{{ $intern->eligibility }}</textarea required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Details</label></div>
-                            <div class="col-12 col-md-9"><textarea name="detail_1" id="elm1" rows="5" class="form-control">{{ $opportunity->detail_1 }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="detail" id="elm1" rows="5" class="form-control">{{ $intern->detail }}</textarea required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">About</label></div>
-                            <div class="col-12 col-md-9"><textarea name="about" id="elm1" rows="5" class="form-control">{{ $opportunity->about }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="about" id="elm1" rows="5" class="form-control">{{ $intern->about }}</textarea required></div>
                     </div>  
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">How to Apply</label></div>
-                            <div class="col-12 col-md-9"><textarea name="how_to_apply" id="elm1" rows="5" class="form-control">{{ $opportunity->how_to_apply }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="how_to_apply" id="elm1" rows="5" class="form-control">{{ $intern->how_to_apply }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Requirements</label></div>
-                            <div class="col-12 col-md-9"><textarea name="requirements" id="elm1" rows="5" class="form-control">{{ $opportunity->requirements }}</textarea required></div>
+                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Description</label></div>
+                            <div class="col-12 col-md-9"><textarea name="description" id="elm1" rows="5" class="form-control">{{ $intern->description }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Note</label></div>
-                            <div class="col-12 col-md-9"><textarea name="note" id="elm1" rows="5" class="form-control">{{ $opportunity->note }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="note" id="elm1" rows="5" class="form-control">{{ $intern->note }}</textarea required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Status</label></div>
-                            <div class="col-12 col-md-9"><textarea name="status" id="elm1" rows="5" class="form-control">{{ $opportunity->status }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="status" id="elm1" rows="5" class="form-control">{{ $intern->status }}</textarea required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="file-input" class=" form-control-label">Image</label></div>
