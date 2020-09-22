@@ -55,7 +55,8 @@ class InternshipController extends Controller
             'img' => 'required|image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
-        $path = public_path().'/images/internship/';      
+        $path = public_path().'/images/internship/';  
+            
         $originalImage = $request->file('img');
         $name = time().$originalImage->getClientOriginalName();
         $image = Image::make($originalImage);
