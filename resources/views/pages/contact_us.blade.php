@@ -50,21 +50,21 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="info-box">
-                  <i class="bx bx-map"></i>
+                  <i class="fa fa-map-marker"></i>
                   <h3>Our Address</h3>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
+                  <i class="fa fa-envelope-o"></i>
                   <h3>Email Us</h3>
                   <p>info@example.com<br>contact@example.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
+                  <i class="fa fa-phone"></i>
                   <h3>Call Us</h3>
                   <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
                 </div>
@@ -82,7 +82,7 @@
           <form class="form-horizontal" id="contactform" method="post" action="{{ route('sendmail') }}">
             @csrf
             <div class="contact-form">
-                <div class="col-sm-6">
+                <div class="col-sm-6 ">
                     <label>Enter your full name <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                       <div class="section-field">
                         <input id="name" type="text" class=" pull-right form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -92,7 +92,7 @@
                         </span>
                         @enderror
                     </div>
-                    <div class="section-field">
+                    <div class="my-3 section-field">
                         <label>Email <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                         <input  id="email" type="email"  class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
                         @error('email')
@@ -101,7 +101,7 @@
                         </span>
                         @enderror
                     </div>
-                    <div class="section-field">
+                    <div class="section-field my-3">
                         <label>Enter your phone number <span class="text-danger"></span></label>
                         <input id="phone_number" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" autocomplete="phone_number">
                         @error('phone_number')
@@ -114,7 +114,7 @@
                 <div class="col-sm-6">
                     <div class="section-field textarea">
                         <label>Enter your message <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
-                        <textarea class="input-message" rows="7" name="message" @error('message') is-invalid @enderror></textarea>
+                        <textarea class="input-message col-12" rows="7" name="message" @error('message') is-invalid @enderror></textarea>
                         @error('message')
                         <span class="invalid-feedback" role="alert">
                             <strong><a class="text-danger">{{ $message }}</a></strong>
