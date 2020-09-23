@@ -49,7 +49,7 @@
                                     class="img-fluid"
                                 />
                                 <div class="icon">
-                                    <i class="ion-ios-speedometer-outline"></i>
+                                    <i class="fa fa-rocket"></i>
                                 </div>
                             </div>
                             <h2 class="title"><a href="#">Our Mission</a></h2>
@@ -76,7 +76,7 @@
                                     class="img-fluid"
                                 />
                                 <div class="icon">
-                                    <i class="ion-ios-list-outline"></i>
+                                    <i class="fa fa-pencil-square-o"></i>
                                 </div>
                             </div>
                             <h2 class="title"><a href="#">Our Plan</a></h2>
@@ -103,7 +103,7 @@
                                     class="img-fluid"
                                 />
                                 <div class="icon">
-                                    <i class="ion-ios-eye-outline"></i>
+                                    <i class="fa fa-eye"></i>
                                 </div>
                             </div>
                             <h2 class="title"><a href="#">Our Vision</a></h2>
