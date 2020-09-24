@@ -324,7 +324,7 @@ li{
 }
 .form-group{
     margin-bottom: 0;
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 .subscribe-content form{
     width: 50%;
@@ -406,7 +406,7 @@ button > a.nav-link.subscribe{
     width: 90%;
     margin-left: 0 !important;
 }
-.about-video,.about-content, .subscribe, .subscribe-content{
+.about-video,.about-content, .subscribe{
     width: 90%;
 }
 .about-video{
@@ -505,9 +505,6 @@ width: 233px;
 @media screen and (max-width : 768px){
     body{
         overflow-x: hidden;
-    }
-    .stats > .container, .subscribe-content {
-        flex-direction: column;
     }
     #subscribe{
         padding-bottom:3rem ;
