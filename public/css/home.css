@@ -509,10 +509,17 @@ width: 233px;
         overflow-x: hidden;
     }
     #subscribe{
-        padding-bottom:3rem ;
+        padding:3rem 0 ;
     }
     .stats > .container > .px-5{
         margin: 1.5rem 0;
+    }
+    .subscribe-content{
+        flex-direction: column;
+    }
+    .subscribe-content h3{
+        margin-bottom: 1rem;
+        padding-left: 1rem;
     }
     #testimonial .carousel{
         height: 400px;

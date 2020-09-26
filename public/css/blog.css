@@ -111,3 +111,18 @@ p{
     border: 1px solid #3c64b1 ;
 }
 
+@media (max-width:768px){
+    #heading{
+        padding: 0 1rem;
+    }
+    .card.flex{
+        flex-direction: column;
+    }
+    .width-45{
+        width: 100%;
+    }
+    .width-45 h2{
+        font-size: 22px;
+        margin: 2rem 0;
+    }
+}
