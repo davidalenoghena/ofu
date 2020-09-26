@@ -3,14 +3,14 @@
 }
 
 #app{
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 img{
     width: 100%;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,.heading-number,h4,h5{
     color: #121212;
 }
 
@@ -111,3 +111,121 @@ p{
     border: 1px solid #3c64b1 ;
 }
 
+
+
+/* Single Blog Page*/
+
+#title{
+    padding: 4rem 0;
+    background-color: #f3f6fa;
+}
+
+.small-image{
+    width: 100px;
+}
+
+.profile{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.smaller-image{
+    width: 55px;
+    height: 55px;
+}
+
+.black{
+    color: #000;
+}
+
+.blog-content{
+    margin:3rem 0 ;
+    padding: 0 1rem;
+    line-height: 2.5;
+}
+
+.filter{
+    object-fit: cover;
+    filter: brightness(0.7);
+    filter: blur(.1);
+}
+
+.space-evenly{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.heading-number {
+    position:relative;
+    display:inline-block;
+    margin: 2rem 0;
+    width: 100%;
+    padding:0 10px;
+}
+.heading-number span{
+
+    padding: .5rem 1rem;
+    border-radius: 50%;
+    color:#3c64b1;
+    background-color:  rgba(60, 100, 177, 0.2);;
+}
+
+#content{
+    padding: 3rem 0;
+}
+
+.heading-number:before,.heading-number:after {
+    position:absolute;
+    content:"";
+    width: 35%;
+    border-bottom:1px solid #000;
+    bottom:11px;
+}
+.heading-number:before {
+    left:-30px;
+    margin-left: 150px;
+}
+.heading-number:after {
+    right:-30px;
+    margin-right: 150px;
+}
+
+@media (max-width:768px){
+    #heading{
+        padding: 0 1rem;
+    }
+    #title h1{
+        font-size: 24px;
+    }
+    .card.flex{
+        flex-direction: column;
+    }
+    .width-45{
+        width: 100%;
+    }
+    .width-45 h2{
+        font-size: 22px;
+        margin: 2rem 0;
+    }
+    .profile{
+        align-items: flex-start;
+    }
+    .profile h3{
+        font-size: 16px;
+    }
+    a > .linkedin{
+        width: 90px;
+    }
+    .profile p{
+        font-size: 14px;
+    }
+    .small-image{
+        width: 48px;
+        height: 48px;
+    }
+    .space-evenly{
+        padding: 1rem;
+    }
+}

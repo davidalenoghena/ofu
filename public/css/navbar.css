@@ -62,8 +62,10 @@
 }
 
 .caption{
+    margin-top: .2rem;
     font-size: 0.6rem;
     letter-spacing: .2em;
+    color: #e59500 !important; 
 }
 
 .dropdown-item:hover{
@@ -234,6 +236,9 @@ a:hover{
     .login-btns > .btn-blue > .nav-link{
         color: #fff !important;
     }
+    .ml{
+        margin-left: 0;
+    }
 
 }
 
@@ -244,6 +249,7 @@ a:hover{
     .navbar-nav li{
         padding: 0 .5rem;
     }
+    
     .ml{
         margin-left: 0;
     }

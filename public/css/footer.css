@@ -64,8 +64,14 @@ li>strong{
     #footer ul{
         justify-content: center;
     }
+    .footer-sect{
+        flex-direction: column;
+    }
     .links ul{
         justify-content: center;
+    }
+    .copyright{
+        order: 2;
     }
 }
 
