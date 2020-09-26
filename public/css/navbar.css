@@ -62,8 +62,10 @@
 }
 
 .caption{
+    margin-top: .2rem;
     font-size: 0.6rem;
     letter-spacing: .2em;
+    color: #e59500 !important; 
 }
 
 .dropdown-item:hover{

@@ -19,65 +19,132 @@
 
     <div id="app" >
       <!--Blog Heading  -->
-      <section id="heading" class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="mb-3">Opportunities Blog</h1>
-            <p>Welcome to our blog! You’ll find the best job search, resume writing, and career advice here. With the help of our experts, you’ll not only create a job-winning resume for any position but breeze through your job interview.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="{{ asset('blog_assets/img/illustration.svg') }}" class="image" alt="blog-illustration">
-          </div>
-        </div>
-      </section>
+      <section id="title" >
+        <div class="container">
+			<div class="row ">
+				<div class="col-md-6">
+					<h1 class="mb-5">How to Land a Job in Your Dream Location? Ideas and Insider Stories</h1>
+					<div class="profile d-flex ">
+						<div>
+							<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 smaller-image" alt="grey-illustration">
+						</div>
+						<div>
+							<p><span class= "black">David Alenoghena</span><br>
+							<span class = "text-muted">Blogger and Certified Big-head</span><br>
+							<em>Updated  21/09/2020</em></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img src="{{ asset('blog_assets/img/illustration.svg') }}" class="image" alt="blog-illustration">
+				</div>     
+			</div>
+		</div>	
+	  </section>
+	  
+
+	  <section id="content" class = "container">
+		  <p class="blog-content">
+			Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
+			“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
+			Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
+			half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
+			leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
+			I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
+			an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
+			the world) can be your workplace:
+		  </p>
+
+		  <p class="blog-content">
+			Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
+			“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
+			Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
+			half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
+			leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
+			I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
+			an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
+			the world) can be your workplace:
+		  </p>
+
+		  <p class="blog-content">
+			Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
+			“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
+			Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
+			half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
+			leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
+			I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
+			an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
+			the world) can be your workplace:
+		  </p>
+
+		  <div class= "heading-number text-center">
+			  <span>1</span>
+		  </div>
+			<h3 class="text-center">Get All Dramatic</h3>
+			<div>
+				<p class="blog-content">
+					Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
+					It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
+				</p>
+			</div>
+			<div class="my-4">
+				<img src="{{ asset('blog_assets/img/hero-bg.jpg') }}" class="image filter" alt="blog-illustration">
+			</div>
+
+
+			<div class= "heading-number mt-5 text-center">
+			  <span>2</span>
+		  	</div>
+			<h3 class="text-center">Get All Dramatic</h3>
+			<div>
+				<p class="blog-content">
+					Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
+					It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
+				</p>
+			</div>
+
+			<div class = "space-evenly">
+				<div>
+					<strong>Rate my article:</strong><br>
+					<p>How to land a job in your dream location</p>
+				</div>
+				<div class="text-muted">
+					<p class="mb-0">Average: 4.63 (88 votes)</p>
+				</div>
+				<div class="d-flex">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+			</div>
+			
+	  </section>
 
       <!-- Featured Blogs -->
       <section id="featured">
-        <div class="container">
-            <h2 class="text-center mb-5">Featured Posts</h2>
-            <div class="row">
-              <div class="col-md-12 card flex">
-                <div class = "width-45">
-                  <img src="{{ asset('blog_assets/img/job.svg') }}" class="image cover" alt="job-illustration">
-                </div>
-                <div class = "width-45  p-2">
-                  <h2>How to Land a Job in Your Dream Location? Ideas and Insider Stories</h2>
-                  <p>Oh, the dreaded elevator pitch. Unless you’re one of the slick salesmen from Mad Men or the Wolf of Wall Street, you probably hate it. 
-                    Nothing wrong with that — a traditional elevator pitch is a lost cause. Here’s how to fix yours to make it actually work!</p>
-                </div>
-              </div>
+        <div class="container profile d-flex ">
+            <div>
+				<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 small-image" alt="grey-illustration">
+			</div>
+			<div>
+				<h3>David Alenoghena</h3>
+				<p>Cursus suscipit egestas tellus luctus tincidunt lectus. Curabitur dui quam bibendum nulla. Felis elit, magna dictumst et mauris tellus aliquam. 
+				   Sit et pellentesque vestibulum volutpat, aenean sollicitudin. Nec hendrerit eget sapien adipiscing.
+				</p>
+				<a href="#">
+					<img src="{{ asset('blog_assets/img/social.svg') }}" class="image linkedin small-image" alt="social-illustration">
+				</a>
 
-              <div class="col-md-6 mt-card">
-                <div class="card mb-3">
-                  <img src="{{ asset('blog_assets/img/pitch.svg') }}" class="card-img-top image" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title my-3">Elevator Pitch: What’s Wrong With It & How to Make Yours Work</h3>
-                    <p class="card-text">Oh, the dreaded elevator pitch. Unless you’re one of the slick salesmen from Mad Men or
-                      the Wolf of Wall Street, you probably hate it. Nothing wrong with that — a traditional elevator pitch is a lost cause. 
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 mt-card">
-                <div class="card mb-3">
-                  <img src="{{ asset('blog_assets/img/pitch.svg') }}" class="card-img-top image" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title my-3">Elevator Pitch: What’s Wrong With It & How to Make Yours Work</h3>
-                    <p class="card-text">Oh, the dreaded elevator pitch. Unless you’re one of the slick salesmen from Mad Men or
-                      the Wolf of Wall Street, you probably hate it. Nothing wrong with that — a traditional elevator pitch is a lost cause. 
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+			</div>
         </div>
       </section>
 
       <!-- Latest Blogs -->
       <section id="latest" class= "container">
         <div class="container">
-          <h2 class="text-center my-5">Latest Posts</h2>
+          <h2 class="text-center my-5">Similar Articles</h2>
           <div class="row">
             <div class="col-md-4">
                 <div class="card mb-3">
@@ -121,82 +188,11 @@
                   </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                  <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                  <div class="card-body">
-                    <small class="text-muted uppercase">26 sep 2020</small>
-                    <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                    <p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    <div class="card-text text-muted d-flex">
-                    <i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-                    <i class="far fa-eye"></i><small>45</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                  <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                  <div class="card-body">
-                    <small class="text-muted uppercase">26 sep 2020</small>
-                    <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                    <p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    <div class="card-text text-muted d-flex">
-                    <i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-                    <i class="far fa-eye"></i><small>45</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                  <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                  <div class="card-body">
-                    <small class="text-muted uppercase">26 sep 2020</small>
-                    <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                    <p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    <div class="card-text text-muted d-flex">
-                    <i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-                    <i class="far fa-eye"></i><small>45</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
+           
           </div>
         </div>
       </section>
 
-      <!-- Subscribe Section -->
-      <section id="subscribe">
-        <div class="container d-flex">
-            <div class="subscribe-content">
-                    <h3>Subscribe to <span class = "yellow-text">daily updates</span></h3>
-                    <form action="#" class = "d-flex row">
-                        <div class = "form-group mr-0 col-9">
-                            <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
-                        </div>
-                        <a class = "nav-link col-3 btn text-white ml-0 m-top-neg  blue-border" href="#">Subscribe</a>
-                    </form>          
-             </div>
-        </div>
-      </section>
-
-      <!-- Pagination -->
-      <section id="pagination" class="container">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link prev" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item"><a class="page-link" href="#">6</a></li>
-          <li class="page-item"><a class="page-link next" href="#">Next</a></li>
-        </ul>
-      </nav>
-        </section>
     </div>
 
 @section('js')
