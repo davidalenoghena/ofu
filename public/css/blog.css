@@ -196,6 +196,20 @@ p{
     #heading{
         padding: 0 1rem;
     }
+    .heading-number:before{
+        margin-left: 75px;
+        width: 120px;
+    }
+    .heading-number:after{
+        width: 120px;
+        margin-right: 65px;
+    }
+    .page-item{
+        margin: 0 .25rem;
+    }
+    .page-link{
+        padding:.3rem .6rem;
+    }
     #title h1{
         font-size: 24px;
     }
