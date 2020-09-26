@@ -63,7 +63,7 @@ class HomeController extends Controller
         $blog3 = DB::table('blogs')->find(($blog_count - 2));
         $blog4 = DB::table('blogs')->find(($blog_count - 3));
         $blog5 = DB::table('blogs')->find(($blog_count - 4));
-        return view('pages.blog2',
+        return view('pages.blog',
         [
             'blogs' => $blogs,
             'blog1' => $blog1,

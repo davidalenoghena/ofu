@@ -333,13 +333,15 @@ li{
    
 }
 .subscribe-content input{
-    padding: .75rem 1rem;
+    padding: 1.3rem;
 }
 button > a.nav-link.subscribe{
     padding: .65rem 1rem;
 }
 .form-group input{
-    background-color: #f1f1f1;
+    border: 1px solid #3C64B1;
+    outline: none;
+    border-radius: 5px;
     color: #3c64b1;
 }
 
