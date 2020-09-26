@@ -1,11 +1,12 @@
 footer{
-    background-color: #f2f6fa;
+    font-size: 12.5px;
+    background-color: #d8dfe6;
     flex-shrink: 0;
 }
 
 
 #footer > .container{
-    padding: 3rem 0;
+    padding: 0.5rem 0;
 }
 
 
@@ -20,7 +21,7 @@ footer{
 #footer ul > li > i{
     color: #b0b8bc;
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.25rem;
 }
 
 
@@ -32,11 +33,11 @@ footer{
     color: #929ECC;
 }
 .footer-sect li{
-    padding: .75rem 0;
+    padding: .25rem 0;
     margin: 0 .5rem;
 }
 li>strong{
-    font-size: 17px;
+    font-size: 12.5px;
 }
 
 /* Login Section */
@@ -45,7 +46,7 @@ li>strong{
 }
 
 .copyright{
-    font-size: .95rem;
+    font-size: 12.5px;
 }
 
 .footer-flex{
