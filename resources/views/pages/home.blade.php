@@ -70,7 +70,7 @@
                     <h3>Scholarships</h3>
                     <p>
                         <a href="{{ route('opportunities.single', $op_first->id) }}">
-                            <strong >{{ $op_first->name }}</strong></a> is currently opened and will be expiring soon
+                            <strong >{{ $op_first->name }}</strong></a>"images/{!! $op_first->img !!}.png" is currently opened and will be expiring soon
                     </p> 
                     <button class="btn p-0">
                         <a class="nav-link transparent-btn" href="{{ route('opportunities') }}">View More</a>
