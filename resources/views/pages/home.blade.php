@@ -69,10 +69,11 @@
                 <div class="opportunities-content-body">
                     <h3>Scholarships</h3>
                     <p>
-                        <strong href="{{ route('opportunities.single', $op_first->id) }}">{{ $op_first->name }}</strong> " is currently opened and will be expiring soon
+                        <a href="{{ route('opportunities.single', $op_first->id) }}">
+                            <strong >{{ $op_first->name }}</strong></a> is currently opened and will be expiring soon
                     </p> 
                     <button class="btn p-0">
-                        <a class="nav-link transparent-btn" href="#">View More</a>
+                        <a class="nav-link transparent-btn" href="{{ route('opportunities') }}">View More</a>
                     </button>
                 </div>
                 <div class="opportunities-content-img-container mobile-left">
@@ -91,10 +92,10 @@
                 <div class="opportunities-content-body ml-5">
                     <h3>Internships</h3>
                     <p>
-                        <strong href="{{ route('internships.single', $in_first->id) }}">{{ $in_first->name }}</strong> is currently opened and will be closing soon
+                        <a href="{{ route('internships.single', $in_first->id) }}"><strong>{{ $in_first->name }}</strong></a> is currently opened and will be closing soon
                     </p>
                     <button class="btn p-0">
-                        <a class="nav-link transparent-btn" href="#">View More</a>
+                        <a class="nav-link transparent-btn" href="{{ route('internships') }}">View More</a>
                     </button>
                 </div>
             </div>
