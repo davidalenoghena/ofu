@@ -26,7 +26,30 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $blog_count = DB::table('blogs')->count();
+        $ran_blog = DB::table('blogs')
+                            ->inRandomOrder()
+                            ->first();
+
+        $blog1 = DB::table('blogs')->find(($blog_count));
+        $blog2 = DB::table('blogs')->find(($blog_count - 1));
+            
+        $op_first = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('id', 'desc')
+                            ->first();
+        $in_first = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('id', 'desc')
+                            ->first();
+        return view('pages.home',
+        [
+            'op_first' =>  $op_first,
+            'in_first' => $in_first,
+            'blog1' => $blog1,
+            'blog2' => $blog2,
+            'ran_blog' => $ran_blog
+        ]);
     }
        public function about_us()
     {

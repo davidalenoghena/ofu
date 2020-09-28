@@ -1,5 +1,5 @@
 @extends('layouts.home') @push('css')
-<title>Opportunites for Undergraduates - Home</title>
+<title>OFU - Home</title>
 @endpush @section('content')
 <!-- Hero Section -->
 <div class="content">
@@ -57,12 +57,11 @@
         <div class="container">
             <div class="opportunities-heading text-center">
                 <h2>
-                    Opportunities abound to
+                    Scholarship and Internship opportunities for
                     <span class="underline-span">undergraduates</span>
                 </h2>
                 <p class="grey-text mt-4">
-                    We help the world’s leading organizations follow their
-                    shipping
+                    Simple and Elegant
                 </p>
             </div>
 
@@ -70,17 +69,15 @@
                 <div class="opportunities-content-body">
                     <h3>Scholarships</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Dolorem blanditiis, neque distinctio eaque
-                        praesentium quasi?
-                    </p>
+                        <strong href="{{ route('opportunities.single', $op_first->id) }}">{{ $op_first->name }}</strong> " is currently opened and will be expiring soon
+                    </p> 
                     <button class="btn p-0">
                         <a class="nav-link transparent-btn" href="#">View More</a>
                     </button>
                 </div>
                 <div class="opportunities-content-img-container mobile-left">
                     <div class="opportunities-content-img">
-                        <img src='{{asset('images/student-2.png')}}' alt="student">
+                        <img src='{{ asset("images/{!! $op_first->img !!}.png") }}' alt="{{ $op_first->name }}">
                     </div>
                 </div>
             </div>
@@ -88,15 +85,13 @@
             <div class="opportunities-content pb-5 py-4">
                 <div class="opportunities-content-img-container ">
                     <div class="opportunities-content-img-2">
-                        <img src='{{asset('images/student-1.png')}}' alt="student">
+                        <img src='{{ asset("images/{!! $in_first->img !!}") }}' alt="{{ $in_first->name }}">
                     </div>
                 </div>
                 <div class="opportunities-content-body ml-5">
                     <h3>Internships</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Dolorem blanditiis, neque distinctio eaque
-                        praesentium quasi?
+                        <strong href="{{ route('internships.single', $in_first->id) }}">{{ $in_first->name }}</strong> is currently opened and will be closing soon
                     </p>
                     <button class="btn p-0">
                         <a class="nav-link transparent-btn" href="#">View More</a>
@@ -111,36 +106,34 @@
             <div class="blog-heading text-center">
                 <h2>Blogs and Updates</h2>
                 <p class="grey-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorem, ipsa eos deleniti mollitia ab asperiores?
+                    I don't know what we will write in all these places o.
                 </p>
             </div>
             <div class="blog-content   pt-4 row">
                 <div class="col-12 blog col-lg-4">
                     <div class="blog-img">
-                        <img src='{{asset('images/black-bg.png')}}' alt="background-img">
+                        <img src='{{ asset("images/{!! $blog1->img !!}") }}' alt="{{ $blog1->blog_title }}">
                     </div>
                     <h4 class="py-3">
-                        How to apply for international scholarships
+                        {{ $blog1->blog_title }}
                     </h4>
-                    <a href="#" class="small yellow-text">Learn more</a>
+                    <a href="{{ route('blog.single', $blog1->id) }}" class="small yellow-text">Learn more</a>
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src='{{asset('images/black-bg.png')}}' alt="background-img">
+                        <img src='{{ asset("images/{!! $blog2->img !!}") }}' alt="{{ $blog2->blog_title }}">
                     </div>
-                    <h4 class="py-3">How to apply for local scholarships</h4>
-                    <a href="#" class="small yellow-text">Learn more</a>
+                    <h4 class="py-3">{{ $blog2->blog_title }}</h4>
+                    <a href="{{ route('blog.single', $blog2->id) }}" class="small yellow-text">Learn more</a>
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src='{{asset('images/black-bg.png')}}' alt="background-img">
+                        <img src='{{ asset("images/{!! $ran_blog->img !!}") }}' alt="{{ $ran_blog->blog_title }}">
                     </div>
                     <h4 class="pt-3 pb-2">
-                        How to just sit and do nothing while hoping to comes to
-                        you
+                    {{ $ran_blog->blog_title }}
                     </h4>
-                    <a href="#" class="small yellow-text">Learn more</a>
+                    <a href="{{ route('blog.single', $ran_blog->id) }}" class="small yellow-text">Learn more</a>
                 </div>
             </div>
         </div>
