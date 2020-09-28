@@ -70,7 +70,7 @@
                     <h3>Scholarships</h3>
                     <p>
                         <a href="{{ route('opportunities.single', $op_first->id) }}">
-                            <strong >{{ $op_first->name }}</strong></a>"images/{!! $op_first->img !!}.png" is currently opened and will be expiring soon
+                            <strong >{{ $op_first->name }}</strong></a> is currently opened and will be expiring soon
                     </p> 
                     <button class="btn p-0">
                         <a class="nav-link transparent-btn" href="{{ route('opportunities') }}">View More</a>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="opportunities-content-img-container mobile-left">
                     <div class="opportunities-content-img">
-                        <img src='{{ asset("images/{!! $op_first->img !!}.png") }}' alt="{{ $op_first->name }}">
+                        <img src="/images/{{ $op_first->img }}.png" alt="{{ $op_first->name }}">
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
             <div class="opportunities-content pb-5 py-4">
                 <div class="opportunities-content-img-container ">
                     <div class="opportunities-content-img-2">
-                        <img src='{{ asset("images/{!! $in_first->img !!}") }}' alt="{{ $in_first->name }}">
+                        <img src="/images/{{ $in_first->img }}.png" alt="{{ $in_first->name }}">
                     </div>
                 </div>
                 <div class="opportunities-content-body ml-5">
@@ -113,7 +113,7 @@
             <div class="blog-content   pt-4 row">
                 <div class="col-12 blog col-lg-4">
                     <div class="blog-img">
-                        <img src='{{ asset("images/{!! $blog1->img !!}") }}' alt="{{ $blog1->blog_title }}">
+                        <img src="/images/{{ $blog1->img }}.png" alt="{{ $blog1->blog_title }}">
                     </div>
                     <h4 class="py-3">
                         {{ $blog1->blog_title }}
@@ -122,14 +122,14 @@
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src='{{ asset("images/{!! $blog2->img !!}") }}' alt="{{ $blog2->blog_title }}">
+                        <img src="/images/{{ $blog2->img }}.png" alt="{{ $blog2->blog_title }}">
                     </div>
                     <h4 class="py-3">{{ $blog2->blog_title }}</h4>
                     <a href="{{ route('blog.single', $blog2->id) }}" class="small yellow-text">Learn more</a>
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src='{{ asset("images/{!! $ran_blog->img !!}") }}' alt="{{ $ran_blog->blog_title }}">
+                        <img src="/images/{{ $ran_blog->img }}.png" alt="{{ $ran_blog->blog_title }}">
                     </div>
                     <h4 class="pt-3 pb-2">
                     {{ $ran_blog->blog_title }}
