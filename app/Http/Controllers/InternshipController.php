@@ -52,7 +52,7 @@ class InternshipController extends Controller
             'description' => 'required',
             'note' => 'required',
             'word' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+            'img' => 'required|image|mimes:jpeg,png,jpg'
         ]);
 
         $path = public_path().'/images/internship/';  

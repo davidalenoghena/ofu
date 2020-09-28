@@ -78,7 +78,8 @@
                 </div>
                 <div class="opportunities-content-img-container mobile-left">
                     <div class="opportunities-content-img">
-                        <img src="/images/{{ $op_first->img }}" alt="{{ $op_first->name }}">
+                        
+                        <img src="{{asset('images/opportunity/'.$op_first->img)}}" alt="{{ $op_first->name }}">
                     </div>
                 </div>
             </div>
@@ -86,7 +87,7 @@
             <div class="opportunities-content pb-5 py-4">
                 <div class="opportunities-content-img-container ">
                     <div class="opportunities-content-img-2">
-                        <img src="/images/{{ $in_first->img }}" alt="{{ $in_first->name }}">
+                        <img src="{{asset('images/internship/'.$in_first->img)}}">
                     </div>
                 </div>
                 <div class="opportunities-content-body ml-5">
@@ -113,7 +114,7 @@
             <div class="blog-content   pt-4 row">
                 <div class="col-12 blog col-lg-4">
                     <div class="blog-img">
-                        <img src="/images/{{ $blog1->img }}" alt="{{ $blog1->blog_title }}">
+                        <img src="{{asset('images/blog/'.$blog1->img)}}" alt="{{ $blog1->blog_title }}">
                     </div>
                     <h4 class="py-3">
                         {{ $blog1->blog_title }}
@@ -122,14 +123,14 @@
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src="/images/{{ $blog2->img }}" alt="{{ $blog2->blog_title }}">
+                        <img src="{{asset('images/blog/'.$blog2->img)}}" alt="{{ $blog2->blog_title }}">
                     </div>
                     <h4 class="py-3">{{ $blog2->blog_title }}</h4>
                     <a href="{{ route('blog.single', $blog2->id) }}" class="small yellow-text">Learn more</a>
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src="/images/{{ $ran_blog->img }}" alt="{{ $ran_blog->blog_title }}">
+                        <img src="{{asset('images/blog/'.$ran_blog->img)}}" alt="{{ $ran_blog->blog_title }}">
                     </div>
                     <h4 class="pt-3 pb-2">
                     {{ $ran_blog->blog_title }}

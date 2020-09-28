@@ -44,7 +44,7 @@ class BlogController extends Controller
             'blog_post' => 'required',
             'author' => 'required',
             'category' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+            'img' => 'required|image|mimes:jpeg,png,jpg'
         ]);
 
         $path = public_path().'/images/blog/';      
