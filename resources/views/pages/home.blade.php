@@ -22,25 +22,31 @@
                 </div>
                 <div class=" carousel-caption hero-content">
                     <div class="hero-content">
-                        <h1>
-                            Get access to
-                            <span class="underline-span">life changing opportunities</span>
-                        </h1>
-
-                        <p>
-                            Et has minim elitr intellegat. Mea aeterno eleifend
-                            antiopam ad, nam no suscipit quaerendum. At nam
-                            minimum ponderum. Est audiam animal molestiae te.
-                        </p>
-
-                        <div class="hero-btn">
-                            <li class="nav-item btn-blue">
-                                <a class="nav-link" href="#">Get Started</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link transparent-btn-3 " href="#">View More</a>
-                            </li>
-                        </div>
+        <div class="container ">
+            <div class="subscribe-content d-flex">
+                @if(session()->has('success'))
+                    <div class="alert alert-success" role="alert ">
+                        {{ session()->get('success') }}
+                    </div>
+                @endif
+                @if(session()->has('failure'))
+                    <div class="alert alert-danger" role="alert ">
+                        {{ session()->get('failure') }}
+                    </div>
+                @endif
+                <h3>
+                    Subscribe to our
+                    <span class="yellow-text">weekly updates </span>
+                </h3>
+                <form method="post" action="" class="d-flex">
+                    @csrf
+                    <div class="form-group">
+                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" size="35" />
+                    </div>
+                    <button type="submit" class="btn btn-blue">Submit</button>
+                </form>
+            </div>
+        </div>
                     </div>
                 </div>
             </div>
@@ -136,33 +142,6 @@
                     </h4>
                     <a href="#" class="small yellow-text">Learn more</a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="subscribe">
-        <div class="container ">
-            <div class="subscribe-content d-flex">
-                @if(session()->has('success'))
-                    <div class="alert alert-success" role="alert ">
-                        {{ session()->get('success') }}
-                    </div>
-                @endif
-                @if(session()->has('failure'))
-                    <div class="alert alert-danger" role="alert ">
-                        {{ session()->get('failure') }}
-                    </div>
-                @endif
-                <h3>
-                    Subscribe to our
-                    <span class="yellow-text">weekly updates</span>
-                </h3>
-                <form method="post" action="" class="d-flex">
-                    @csrf
-                    <div class="form-group">
-                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" />
-                    </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
-                </form>
             </div>
         </div>
     </section>

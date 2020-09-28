@@ -60,9 +60,14 @@ li{
 }
 
 .btn-blue{
+    color: #fff ;
     background-color: #3c64b1;
     border-radius: 8px;
-}  
+}
+
+.btn-blue:hover{
+    color: #e59500;
+} 
 
 /* Hero-Section */
 .carousel{
