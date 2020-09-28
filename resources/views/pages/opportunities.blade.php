@@ -19,15 +19,14 @@
     <div id="app" class = "container">
         <section class="heading">
             <!-- Heading -->
-            <h1>Scholarships</h1>
+            <h1>SCHOLARSHIPS</h1>
         </section>
         <section id="search" class = "my-5">
             <div class="filter select">
                 <select name="filter" id="filter">
                     <option selected disabled>Choose an option</option>
-                    <option value="1">Scholarships</option>
-                    <option value="2">Internships</option>
-                    <option value="3">Grants</option>
+                    <option value="1" href = "{{ route ('opportunities') }}">Scholarships</option>
+                    <option value="2" href = "{{ route ('internships') }}">Internships</option>
                 </select>
             </div>
 
@@ -48,275 +47,89 @@
                 <p>Eligibility</p>
                 <p>Status</p>
             </div>
-         
-            @foreach ($opportunities as $opportunity)
+            @foreach($op_ex as $opportunity)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#one" aria-expanded="false" aria-controls="five">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $opportunity->word }}" aria-expanded="false" aria-controls="{{ $opportunity->word }}">
                         <div class="table-main">
-                                <p><strong><a href = "#">{{ $opportunities->details }}</a></strong></p>
-                                <p>$7000</p>
-                                <p>All Levels</p>
+                                <p><strong>{{ $opportunity->name }}</strong></p>
+                                <p>&#8358;{{ $opportunity->worth }}</p>
+                                <p>{{ $opportunity->eligibility_slug }}</p>
                                 <p class = "text-danger">Expiring Soon</p>
                         </div>
                     </button>
                 </div>
-                <div id="one" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
                             <img src='{{asset('images/shell.png')}}' alt="shell-logo">
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
+                                <p>{{ $opportunity->detail }}</p>
+                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
                 </div> 
-            </div>
+            </div> 
+            @endforeach  
+            @foreach($op_av as $opportunity)
+            <div class = " table-bg">  
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $opportunity->word }}" aria-expanded="false" aria-controls="{{ $opportunity->word }}">
+                        <div class="table-main">
+                                <p><strong>{{ $opportunity->name }}</strong></p>
+                                <p>&#8358;{{ $opportunity->worth }}</p>
+                                <p>{{ $opportunity->eligibility_slug }}</p>
+                                <p class = "yellow-text">Available</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class = "table-main-2">
+                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <div>
+                                <p>{{ $opportunity->detail }}</p>
+                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
             @endforeach
+            @foreach($op_not_av as $opportunity)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#two" aria-expanded="false" aria-controls="five">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $opportunity->word }}" aria-expanded="false" aria-controls="{{ $opportunity->word }}">
                         <div class="table-main">
-                                <p><strong><a href = "#">AGIP JV Scholarship</a></strong></p>
-                                <p>$20000</p>
-                                <p>All Levels</p>
+                                <p><strong>{{ $opportunity->name }}</strong></p>
+                                <p>&#8358;{{ $opportunity->worth }}</p>
+                                <p>{{ $opportunity->eligibility_slug }}</p>
                                 <p class = "text-muted">Not Available</p>
                         </div>
                     </button>
                 </div>
-                <div id="two" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
                             <img src='{{asset('images/shell.png')}}' alt="shell-logo">
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
+                                <p>{{ $opportunity->detail }}</p>
+                                <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
                 </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#three" aria-expanded="false" aria-controls="five">
-                        <div class="table-main">
-                                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                                <p>$20000</p>
-                                <p>All Levels</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="three" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#four" aria-expanded="false" aria-controls="five">
-                        <div class="table-main">
-                                <p><strong><a href = "#">Delta State Bursary</a></strong></p>
-                                <p>$500</p>
-                                <p>Delta State Students</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="four" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#five" aria-expanded="false" aria-controls="five">
-                        <div class="table-main">
-                                <p><strong><a href = "#">NLNG Scholarship</a></strong></p>
-                                <p>$5000</p>
-                                <p>100 Level</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="five" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#six" aria-expanded="false" aria-controls="six">
-                        <div class="table-main">
-                                <p><strong><a href = "#">Chevron Scholarship</a></strong></p>
-                                <p>$10000</p>
-                                <p>All Levels</p>
-                                <p class = "text-danger">Expiring Soon</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="six" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#seven" aria-expanded="false" aria-controls="seven">
-                        <div class="table-main">
-                                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                                <p>$20000</p>
-                                <p>All Levels</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="seven" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#eight" aria-expanded="false" aria-controls="eight">
-                        <div class="table-main">
-                                <p><strong><a href = "#">MTN Scholarship</a></strong></p>
-                                <p>$20000</p>
-                                <p>200 Level</p>
-                                <p class = "text-muted">Not Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="eight" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#nine" aria-expanded="false" aria-controls="nine">
-                        <div class="table-main">
-                                <p><strong><a href = "#">Shell JV Scholarship</a></strong></p>
-                                <p>$20000</p>
-                                <p>All Levels</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="nine" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#ten" aria-expanded="false" aria-controls="ten">
-                        <div class="table-main">
-                                <p><strong><a href = "#">Jim Ovia Scholarship</a></strong></p>
-                                <p>$2000</p>
-                                <p>100 Level</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="ten" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                <a class="btn-link" href="#">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            
+            </div> 
+            @endforeach       
         </section>
 
-        
-
-        <section >
+        <section>
         <nav aria-label="Page navigation example" class="pagination-body">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
+            {{ $op_not_av->links() }}
         </nav>
         </section>
 
-        
     </div>
     <section id="subscribe">
         <div class="container d-flex">
@@ -327,8 +140,8 @@
                     
                 </div>
                 <div>
-                <form action="#" class = "d-flex row">
-                    <div class = "form-group col-9">
+                <form action="#" class = "d-flex mb-3 row">
+                    <div class = "form-group mr-0 col-9">
                         <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
                     </div>
 
@@ -343,8 +156,6 @@
 @endsection
 
 @section('js')
-</section>
-
     <!-- Bootstrap JS, PopperJS, jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     

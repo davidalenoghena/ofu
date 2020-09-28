@@ -3,51 +3,30 @@
 <footer>
     <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <section id="footer">
-            <div class="container d-flex footer-sect">
-                <div>
-                    <div>
-                        <div class="navbar-brand">
-                        <a href="{{ route('home') }}"><span><strong><u>OFU</u><span class = "nav-span">||||</span></strong></span></a>
-                        </div>
-                        <p class="nav-span">Never Miss An Opportunity</p>
+            <div class="container  footer-sect">
+                <div class = "col-md-4 copyright ">
+                <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script> OFU</p>
+                </div>
+
+                <div class="footer-flex ">
+                    <div class = "">
+                        <ul class = "d-flex">
+                            <li><a href = "{{ route('home') }}">Home</a></li>
+                            <li><a href = "{{ route('opportunities') }}">Opportunities</a></li>
+                            <li><a href = "{{ route('blog') }}">Blog</a></li>
+                            <li><a href = "{{ route('about') }}">About</a></li>
+                            <li><a href = "#">Contact</a></li>
+                        </ul>
                     </div>
-                    <div>
-                    <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script></p>
-                    <p> All Rights Reserved.</p>
-                    </div>  
-                </div>
 
-                <div class="row ">
-                <div class = "col-md-4">
-                    <ul>
-                        <li style="color: #e59500;"><strong>HELP AND SUPPORT</strong></li>
-                        <li>FAQ</li>
-                        <li>LIVE SUPPORT</li>
-                        <li>TERMS OF SERVICE</li>
-                        <li>PRIVACY POLICY</li>
-                    </ul>
-                </div>
-
-                <div class = "col-md-4">
-                    <ul>
-                        <li style="color: #e59500;"><strong>FEATURES</strong></li>
-                        <li><a href = "#">SCHOLARSHIPS</a></li>
-                        <li><a href = "#">INTERNSHIPS</a></li>
-                        <li><a href = "#">GRANTS</a></li>
-                    </ul>
-                </div>
-
-                <div class = "col-md-4">
-                    <ul>
-                        <li style="color: #e59500;"><strong>COMPANY</strong></li>
-                        <li><a href = "#">ABOUT</a></li>
-                        <li><a href = "#">CONTACT</a></li>
-                        <li><a href = "#">CAREERS</a></li>
-                        <li style="color: #e59500;"><strong>CONTACT US</strong></li>
-                        <li>info@opportunitiesforundergraduates.com</li>
-                        <li>+234 (0)810-798-6162</li>
-                    </ul>
-                </div>
+                    <div class = " links ">
+                        <ul class = "d-flex">
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google-plus"></i></li>
+                            <li><i class="fa fa-linkedin"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

@@ -18,7 +18,7 @@ body{
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    color: white;
+
 }
 
 .content{
@@ -31,156 +31,16 @@ h3,
 h4,
 h5{
     font-family: 'Mulish', sans-serif;
+    
+}
+
+h2{
+    color: #373F41;
 }
 
 li{
     list-style-type: none;
 }
-/* #ofu-navbar{
-    min-height: 8vh;
-}
-.navbar-dark .navbar-nav .nav-link,.nav-item > a.nav-link{
-    color: #ffffff;
-    font-size: 14px;
-}
-
-.dropdown-menu{
-    background-color: #151b25;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; 
-    /* // remove the gap so it doesn't close */
- /* }
- .dropdown-menu li{
-        margin: 0;
-        margin-bottom: 1em;
-        padding: .75rem;
-        position: relative;    
- }
- .dropdown-item:visited{
-     background-color: #151b25;
- }
- .dropdown-menu ul{
-     padding-left: .5rem;
- }
- .dropdown-li{
-     padding: .5rem;
-     font-size: 14px;
-     
- }
- .dropdown-li > .dropdown-item{
-     color: #fff;
- }
- .dropdown-menu ul > li:after {
-    content: '';
-    height: .4em;
-    width: .4em;
-    background: #e59500;
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    top: 1em;
-    left: 1em;
-}
-
-.dropdown-item:hover{
-    background-color: transparent;
-}
-  
-a{
-    color: #ffffff ;
-}
-a:hover{
-    color: #e59500 !important;;
-    text-decoration: none;
-}
-
-.ml{
-    margin-left: 3rem;
-}
-.mr{
-    margin-right: 2rem;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    background: #151b25;
-    transition: transparent 1s ease 0s;
-    box-shadow: 0 0 4px grey;
-}
-a.text-white>span>strong:hover{
-    color: #fff;
-}
-.solid{
-  transition: blue 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    outline: 0;
-}
-
-.navbar-toggler{
-    border: 0 ;
-}
-
-.navbanner{
-    display: flex;
-    flex-direction: row;
-}
-
-.one,.two,.three{
-    width: 25px;
-    height: 3px;
-    margin: 3px 0;
-    background-color: #fff;
-    align-self: flex-end;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    position: relative;
-    left: 0;
-    opacity: 1;
-    display: block;
-    transition: all 0.4s ease;
-}
-.toggle .one{
-    transform: rotate(-45deg) translate(-4px,4px);
-}
-.toggle .two{
-    opacity: 0;
-}
-.toggle .three{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-
-
-.collapse{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar-brand span{
-    font-size: 24px;
-}
-
-.nav-span{
-    color: #e59500;
-}
-
-.navbar-nav li{
-    padding: 0 1rem;
-}*/
-
 .btn-reg{
     background-color: #e59500;
     border-radius: 8px;
@@ -189,6 +49,10 @@ a.text-white>span>strong:hover{
 
 .btn-reg:hover{
     background-color: #171f2d;
+}
+
+.nav-link{
+    padding: .75rem 1.125rem;
 }
 
 .btn-blue a{
@@ -206,7 +70,7 @@ a.text-white>span>strong:hover{
 }
 
 .carousel img{
-    filter: brightness(50%);
+    filter: brightness(60%);
 }
 
 .carousel-indicators li{
@@ -261,20 +125,33 @@ a.text-white>span>strong:hover{
     margin: 0 1rem;
 }
 
-.transparent-btn{
+.transparent-btn-3{
     border-radius: 8px;
     border: 1px solid #fff;
+    color: #fff;
+}
+
+.transparent-btn-2{
+    border-radius: 8px;
+    border: 1px solid #3c64b1;
+    color: #3c64b1;
+}
+
+.transparent-btn{
+    border-radius: 8px;
+    border: 1px solid #000;
+    color: #000;
 }
 
 /* About Section */
 
 #about, #blog{
-    background-color: #171f2d;
+    background-color: #f3f6fa;
 
 }
 
 #about > .container{
-    padding: 6rem 0 0 0  ;
+    padding: 7rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +162,7 @@ a.text-white>span>strong:hover{
     height: auto;
     margin: 0 3rem;
     padding: 7rem;
-    border: 1px solid white;
+    border: 1px solid #373F41;
     align-items: center;
     display: grid;
     place-items: center;
@@ -301,23 +178,33 @@ a.text-white>span>strong:hover{
     width: 45%;
 }
 
+.about-content h2{
+    color: #373F41;;
+}
+
 .grey-text{
     color: #737b7d;
 }
 
-.m-top{
-    margin-top: 5rem;
+.stats{
+    background-color: #3c64b1;
+    padding: 3rem 0;
+    color: #fff;
+}
+.checked{
+    color: #e59500;
 }
 
 
 /* Opportunities Section */
 
 #opportunities{
-    background: #151b25;
+    background: #fff;
+    color: #000;
 }
 
 #opportunities > .container{
-    padding: 5rem 0 0 0 ;
+    padding: 5rem 0 ;
 }
 
 .opportunities-content{
@@ -350,7 +237,7 @@ a.text-white>span>strong:hover{
     border-radius: 8px;
     width: 23rem;
     height: 23rem;
-    border: 1px solid #ffffff;
+    border: 1px solid #000;
 
 }
 
@@ -380,35 +267,43 @@ a.text-white>span>strong:hover{
 
 /* Testimonial Section */
 #testimonial{
-    background-color: #151b25;
+    background-color: #f3f6fa;
     height: 60vh;
 }
 .carousel-cell {
     width: 50%;
     height: 19rem;
-    margin-right: 10px;
-    background: #293852;
+    margin: 0 .65rem;
+    background: #fff;
     border-radius: 5px;
+    padding: 2rem ;
     counter-increment: gallery-cell;
-  }
+}
+.grey{
+    color: #b5b5b5;
+}
+.profile{
+    margin-top: 1rem;
+    align-items: center;
+}
 .mtop{
     margin-top: 4rem;
 }
   /* cell number */
-  .carousel-cell:before {
+  /* .carousel-cell:before {
     display: block;
     text-align: center;
     content: counter(gallery-cell);
     line-height: 200px;
     font-size: 80px;
     color: white;
-  }
+  } */
   
 
 
 /* Subscribe Section */
 #subscribe{
-    background-color: #171f2d;
+    background-color: #f3f6fa;
     padding: 5rem 0;
 }
 #subscribe > .container{
@@ -418,11 +313,36 @@ a.text-white>span>strong:hover{
     margin-top: 3rem;
     align-self: center;
 }
-.subscribe-content,.subscribe{
+.subscribe-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-content h3{
     width: 50%;
 }
-.m-top-neg{
-    margin-top: -1rem;
+.form-group{
+    margin-bottom: 0;
+    margin-right: .5rem;
+}
+.subscribe-content form{
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.subscribe-content input{
+    padding: 1.3rem;
+}
+button > a.nav-link.subscribe{
+    padding: .65rem 1rem;
+}
+.form-group input{
+    border: 1px solid #3C64B1;
+    outline: none;
+    border-radius: 5px;
+    color: #3c64b1;
 }
 
 
@@ -440,8 +360,9 @@ a.text-white>span>strong:hover{
     flex-direction: column;
     position: absolute;
     top: 8vh;
-    background-color: #151b25;
+    background-color: #f3f6fa;
     right: 0;
+    color: #3c64b1;
     width: 50%;
     height: 14vh;
     text-align: center;
@@ -487,7 +408,7 @@ a.text-white>span>strong:hover{
     width: 90%;
     margin-left: 0 !important;
 }
-.about-video,.about-content, .subscribe, .subscribe-content{
+.about-video,.about-content, .subscribe{
     width: 90%;
 }
 .about-video{
@@ -500,7 +421,8 @@ a.text-white>span>strong:hover{
     flex-direction: column-reverse;
 }
 .footer-sect ul, .navbar ul{
-    padding-left: 0;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 .collapse{
     align-items: flex-start;
@@ -586,12 +508,39 @@ width: 233px;
     body{
         overflow-x: hidden;
     }
+    #subscribe{
+        padding:3rem 0 ;
+    }
+    .stats > .container > .px-5{
+        margin: 1.5rem 0;
+    }
+    .subscribe-content{
+        flex-direction: column;
+    }
+    .subscribe-content h3{
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    #testimonial .carousel{
+        height: 400px;
+    }
+    div.flickity-viewport{
+        height: 390px !important;
+    }
+    .carousel-cell{
+        width: 90%;
+        height: auto;
+    }
+    .subscribe-content h3,.subscribe-content form{
+        width: 100%;
+    }
     .nav-links{
         position: absolute;
         top: 22vh;
         right: 0;
         height: 80vh;
-        background-color: #151b25;
+        color: #3c64b1;
+        background-color: #f3f6fa;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

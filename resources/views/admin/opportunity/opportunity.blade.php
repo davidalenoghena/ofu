@@ -22,7 +22,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Blog Posts</strong>
+                            <strong class="card-title">Opportunity</strong>
                         </div>
                         <div class="card-body">
                             @if(Session::has('success'))
@@ -31,13 +31,14 @@
                             </div>
                             @endif
 
-                            @if($blogs->count() > 0)
+                            @if($opportunity->count() > 0)
                             <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Blog Post</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Eligibility</th>
                                         <th scope="col">Created</th>
                                         <th></th>
                                         <th scope="col">Actions</th>
@@ -48,21 +49,23 @@
                                     @php
                                      $count = 1;
                                     @endphp
-                                    @foreach($blogs as $blog_item)
+                                    @foreach($opportunity as $row)
                                     <tr>
                                         <th scope="row">{{ $count++ }}</th>
-                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_title, 24, $end='...') }}</td>
-                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_post, 34, $end='...') }}</td>
-                                        <td>{{ $blog_item->created_at }}</td>
-                                        <td><a href="{{ route('show.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Read</a></td>
-                                        <td><a href="{{ route('edit.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Edit</a></td>
-                                        <td><a href="{{ route('disable.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-danger">Unpublish</a></td>
+                                        <td>{{ \Illuminate\Support\Str::limit($row->name, 24, $end='...') }}</td>
+                                        <td>{{ $row->status }}</td>
+                                        <td>{!! $row->eligibility !!}</td>
+                                        <td>{{ $row->created_at }}</td>
+                                        <td><a href="{{ route('show.opportunity', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a></td>
+                                        <td><a href="{{ route('edit.opportunity', ['id' => $row->id]) }}" class="btn btn-link text-info">Edit</a></td>
+                                        <td><a href="/admin/opportunity/delete/{{ $row->id }}"  onclick="return confirm('Are you sure?')" class="btn btn-link text-danger">Delete</a></td>
+                                        
                                     </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                             @else
-                                <h6 class="text-center text-danger">0 BLog in this category</h6>
+                                <h6 class="text-center text-danger">0 Opprotunity in this category</h6>
                             @endif
                         </div>
                     </div>

@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\blog;
+use App\Opportunity;
+use App\Internship;
+use App\Mail\SendMailable;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -28,6 +32,19 @@ class HomeController extends Controller
     {
         return view('pages.about_us');
     }
+    public function mail(Request $request)
+    {
+        $data = request()->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone_number' => '',
+            'message' => 'required'
+        ]);
+
+        $admin_mail = 'ofuapp@gmail.com';
+        \Mail::to($admin_mail)->send(new SendMailable($data));
+        return redirect(route('contact'))->with('message', 'Thank You for your message. We will be in touch.');
+    }
     public function contact_us()
     {
         return view('pages.contact_us');
@@ -46,7 +63,7 @@ class HomeController extends Controller
         $blog3 = DB::table('blogs')->find(($blog_count - 2));
         $blog4 = DB::table('blogs')->find(($blog_count - 3));
         $blog5 = DB::table('blogs')->find(($blog_count - 4));
-        return view('pages.blog2',
+        return view('pages.blog',
         [
             'blogs' => $blogs,
             'blog1' => $blog1,
@@ -88,30 +105,128 @@ class HomeController extends Controller
     }
     public function opportunities()
     {
-        // $opportunities_data = blog::find($opportunities);
-        $opportunites_count = DB::table('opportunities')->count();
-        $ran_opportunities = DB::table('opportunities')
-                            ->inRandomOrder()
-                            ->paginate(6);
-        $opportunities = DB::table('opportunities')
-                            ->paginate(6);
-                            // ->get();
-        $opportunities1 = DB::table('opportunities')->find(($opportunites_count));
-        $opportunities2 = DB::table('opportunities')->find(($opportunites_count - 1));
-        $opportunities3 = DB::table('opportunities')->find(($opportunites_count - 2));
-        $opportunities4 = DB::table('opportunities')->find(($opportunites_count - 3));
-        $opportunities5 = DB::table('opportunities')->find(($opportunites_count - 4));
+        $count = DB::table('opportunities')->count();
+        $op_ex = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $op_av = DB::table('opportunities')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $op_not_av = DB::table('opportunities')
+                            ->where('status_slug', 2)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(10);
         return view('pages.opportunities',
         [
-            // 'opportunites_data' => $opportunites_data,
-            'opportunities' =>  $opportunities,
-            'opportunities1' => $opportunities1,
-            'opportunities2' => $opportunities2,
-            'opportunities3' => $opportunities3,
-            'opportunities4' => $opportunities4,
-            'opportunities5' => $opportunities5,
-            'ran_blogs' => $ran_opportunities 
-        ]
-    );
+            'op_ex' =>  $op_ex,
+            'op_av' => $op_av,
+            'op_not_av' => $op_not_av
+        ]);
+    }
+    public function singleopportunity($opportunity){
+        $op_data = Opportunity::find($opportunity);
+        $count = DB::table('opportunities')->count();
+
+        $previous = Opportunity::where('id', '<', $opportunity)->max('id');
+        $previous_data = Opportunity::find($previous);
+        
+        $next = Opportunity::where('id', '>', $opportunity)->min('id');
+        $next_data = Opportunity::find($next);
+
+        $all_data = DB::table('opportunities')->get();
+
+        $last_data = DB::table('opportunities')->find($count+1);
+
+        $op_ex_first = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $op_av_first = DB::table('opportunities')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $op_ex = DB::table('opportunities')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        $op_av = DB::table('opportunities')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        return view('pages.single_opportunity',
+        [
+            'all_data' => $all_data,
+            'last_data' => $last_data,
+            'previous_data' => $previous_data,
+            'next_data' => $next_data,
+            'op_data' =>  $op_data,
+            'op_ex' =>  $op_ex,
+            'op_av' => $op_av
+        ]);
+    }
+    public function internships()
+    {
+        $count = DB::table('internships')->count();
+        $in_cl = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $in_av = DB::table('internships')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(($count+10));
+        $in_not_av = DB::table('internships')
+                            ->where('status_slug', 2)
+                            ->orderBy('updated_at', 'desc')
+                            ->paginate(10);
+        return view('pages.internships',
+        [
+            'in_cl' =>  $in_cl,
+            'in_av' => $in_av,
+            'in_not_av' => $in_not_av
+        ]);
+    }
+    public function singleinternship($internship){
+        $in_data = Internship::find($internship);
+        $count = DB::table('internships')->count();
+
+        $previous = Internship::where('id', '<', $internship)->max('id');
+        $previous_data = Internship::find($previous);
+        
+        $next = Internship::where('id', '>', $internship)->min('id');
+        $next_data = Internship::find($next);
+
+        $all_data = DB::table('internships')->get();
+
+        $last_data = DB::table('internships')->find($count+1);
+
+        $in_cl_first = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $in_av_first = DB::table('internships')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->first();
+        $in_cl = DB::table('internships')
+                            ->where('status_slug', 0)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        $in_av = DB::table('internships')
+                            ->where('status_slug', 1)
+                            ->orderBy('updated_at', 'desc')
+                            ->get();
+        return view('pages.single_internship',
+        [
+            'all_data' => $all_data,
+            'last_data' => $last_data,
+            'previous_data' => $previous_data,
+            'next_data' => $next_data,
+            'in_data' =>  $in_data,
+            'in_cl' =>  $in_cl,
+            'in_av' => $in_av
+        ]);
     }
 }
