@@ -139,23 +139,29 @@
             </div>
         </div>
     </section>
-
     <section id="subscribe">
         <div class="container ">
             <div class="subscribe-content d-flex">
+                @if(session()->has('success'))
+                    <div class="alert alert-success" role="alert ">
+                        {{ session()->get('success') }}
+                    </div>
+                @endif
+                @if(session()->has('failure'))
+                    <div class="alert alert-danger" role="alert ">
+                        {{ session()->get('failure') }}
+                    </div>
+                @endif
                 <h3>
                     Subscribe to our
-                    <span class="yellow-text">daily updates</span>
+                    <span class="yellow-text">weekly updates</span>
                 </h3>
-                <form action="#" class="d-flex ">
+                <form method="post" action="{{ route('newsletter') }}" class="d-flex">
+                    @csrf
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email" />
+                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" />
                     </div>
-
-                    <button class="p-0 btn">
-                        <a class="nav-link ml-0 subscribe text-white btn-blue" href="#">Subscribe</a>
-                    </button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </form>
             </div>
         </div>

@@ -163,7 +163,7 @@ class OpportunityController extends Controller
         $opportunity->word = $request->word;
         $opportunity->save();
 
-        return redirect('/admin/opportunities')->with('success', 'Opportunity Updated successfully'); 
+        return redirect('/admin/opportunities')->with('success', 'Opportunity updated successfully'); 
     }
 
     /**
@@ -177,6 +177,6 @@ class OpportunityController extends Controller
         opportunity::where('id', $id)->delete();   
 
 
-     return redirect('/admin/opportunities')->with('success', 'Opportunity Deleted successfully');
+     return redirect('/admin/opportunities')->with('success', 'Opportunity deleted successfully');
     }
 }
