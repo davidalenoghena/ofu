@@ -156,7 +156,7 @@
                     Subscribe to our
                     <span class="yellow-text">weekly updates</span>
                 </h3>
-                <form method="post" action="{{ route('newsletter') }}" class="d-flex">
+                <form method="post" action="" class="d-flex">
                     @csrf
                     <div class="form-group">
                         <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" />
