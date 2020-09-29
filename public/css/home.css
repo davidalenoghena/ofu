@@ -369,7 +369,7 @@ button > a.nav-link.subscribe{
     right: 0;
     color: #3c64b1;
     width: 50%;
-    height: 14vh;
+    height: 8.5rem;
     text-align: center;
     z-index: 2;
     border-bottom: 1px solid rgb(118, 118, 118);
@@ -442,7 +442,10 @@ button > a.nav-link.subscribe{
     height: 75vh;
 }
 .hero-content{
-    top: 8%;
+    top: 14%;
+    left: 0%;
+    width: 100%;
+    place-items: flex-start;
 }
 .hero-content h1, .hero-content p{
     width: 100%;
@@ -515,6 +518,9 @@ width: 233px;
     }
     #subscribe{
         padding:3rem 0 ;
+    }
+    .opportunities-heading h2{
+        font-size: 1.4rem;
     }
     .stats > .container > .px-5{
         margin: 1.5rem 0;
