@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
 footer{
+    font-family: 'Epilogue', sans-serif;
     font-size: 12.5px;
     background-color: #d8dfe6;
     flex-shrink: 0;
@@ -30,7 +33,7 @@ footer{
 }
 
 #footer ul > li > a{
-    color: #929ECC;
+    color: #3c64b1;
 }
 .footer-sect li{
     padding: .25rem 0;
