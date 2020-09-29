@@ -37,11 +37,12 @@
                 <h3>
                     Subscribe to our
                     <span class="yellow-text">weekly updates </span>
-                </h3>
+                </h3><br>
+                
                 <form method="post" action="" class="d-flex">
                     @csrf
                     <div class="form-group">
-                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" size="35" />
+                       <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" size="35" />
                     </div>
                     <button type="submit" class="btn btn-blue">Submit</button>
                 </form>

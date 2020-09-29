@@ -130,6 +130,15 @@ li{
     margin: 0 1rem;
 }
 
+.hero-content > .container > .subscribe-content{
+    flex-direction: column;
+}
+
+.hero-content > .container > .subscribe-content h3, 
+.hero-content > .container > .subscribe-content form{
+    width: 100%;
+}
+
 .transparent-btn-3{
     border-radius: 8px;
     border: 1px solid #fff;
