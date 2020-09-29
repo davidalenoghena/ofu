@@ -31,7 +31,7 @@
                     <br>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Title</label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="blog_title" name="blog_title" placeholder="Blog Title" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="blog_title" name="blog_title" placeholder="Blog Title" class="form-control" value="{{ old('blog_title') }} " required></div>
                     </div>
     
                     <div class="row form-group">
@@ -42,7 +42,7 @@
 
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Author</label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="author" name="author" placeholder="Blog Author" class="form-control" required></div>
+                            <div class="col-12 col-md-9"><input type="text" id="author" name="author" placeholder="Blog Author" value="{{ old('author') }}" class="form-control" required></div>
                     </div>
 
                     <div class="row form-group">

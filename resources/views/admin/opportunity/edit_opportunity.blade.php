@@ -59,7 +59,7 @@
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Details</label></div>
-                            <div class="col-12 col-md-9"><textarea name="detail_1" id="elm1" rows="5" class="form-control">{{ $opportunity->detail_1 }}</textarea required></div>
+                            <div class="col-12 col-md-9"><textarea name="detail" id="elm1" rows="5" class="form-control">{{ $opportunity->detail }}</textarea required></div>
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">About</label></div>

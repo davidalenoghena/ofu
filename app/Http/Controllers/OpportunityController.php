@@ -44,8 +44,7 @@ class OpportunityController extends Controller
             'worth' => 'required',
             'eligibility_slug' => 'required',
             'status_slug' => 'required',
-            'detail_1' => 'required',
-            'detail_2' => 'required',
+            'detail' => 'required',
             'about' => 'required',
             'status' => 'required',
             'eligibility' => 'required',
@@ -53,7 +52,7 @@ class OpportunityController extends Controller
             'requirements' => 'required',
             'note' => 'required',
             'word' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+            'img' => 'required|image|mimes:jpeg,png,jpg'
         ]);
 
         $path = public_path().'/images/opportunity/';      
@@ -69,8 +68,7 @@ class OpportunityController extends Controller
         $opportunity->worth = $request->worth;
         $opportunity->eligibility_slug = $request->eligibility_slug;
         $opportunity->status_slug = $request->status_slug;
-        $opportunity->detail_1 = $request->detail_1;
-        $opportunity->detail_2 = $request->detail_2;  
+        $opportunity->detail = $request->detail;
         $opportunity->about = $request->about;
         $opportunity->status = $request->status;
         $opportunity->eligibility = $request->eligibility;
@@ -126,8 +124,7 @@ class OpportunityController extends Controller
             'worth' => 'required',
             'eligibility_slug' => 'required',
             'status_slug' => 'required',
-            'detail_1' => 'required',
-            'detail_2' => 'required',
+            'detail' => 'required',
             'about' => 'required',
             'status' => 'required',
             'eligibility' => 'required',
@@ -152,8 +149,7 @@ class OpportunityController extends Controller
         $opportunity->worth = $request->worth;
         $opportunity->eligibility_slug = $request->eligibility_slug;
         $opportunity->status_slug = $request->status_slug;
-        $opportunity->detail_1 = $request->detail_1;
-        $opportunity->detail_2 = $request->detail_2;  
+        $opportunity->detail = $request->detail;
         $opportunity->about = $request->about;
         $opportunity->status = $request->status;
         $opportunity->eligibility = $request->eligibility;
