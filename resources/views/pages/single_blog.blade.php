@@ -43,155 +43,168 @@
 	  </section>
 	  
 
-	  <section id="content" class = "container">
-		  <p class="blog-content">
-			Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
-			“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
-			Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
-			half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
-			leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
-			I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
-			an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
-			the world) can be your workplace:
-		  </p>
 
-		  <p class="blog-content">
-			Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
-			“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
-			Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
-			half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
-			leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
-			I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
-			an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
-			the world) can be your workplace:
-		  </p>
-
-		  <p class="blog-content">
-			Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
-			“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
-			Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
-			half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
-			leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
-			I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
-			an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
-			the world) can be your workplace:
-		  </p>
-
-		  <div class= "heading-number text-center">
-			  <span>1</span>
-		  </div>
-			<h3 class="text-center">Get All Dramatic</h3>
+	<section class = "relative">
+		<section id="icons">
 			<div>
-				<p class="blog-content">
-					Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
-					It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
-				</p>
+				<i class="fas fa-thumbs-up"><small class="mt-2"><br>286</small></i>
+				<i class="fa fa-twitter"></i></li>
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-google-plus"></i>
+				<i class="fa fa-linkedin"></i>
+				<i class="far fa-comments"></i>
 			</div>
-			<div class="my-4">
-				<img src="{{ asset('blog_assets/img/hero-bg.jpg') }}" class="image filter" alt="blog-illustration">
+		</section>
+
+		<section id="content" class = "container">
+			<p class="blog-content">
+				Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
+				“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
+				Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
+				half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
+				leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
+				I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
+				an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
+				the world) can be your workplace:
+			</p>
+
+			<p class="blog-content">
+				Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
+				“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
+				Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
+				half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
+				leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
+				I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
+				an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
+				the world) can be your workplace:
+			</p>
+
+			<p class="blog-content">
+				Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
+				“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
+				Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
+				half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
+				leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
+				I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
+				an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
+				the world) can be your workplace:
+			</p>
+
+			<div class= "heading-number text-center">
+				<span>1</span>
 			</div>
-
-
-			<div class= "heading-number mt-5 text-center">
-			  <span>2</span>
-		  	</div>
-			<h3 class="text-center">Get All Dramatic</h3>
-			<div>
-				<p class="blog-content">
-					Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
-					It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
-				</p>
-			</div>
-
-			<div class = "space-evenly">
+				<h3 class="text-center">Get All Dramatic</h3>
 				<div>
-					<strong>Rate my article:</strong><br>
-					<p>How to land a job in your dream location</p>
+					<p class="blog-content">
+						Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
+						It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
+					</p>
 				</div>
-				<div class="text-muted">
-					<p class="mb-0">Average: 4.63 (88 votes)</p>
+				<div class="my-4 flex-center">
+					<img src="{{ asset('blog_assets/img/hero-bg.jpg') }}" class="image filter" alt="blog-illustration">
 				</div>
-				<div class="d-flex">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star-half-alt"></i>
+
+
+				<div class= "heading-number mt-5 text-center">
+				<span>2</span>
+				</div>
+				<h3 class="text-center">Get All Dramatic</h3>
+				<div>
+					<p class="blog-content">
+						Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
+						It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
+					</p>
+				</div>
+
+				<div class = "space-evenly">
+					<div>
+						<strong>Rate my article:</strong><br>
+						<p>How to land a job in your dream location</p>
+					</div>
+					<div class="text-muted">
+						<p class="mb-0">Average: 4.63 (88 votes)</p>
+					</div>
+					<div class="d-flex">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+					</div>
+				</div>
+				
+		</section>
+
+		<!-- Featured Blogs -->
+		<section id="featured">
+			<div class="container profile d-flex ">
+				<div>
+					<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 small-image" alt="grey-illustration">
+				</div>
+				<div>
+					<h3>David Alenoghena</h3>
+					<p>Cursus suscipit egestas tellus luctus tincidunt lectus. Curabitur dui quam bibendum nulla. Felis elit, magna dictumst et mauris tellus aliquam. 
+					Sit et pellentesque vestibulum volutpat, aenean sollicitudin. Nec hendrerit eget sapien adipiscing.
+					</p>
+					<a href="#">
+						<img src="{{ asset('blog_assets/img/social.svg') }}" class="image linkedin small-image" alt="social-illustration">
+					</a>
+
 				</div>
 			</div>
-			
-	  </section>
+		</section>
+	</section>
 
-      <!-- Featured Blogs -->
-      <section id="featured">
-        <div class="container profile d-flex ">
-            <div>
-				<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 small-image" alt="grey-illustration">
+	<!-- Latest Blogs -->
+	<section id="latest" class= "container">
+			<div class="container">
+			<h2 class="text-center my-5">Similar Articles</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-3">
+					<img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
+					<div class="card-body">
+						<small class="text-muted uppercase">26 sep 2020</small>
+						<h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
+						<p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+						<div class="card-text text-muted d-flex">
+						<i class="far fa-comments"></i><small class="mr-3">7.4k</small>
+						<i class="far fa-eye"></i><small>45</small>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-3">
+					<img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
+					<div class="card-body">
+						<small class="text-muted uppercase">26 sep 2020</small>
+						<h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
+						<p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+						<div class="card-text text-muted d-flex">
+						<i class="far fa-comments"></i><small class="mr-3">7.4k</small>
+						<i class="far fa-eye"></i><small>45</small>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-3">
+					<img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
+					<div class="card-body">
+						<small class="text-muted uppercase">26 sep 2020</small>
+						<h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
+						<p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+						<div class="card-text text-muted d-flex">
+						<i class="far fa-comments"></i><small class="mr-3">7.4k</small>
+						<i class="far fa-eye"></i><small>45</small>
+						</div>
+					</div>
+					</div>
+				</div>
 			</div>
-			<div>
-				<h3>David Alenoghena</h3>
-				<p>Cursus suscipit egestas tellus luctus tincidunt lectus. Curabitur dui quam bibendum nulla. Felis elit, magna dictumst et mauris tellus aliquam. 
-				   Sit et pellentesque vestibulum volutpat, aenean sollicitudin. Nec hendrerit eget sapien adipiscing.
-				</p>
-				<a href="#">
-					<img src="{{ asset('blog_assets/img/social.svg') }}" class="image linkedin small-image" alt="social-illustration">
-				</a>
-
 			</div>
-        </div>
-      </section>
-
-      <!-- Latest Blogs -->
-      <section id="latest" class= "container">
-        <div class="container">
-          <h2 class="text-center my-5">Similar Articles</h2>
-          <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-3">
-                  <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                  <div class="card-body">
-                    <small class="text-muted uppercase">26 sep 2020</small>
-                    <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                    <p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    <div class="card-text text-muted d-flex">
-                    <i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-                    <i class="far fa-eye"></i><small>45</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                  <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                  <div class="card-body">
-                    <small class="text-muted uppercase">26 sep 2020</small>
-                    <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                    <p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    <div class="card-text text-muted d-flex">
-                    <i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-                    <i class="far fa-eye"></i><small>45</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                  <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                  <div class="card-body">
-                    <small class="text-muted uppercase">26 sep 2020</small>
-                    <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                    <p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    <div class="card-text text-muted d-flex">
-                    <i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-                    <i class="far fa-eye"></i><small>45</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
-           
-          </div>
-        </div>
-      </section>
+	</section>
 
     </div>
 
