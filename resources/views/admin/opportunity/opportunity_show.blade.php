@@ -36,11 +36,7 @@
                 </div>
                 <hr>
                 <div class="card-text text-sm">
-                    <strong>First detail:</strong>{{ $opportunity_data->detail_1 }}
-                </div>
-                <hr>
-                <div class="card-text text-sm">
-                    <strong>Second Detail:</strong>{{ $opportunity_data->detail_2 }}
+                    <strong>First detail:</strong>{{ $opportunity_data->detail }}
                 </div>
                 <hr>
                 <div class="card-text text-sm">
