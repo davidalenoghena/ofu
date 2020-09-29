@@ -86,7 +86,7 @@
             <div class="opportunities-content pb-5 py-4">
                 <div class="opportunities-content-img-container ">
                     <div class="opportunities-content-img-2">
-                        <img src='{{ asset("images/{!! $in_first->img !!}") }}' alt="{{ $in_first->name }}">
+                        <img src='{{asset("images/{$in_first->img}") }}' alt="{{ $in_first->name }}">
                     </div>
                 </div>
                 <div class="opportunities-content-body ml-5">
