@@ -35,7 +35,7 @@
                     </div>
                 @endif
                 <h3>
-                    Subscribe to our
+                    Subscribe for
                     <span class="yellow-text">weekly updates </span>
                 </h3><br>
                 
@@ -44,7 +44,7 @@
                     <div class="form-group">
                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" size="35" />
                     </div>
-                    <button type="submit" class="btn btn-blue">Submit</button>
+                    <button type="submit" class="btn btn-blue">Subscribe</button>
                 </form>
             </div>
         </div>

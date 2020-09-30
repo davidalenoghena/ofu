@@ -212,7 +212,7 @@
         <div class="container d-flex">
             <div class="subscribe-content">
                 <div class = "w__50 mb-4">
-                    <h3>Subscribe to <span class = "yellow-text">daily updates</span></h3>
+                    <h3>Subscribe for <span class = "yellow-text">weekly updates</span></h3>
                     
                 </div>
 
@@ -224,7 +224,6 @@
 
                     <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  blue-border btn-blue" href="#">Subscribe</a></button>
                 </form>
-                <p class = "">By clicking “Subscribe” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
                 </div>              
              </div>
         </div>
