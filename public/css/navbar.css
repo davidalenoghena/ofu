@@ -28,8 +28,8 @@
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; 
- }
- .dropdown-menu li{
+}
+.dropdown-menu li{
         margin: 0;
         margin-bottom: 1em;
         padding: .75rem;
@@ -75,7 +75,7 @@
 .dropdown-item:hover{
     background-color: transparent;
 }
-  
+
 a{
     color: #3c64b1 ;
     line-height: 1.125rem;
@@ -100,8 +100,8 @@ a:hover{
 }
 
 .solid{
-  transition: blue 1s ease 0s;
-  box-shadow: 0 0 4px grey;
+    transition: blue 1s ease 0s;
+    box-shadow: 0 0 4px grey;
 
 }
 
