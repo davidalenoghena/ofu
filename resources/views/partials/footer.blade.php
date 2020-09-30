@@ -5,7 +5,7 @@
     <section id="footer">
             <div class="container  footer-sect">
                 <div class = "col-md-4 copyright ">
-                <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script>, Opportunities for Undergraduates</p>
+                    <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script>, Opportunities for Undergraduates</p>
                 </div>
 
                 <div class="footer-flex ">

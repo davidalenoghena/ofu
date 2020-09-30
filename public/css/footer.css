@@ -7,8 +7,6 @@ footer{
     background-color: #d8dfe6;
     flex-shrink: 0;
 }
-
-
 #footer > .container{
     padding: 2rem 0;
 }
@@ -25,8 +23,14 @@ footer{
     font-size: 1rem;
     padding: 0 0.25rem;
 }
+#footer ul > li > i:hover{
+    color: #fff;
+}
 #footer ul{
     padding-left: 0;
+}
+li{
+    cursor: pointer;
 }
 
 #footer ul > li > a{
@@ -79,16 +83,14 @@ li>strong{
     }
     .navs{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .links{
-        border: none;
-    }
-    .links ul{
-        justify-content: center;
+        /* border: none; */
     }
     .copyright{
         order: 2;
+        text-align: center;
     }
 }
 
