@@ -10,7 +10,7 @@
 
                 <div class="footer-flex ">
                     <div class = "">
-                        <ul class = "d-flex">
+                        <ul class = "d-flex navs">
                             <li><a href = "{{ route('home') }}">Home</a></li>
                             <li><a href = "{{ route('opportunities') }}">Opportunities</a></li>
                             <li><a href = "{{ route('blog') }}">Blog</a></li>
@@ -18,7 +18,7 @@
                             <li><a href = "{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
-
+                    <div class="vertical_line"> </div>
                     <div class = " links ">
                         <ul class = "d-flex">
                             <li><i class="fa fa-twitter"></i></li>

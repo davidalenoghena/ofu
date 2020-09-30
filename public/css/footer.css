@@ -57,15 +57,15 @@ li>strong{
 }
 
 .links{
-    border-left: 1px solid #3c64b1;
+    /* border-left: 1px solid #3c64b1; */
     align-items: center;
 }
 
-/* .vertical_line{
+.vertical_line{
     width: 2px;
     height: 100%;
     background: #3c64b1;
-} */
+}
 
 @media only screen and (max-width:768px){
     #footer ul{

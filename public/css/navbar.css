@@ -34,6 +34,7 @@
         margin-bottom: 1em;
         padding: .75rem;
         position: relative;    
+<<<<<<< HEAD
 }
 .dropdown-item:visited{
     background-color: #151b25;
@@ -49,6 +50,24 @@
     color: #3c64b1;
 }
 .dropdown-menu ul > li:after {
+=======
+}
+.dropdown-item:visited{
+    background-color: #151b25;
+}
+.dropdown-menu ul{
+    padding-left: .5rem;
+}
+.dropdown-li{
+    padding: .5rem;
+    font-size: 13px;
+    
+}
+.dropdown-li > .dropdown-item{
+    color: #3c64b1;
+}
+.dropdown-menu ul > li:after {
+>>>>>>> db1d95636fc97a8d915f1ce8cd034459448819b8
     content: '';
     height: .4em;
     width: .4em;
@@ -99,8 +118,8 @@ a:hover{
 }
 
 .solid{
-  transition: blue 1s ease 0s;
-  box-shadow: 0 0 4px grey;
+    transition: blue 1s ease 0s;
+    box-shadow: 0 0 4px grey;
 
 }
 
