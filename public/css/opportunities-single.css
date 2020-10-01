@@ -46,9 +46,11 @@
     margin: 0 1rem;
   }
 
-  /* .container {
-    max-width: 960px;
-  } */
+  .opp-single{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   .panel-default{
     margin: 2rem 0;
@@ -94,6 +96,10 @@
     -webkit-transition: -webkit-transform .25s linear;
   }
 
+  .posts__list li > a{
+    display: block;
+    width: 165px;
+  }
   .panel-collapse{
     background-color: #f3f6fa;
     padding: 1rem 2.5rem;
@@ -157,6 +163,7 @@
   @media only screen and (max-width: 600px){
     #opportune{
       display: block;
+      padding: 0;
     }
 
     #blog_search{

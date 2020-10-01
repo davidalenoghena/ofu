@@ -42,7 +42,7 @@
                 <form method="post" action="" class="d-flex">
                     @csrf
                     <div class="form-group">
-                       <input id="email" type="email" class="form-control" name="email" placeholder="Enter email" size="35" />
+                       <input id="email" type="email" class="form-control blue-border" name="email" placeholder="Enter email" size="35" />
                     </div>
                     <button type="submit" class="btn btn-blue">Subscribe</button>
                 </form>

@@ -131,7 +131,7 @@
         </section>
 
     </div>
-    <section id="subscribe">
+    <section id="subscribe" class="mb-5">
         <div class="container d-flex">
             <div class="subscribe-content">
                 <div>
@@ -140,10 +140,10 @@
                 <div>
                 <form action="#" class = "d-flex mb-3 row">
                     <div class = "form-group mr-0 col-9">
-                        <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
                     </div>
 
-                    <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  blue-border btn-blue" href="#">Subscribe</a></button>
+                    <button class="p-0 col-3 btn"><a class = "btn-blue new" href="#">Subscribe</a></button>
                 </form>
                 </div>              
              </div>

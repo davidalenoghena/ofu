@@ -10,6 +10,10 @@ body{
   margin-top: 10vh;
 }
 
+a.btn-link:hover{
+  text-decoration: none;
+}
+
 .table-data p > strong > a{
 background-color: transparent !important;
 }
@@ -176,21 +180,21 @@ select {
 }
 
 .blue-border{
-  border: 1.5px solid rgba(60, 100, 177, 0.5);
+  border: 1.5px solid rgba(60, 100, 177, 0.5) !important;
 }
 
 #subscribe{
-  background-color: #f3f6fa;
+  background-color: transparent;
   color: #3c64b1;
 }
 .subscribe-content button{
   color: #fff;
 }
 
-.btn-blue{
+.new.btn-blue{
   background-color: #3c64b1 !important;
   color: #fff !important;
-  padding: .375rem .75rem;
+  padding: .6rem 1.2rem;
 }
 
 footer li > a{
@@ -265,6 +269,13 @@ place-items: center;
   #subscribe{
       flex-direction: column;
   }
+  .new.btn-blue{
+    padding: .4rem .8rem;
+  }
+  #subscribe .form-control{
+    padding: 1rem;
+  }
+  
   .select{
     width: 11.25em;
     margin-top: 2rem;
