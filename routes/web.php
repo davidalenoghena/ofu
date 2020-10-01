@@ -29,6 +29,8 @@ Route::get('/opportunities', 'HomeController@opportunities')->name('opportunitie
 Route::get('/opportunities/{name}', 'HomeController@singleopportunity')->name('opportunities.single');
 Route::get('/internships', 'HomeController@internships')->name('internships');
 Route::get('/internships/{name}', 'HomeController@singleinternship')->name('internships.single');
+Route::get('/osearch', 'SearchController@opportunitiessearch')->name('opportunity.search');
+Route::get('/isearch', 'SearchController@internshipssearch')->name('internship.search');
 
 //Admin section
 Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('is_admin');

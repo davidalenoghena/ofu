@@ -31,7 +31,7 @@
             </div>
 
             <div class="search">
-                <form action="osearch" method="GET">
+            <form action="isearch" method="GET">
                     @csrf
                     <div class="search-wrap">
                         <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
@@ -43,82 +43,25 @@
             </div>
         </section>
 
-        <section id = "accordion" class="table">
-            <div class="table-header">
-                <p>Name</p>
-                <p>Location</p>
-                <p>Eligibility</p>
-                <p>Status</p>
-            </div>
-            @foreach($in_cl as $internship)
+        @foreach($results as $result)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
+                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $result->word }}" aria-expanded="false" aria-controls="{{ $result->word }}">
                         <div class="table-main">
-                                <p><strong>{{ $internship->name }}</strong></p>
-                                <p>{{ $internship->location }}</p>
-                                <p>{{ $internship->eligibility_slug }}</p>
-                                <p class = "text-danger">Closing Soon</p>
+                                <p><strong>{{ $result->name }}</strong></p>
+                                <p>&#8358;{{ $result->location }}</p>
+                                <p>{{ $result->eligibility_slug }}</p>
+                                <p class = "text-danger">Expiring Soon</p>
                         </div>
                     </button>
                 </div>
-                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="{{ $result->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
                             <img src='{{asset('images/shell.png')}}' alt="shell-logo">
                             <div>
-                                <p>{{ $internship->detail }}</p>
-                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-            @endforeach  
-            @foreach($in_av as $internship)
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
-                        <div class="table-main">
-                                <p><strong>{{ $internship->name }}</strong></p>
-                                <p>{{ $internship->location }}</p>
-                                <p>{{ $internship->eligibility_slug }}</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>{{ $internship->detail }}</p>
-                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-            @endforeach
-            @foreach($in_not_av as $internship)
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
-                        <div class="table-main">
-                                <p><strong>{{ $internship->name }}</strong></p>
-                                <p>{{ $internship->location }}</p>
-                                <p>{{ $internship->eligibility_slug }}</p>
-                                <p class = "text-muted">Not Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>{{ $internship->detail }}</p>
-                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
+                                <p>{{ $result->detail }}</p>
+                                <a class="btn-link" href="{{ route('opportunities.single', $result->id) }}">See Full Details</a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +72,7 @@
 
         <section>
         <nav aria-label="Page navigation example" class="pagination-body">
-            {{ $in_not_av->links() }}
+            {{ $results->links() }}
         </nav>
         </section>
 
