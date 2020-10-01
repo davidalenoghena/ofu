@@ -24,7 +24,7 @@
         <section id="search" class = "my-5">
             <div class="filter select">
                 <select name="filter" id="filter">
-                    <option selected disabled>Choose an option</option>
+                    <option selected disabled>Configure Filter</option>
                     <option value="1" href = "{{ route ('opportunities') }}">Scholarships</option>
                     <option value="2" href = "{{ route ('internships') }}">Internships</option>
                 </select>
@@ -135,9 +135,7 @@
         <div class="container d-flex">
             <div class="subscribe-content">
                 <div>
-                    <h3>Subscribe to <span class = "yellow-text">daily updates</span></h3>
-                    <p class = " py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et unde maxime. Earum cupiditate quasi ullam laboriosam amet quae assumenda ut fugiat quaerat. Cum, tempora.</p>
-                    
+                    <h3>Subscribe for <span class = "yellow-text">weekly updates</span></h3>
                 </div>
                 <div>
                 <form action="#" class = "d-flex mb-3 row">
@@ -147,8 +145,6 @@
 
                     <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  blue-border btn-blue" href="#">Subscribe</a></button>
                 </form>
-                <p class = "">By clicking “Subscribe” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
-           
                 </div>              
              </div>
         </div>
