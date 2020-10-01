@@ -20,10 +20,15 @@
 @section('content')
     <div id="opportune" class = "container">
         <div id="scholarship">
-            <section class="heading">
-                <!-- Heading -->
-                <h2>{{ $op_data->name }}</h2>
-                <h6 class = "grey-text">Updated: {{ $op_data->updated_at }}</h6>
+            <section class="opp-single heading">
+                <div>
+                    <!-- Heading -->
+                    <h2>{{ $op_data->name }}</h2>
+                    <h6 class = "grey-text">Updated: {{ $op_data->updated_at }}</h6>
+                </div>
+                <div>
+                    <img src="{{ asset('images/logo.png') }}" alt="">
+                </div>
             </section>
 
        
@@ -222,7 +227,7 @@
                         <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
                     </div>
 
-                    <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  blue-border btn-blue" href="#">Subscribe</a></button>
+                    <button class="p-0 col-3 btn"><a class = "  blue-border btn-blue new" href="#">Subscribe</a></button>
                 </form>
                 </div>              
              </div>

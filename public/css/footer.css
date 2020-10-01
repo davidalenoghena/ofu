@@ -54,11 +54,15 @@ li>strong{
     color: #5a5a5a;
 }
 
+.copyright{
+    width: 45%;
+}
+
 .footer-flex{
     display: flex;
     align-items: center;
     color: #929ECC;
-    width: 100%;
+    width: 45%;
 }
 
 .links{
@@ -92,6 +96,8 @@ li>strong{
     .copyright{
         order: 2;
         text-align: center;
+        margin-top: 1rem;
+        width: auto;
     }
 }
 

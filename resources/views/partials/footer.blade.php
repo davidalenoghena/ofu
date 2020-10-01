@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <section id="footer">
             <div class="container  footer-sect">
-                <div class = "col-md-4 copyright ">
+                <div class = " copyright ">
                     <p> &copy; Copyright <script>document.write(new Date().getFullYear())</script>, Opportunities for Undergraduates</p>
                 </div>
 

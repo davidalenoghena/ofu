@@ -59,6 +59,12 @@ li{
     color: #ffffff;
 }
 
+
+.blue-border{
+    border: 1.5px solid rgba(60, 100, 177, 0.5) !important;
+}
+  
+
 .btn-blue{
     color: #fff ;
     background-color: #3c64b1;
