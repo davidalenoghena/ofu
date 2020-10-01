@@ -31,7 +31,7 @@
             </div>
 
             <div class="search">
-                <form action="osearch" method="GET">
+                <form action="isearch" method="GET">
                     @csrf
                     <div class="search-wrap">
                         <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
