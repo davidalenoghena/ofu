@@ -31,7 +31,7 @@
             </div>
 
             <div class="search">
-                <form action="osearch" method="GET">
+                <form action="{{ route('opportunity.search') }}" method="GET">
                     @csrf
                     <div class="search-wrap">
                         <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
@@ -65,7 +65,7 @@
                 <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/opportunity/'.$opportunity->img) }}" alt="{{ $opportunity->name }}">
                             <div>
                                 <p>{{ $opportunity->detail }}</p>
                                 <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
@@ -90,7 +90,7 @@
                 <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/opportunity/'.$opportunity->img) }}" alt="{{ $opportunity->name }}">
                             <div>
                                 <p>{{ $opportunity->detail }}</p>
                                 <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
@@ -115,7 +115,7 @@
                 <div id="{{ $opportunity->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/opportunity/'.$opportunity->img) }}" alt="{{ $opportunity->name }}">
                             <div>
                                 <p>{{ $opportunity->detail }}</p>
                                 <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>

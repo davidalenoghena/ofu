@@ -161,7 +161,7 @@ class HomeController extends Controller
 
         $all_data = DB::table('opportunities')->get();
 
-        $last_data = DB::table('opportunities')->find($count+1);
+        $last_data = DB::table('opportunities')->find($count);
 
         $op_ex_first = DB::table('opportunities')
                             ->where('status_slug', 0)
@@ -224,7 +224,7 @@ class HomeController extends Controller
 
         $all_data = DB::table('internships')->get();
 
-        $last_data = DB::table('internships')->find($count+1);
+        $last_data = DB::table('internships')->find($count);
 
         $in_cl_first = DB::table('internships')
                             ->where('status_slug', 0)

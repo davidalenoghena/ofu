@@ -1,7 +1,7 @@
 @extends('layouts.home')
 @push('css')
 <head>
-  <title>OFU - Opportunities</title>
+  <title>OFU - Internships</title>
 
   <!-- Favicons -->
   <link href="{{ asset('about_assets/img/favicon.png') }}" rel="icon">
@@ -20,10 +20,15 @@
 @section('content')
     <div id="opportune" class = "container">
         <div id="scholarship">
-            <section class="heading">
-                <!-- Heading -->
-                <h2>{{ $in_data->name }}</h2>
-                <h6 class = "grey-text">Updated: {{ $in_data->updated_at }}</h6>
+        <section class="opp-single heading">
+                <div>
+                    <!-- Heading -->
+                    <h2>{{ $in_data->name }}</h2>
+                    <h6 class = "grey-text">Updated: {{ $in_data->updated_at->diffForHumans() }}</h6>
+                </div>
+                <div>
+                    <img src="{{asset('images/internship/'.$in_data->img)}}" alt="{{ $in_data->name }}">
+                </div>
             </section>
 
        
@@ -182,14 +187,17 @@
 
             <section id="search" class = "my-5">
 
-                <div class="search">
+            <div class="search">
+                <form action="{{ route('internship.search') }}" method="GET">
+                    @csrf
                     <div class="search-wrap">
-                        <input type="text" name="search" class = "searchBox" placeholder = "Search...">
+                        <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
-                </div>
+                </form>
+            </div>
             </section>
             @if (count($in_cl)>0)
             <section>
