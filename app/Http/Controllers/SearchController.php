@@ -44,16 +44,19 @@ class SearchController extends Controller
         $in_cl = DB::table('internships')
                             ->select(DB::raw("*"))
                             ->where('name', 'like', '%'.$request->search.'%')
+                            ->orWhere('location', 'like', '%' .$request->search. '%')
                             ->where('status_slug', 0)
                             ->paginate(($count+10));
         $in_av = DB::table('internships')
                             ->select(DB::raw("*"))
                             ->where('name', 'like', '%'.$request->search.'%')
+                            ->orWhere('location', 'like', '%' .$request->search. '%')
                             ->where('status_slug', 1)
                             ->paginate(($count+10));
         $in_not_av = DB::table('internships')
                             ->select(DB::raw("*"))
                             ->where('name', 'like', '%'.$request->search.'%')
+                            ->orWhere('location', 'like', '%' .$request->search. '%')
                             ->where('status_slug', 2)
                             ->paginate(20);
         return view('pages.search.internships',
