@@ -21,14 +21,19 @@ Route::get('/', 'HomeController@index')->name('home');
 //Route::get('/user', 'UserController@index')->name('user.home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about_us')->name('about');
+
 Route::get('/contact', 'HomeController@contact_us')->name('contact');
 Route::post('/contact', 'HomeController@mail')->name('sendmail');
+
 Route::get('/blog', 'HomeController@blog')->name('blog');
 Route::get('/blog/{id}', 'HomeController@singleblog')->name('blog.single');
+
 Route::get('/opportunities', 'HomeController@opportunities')->name('opportunities');
 Route::get('/opportunities/{name}', 'HomeController@singleopportunity')->name('opportunities.single');
+
 Route::get('/internships', 'HomeController@internships')->name('internships');
 Route::get('/internships/{name}', 'HomeController@singleinternship')->name('internships.single');
+
 Route::get('/osearch', 'SearchController@opportunitiessearch')->name('opportunity.search');
 Route::get('/isearch', 'SearchController@internshipssearch')->name('internship.search');
 

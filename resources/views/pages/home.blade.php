@@ -88,7 +88,7 @@
             <div class="opportunities-content pb-5 py-4">
                 <div class="opportunities-content-img-container ">
                     <div class="opportunities-content-img-2">
-                        <img src="{{asset('images/internship/'.$in_first->img)}}">
+                        <img src="{{ asset('images/internship/'.$in_first->img) }}">
                     </div>
                 </div>
                 <div class="opportunities-content-body ml-5">

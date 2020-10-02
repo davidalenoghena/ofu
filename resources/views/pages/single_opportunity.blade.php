@@ -27,7 +27,7 @@
                     <h6 class = "grey-text">Updated: {{ $op_data->updated_at->diffForHumans() }}</h6>
                 </div>
                 <div>
-                    <img src="{{ asset('images/logo.png') }}" alt="">
+                    <img src="{{asset('images/opportunity/'.$op_data->img)}}" alt="{{ $op_data->name }}">
                 </div>
             </section>
 
@@ -178,14 +178,17 @@
 
             <section id="search" class = "my-5">
 
-                <div class="search">
+            <div class="search">
+                <form action="{{ route('opportunity.search') }}" method="GET">
+                    @csrf
                     <div class="search-wrap">
-                        <input type="text" name="search" class = "searchBox" placeholder = "Search...">
+                        <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
-                </div>
+                </form>
+            </div>
             </section>
             @if (count($op_ex)>0)
             <section>

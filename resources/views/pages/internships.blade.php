@@ -31,7 +31,7 @@
             </div>
 
             <div class="search">
-                <form action="isearch" method="GET">
+                <form action="{{ route('internship.search') }}" method="GET">
                     @csrf
                     <div class="search-wrap">
                         <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
@@ -65,7 +65,7 @@
                 <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                             <div>
                                 <p>{{ $internship->detail }}</p>
                                 <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
@@ -90,7 +90,7 @@
                 <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                             <div>
                                 <p>{{ $internship->detail }}</p>
                                 <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
@@ -115,7 +115,7 @@
                 <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                             <div>
                                 <p>{{ $internship->detail }}</p>
                                 <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
