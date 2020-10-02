@@ -24,7 +24,7 @@
                 <div>
                     <!-- Heading -->
                     <h2>{{ $op_data->name }}</h2>
-                    <h6 class = "grey-text">Updated: {{ $op_data->updated_at }}</h6>
+                    <h6 class = "grey-text">Updated: {{ $op_data->updated_at->diffForHumans() }}</h6>
                 </div>
                 <div>
                     <img src="{{ asset('images/logo.png') }}" alt="">
