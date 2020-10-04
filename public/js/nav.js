@@ -39,6 +39,3 @@ const navClose = () => {
 
 navSlide();
 navClose();
-console.log("Tes!t");
-
-require('summernote');

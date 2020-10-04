@@ -572,12 +572,12 @@ width: 233px;
         transform: translateX(100%);
         transition: transform .5s ease-in;
     }
-    .dropdown-menu.show {
+    #ofu-navbar .dropdown-menu.show {
         display: block !important; 
         margin-top: 0; 
         /* // remove the gap so it doesn't close */
      }
-     .dropdown:hover .dropdown-menu {
+     #ofu-navbar .dropdown:hover .dropdown-menu {
         display: none;
         margin-top: 0; 
         /* // remove the gap so it doesn't close */
