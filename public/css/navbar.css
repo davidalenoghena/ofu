@@ -46,10 +46,10 @@
      font-size: 13px;
      
  }
- .dropdown-li > .dropdown-item{
+ #ofu-navbar .dropdown-li > .dropdown-item{
      color: #3c64b1;
  }
- .dropdown-menu ul > li:after {
+ #ofu-navbar.dropdown-menu ul > li:after {
     content: '';
     height: .4em;
     width: .4em;
@@ -183,7 +183,7 @@ a:hover{
     }
      .nav-links{
         position: absolute;
-        top: 24vh;
+        top: 21vh;
         right: 0;
         height: 80vh;
         color: #3c64b1;
