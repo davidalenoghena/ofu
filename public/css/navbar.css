@@ -46,10 +46,10 @@
      font-size: 13px;
      
  }
- #ofu-navbar .dropdown-li > .dropdown-item{
+.dropdown-li > .dropdown-item{
      color: #3c64b1;
  }
- #ofu-navbar.dropdown-menu ul > li:after {
+ .dropdown-menu ul > li:after {
     content: '';
     height: .4em;
     width: .4em;
