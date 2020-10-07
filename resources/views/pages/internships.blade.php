@@ -22,13 +22,14 @@
             <h1>INTERNSHIPS</h1>
         </section>
         <section id="search" class = "my-5">
-            <div class="filter select">
-                <select name="filter" id="filter">
-                    <option selected disabled>Choose an option</option>
-                    <option value="1" href = "{{ route ('opportunities') }}">Scholarships</option>
-                    <option value="2" href = "{{ route ('internships') }}">Internships</option>
-                </select>
-            </div>
+            <form action="{{ route('internship.filter') }}" method="GET"> 
+                @csrf   
+                <div class="filter">
+                    <h3>Filter</h3>
+                    <select type="text" id="picker" name="picker[]" multiple="multiple"></select>
+                    <button type="submit" class="btn btn-primary">Apply</button>
+                </div>
+            </form>
 
             <div class="search">
                 <form action="{{ route('internship.search') }}" method="GET">

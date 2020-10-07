@@ -33,7 +33,7 @@
             </form>
 
             <div class="search">
-                <form action="isearch" method="GET">
+                <form action="osearch" method="GET">
                     @csrf
                     <div class="search-wrap">
                         <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
@@ -52,72 +52,28 @@
                 <p>Eligibility</p>
                 <p>Status</p>
             </div>
-            @foreach($in_cl as $internship)
+            @foreach($the_search as $internship)
             <div class = " table-bg">  
                 <div class="card-header" id="headingThree">
                     <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
                         <div class="table-main">
-                                <p><strong>{{ $internship->name }}</strong></p>
+                        <p><strong>{{ $internship->name }}</strong></p>
                                 <p>{{ $internship->location }}</p>
                                 <p>{{ $internship->eligibility_slug }}</p>
-                                <p class = "text-danger">Closing Soon</p>
+                                @if($internship->status_slug == 0)
+                                    <p class = "text-danger">Expiring Soon</p>
+                                @elseif($internship->status_slug == 1)
+                                    <p class="yellow-text">Available</p>
+                                @elseif($internship->status_slug == 2)
+                                    <p class="text-muted">Not Available</p>
+                                @endif
                         </div>
                     </button>
                 </div>
                 <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>{{ $internship->detail }}</p>
-                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-            @endforeach  
-            @foreach($in_av as $internship)
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
-                        <div class="table-main">
-                                <p><strong>{{ $internship->name }}</strong></p>
-                                <p>{{ $internship->location }}</p>
-                                <p>{{ $internship->eligibility_slug }}</p>
-                                <p class = "yellow-text">Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
-                            <div>
-                                <p>{{ $internship->detail }}</p>
-                                <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div> 
-            @endforeach
-            @foreach($in_not_av as $internship)
-            <div class = " table-bg">  
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-drop collapsed" data-toggle="collapse" data-target="#{{ $internship->word }}" aria-expanded="false" aria-controls="{{ $internship->word }}">
-                        <div class="table-main">
-                                <p><strong>{{ $internship->name }}</strong></p>
-                                <p>{{ $internship->location }}</p>
-                                <p>{{ $internship->eligibility_slug }}</p>
-                                <p class = "text-muted">Not Available</p>
-                        </div>
-                    </button>
-                </div>
-                <div id="{{ $internship->word }}" class="collapse accordion-show" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class = "table-main-2">
-                            <img src='{{asset('images/shell.png')}}' alt="shell-logo">
+                            <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                             <div>
                                 <p>{{ $internship->detail }}</p>
                                 <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
@@ -131,38 +87,32 @@
 
         <section>
         <nav aria-label="Page navigation example" class="pagination-body">
-            {{ $in_not_av->links() }}
+            {{ $the_search->links() }}
         </nav>
         </section>
 
     </div>
-    <section id="subscribe">
+    <section id="subscribe" class="mb-5">
         <div class="container d-flex">
             <div class="subscribe-content">
                 <div>
-                    <h3>Subscribe to <span class = "yellow-text">daily updates</span></h3>
-                    <p class = " py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et unde maxime. Earum cupiditate quasi ullam laboriosam amet quae assumenda ut fugiat quaerat. Cum, tempora.</p>
-                    
+                    <h3>Subscribe for <span class = "yellow-text">weekly updates</span></h3>
                 </div>
                 <div>
                 <form action="#" class = "d-flex mb-3 row">
                     <div class = "form-group mr-0 col-9">
-                        <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
                     </div>
 
-                    <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  blue-border btn-blue" href="#">Subscribe</a></button>
+                    <button class="p-0 col-3 btn"><a class = "btn-blue new" href="#">Subscribe</a></button>
                 </form>
-                <p class = "">By clicking “Subscribe” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
-           
-                </div>                
+                </div>              
              </div>
         </div>
     </section>
 @endsection
 
 @section('js')
-</section>
-
     <!-- Bootstrap JS, PopperJS, jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     

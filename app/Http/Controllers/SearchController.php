@@ -67,4 +67,38 @@ class SearchController extends Controller
             'your_search' => $your_search,
         ]);
     }
+
+    public function in_filtersearch(Request $request)
+    {
+        $your_search = $request->picker;
+
+        $the_search = DB::table('internships')
+                            ->select(DB::raw("*"))
+                            ->whereIn('eligibility_slug', $your_search)
+                            ->orderBy('status_slug', 'asc')
+                            ->paginate(20);
+        $your_search = implode(', ', $your_search);
+        return view('pages.filter.internships',
+        [
+            'the_search' => $the_search,
+            'your_search' => $your_search,
+        ]);
+    }
+
+    public function op_filtersearch(Request $request)
+    {
+        $your_search = $request->picker;
+
+        $the_search = DB::table('opportunities')
+                            ->select(DB::raw("*"))
+                            ->whereIn('eligibility_slug', $your_search)
+                            ->orderBy('status_slug', 'asc')
+                            ->paginate(20);
+        $your_search = implode(', ', $your_search);
+        return view('pages.filter.opportunities',
+        [
+            'the_search' => $the_search,
+            'your_search' => $your_search,
+        ]);
+    }
 }

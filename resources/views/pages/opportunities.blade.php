@@ -26,15 +26,14 @@
         <h1>SCHOLARSHIPS</h1>
     </section>
     <section id="search" class="my-5">
-
-        <div class="filter">
-            <h3>Filter</h3>
-            <select id="picker" multiple="multiple"></select>
-
-
-            <button class="btn btn-primary">Update</button>
-        </div>
-
+        <form action="{{ route('opportunity.filter') }}" method="GET"> 
+            @csrf   
+            <div class="filter">
+                <h3>Filter</h3>
+                <select type="text" id="picker" name="picker[]" multiple="multiple"></select>
+                <button type="submit" class="btn btn-primary">Apply</button>
+            </div>
+        </form>
         <div class="search">
             <form action="{{ route('opportunity.search') }}" method="GET">
                 @csrf
@@ -174,42 +173,31 @@
                 label: 'Eligibility',
                 children: [{
                         label: '100 level',
-                        value: '1-1'
+                        title: 'Option 1',
+                        value: '100 level'
                     },
                     {
                         label: '200 level',
-                        value: '1-2'
+                        title: 'Option 2',
+                        value: '200 level'
                     },
                     {
                         label: '300 level',
-                        value: '1-3'
+                        title: 'Option 3',
+                        value: '300 level'
                     },
                     {
                         label: '400 level',
-                        value: '1-4'
+                        title: 'Option 4',
+                        value: '400 level'
+                    },
+                    {
+                        label: '500 level',
+                        title: 'Option 5',
+                        value: '500 level'
                     }
                 ]
             },
-            {
-                label: 'Ads Patform',
-                children: [{
-                        label: 'Facebook',
-                        value: '1',
-                    },
-                    {
-                        label: 'Twitter',
-                        value: '2'
-                    },
-                    {
-                        label: 'YouTube',
-                        value: '3'
-                    },
-                    {
-                        label: 'SnapChat',
-                        value: '3'
-                    }
-                ]
-            }
         ];
 
         $('#picker').multiselect({
