@@ -36,6 +36,8 @@ Route::get('/internships/{name}', 'HomeController@singleinternship')->name('inte
 
 Route::get('/osearch', 'SearchController@opportunitiessearch')->name('opportunity.search');
 Route::get('/isearch', 'SearchController@internshipssearch')->name('internship.search');
+Route::get('/op_filter', 'SearchController@op_filtersearch')->name('opportunity.filter');
+Route::get('/in_filter', 'SearchController@in_filtersearch')->name('internship.filter');
 
 //Admin section
 Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('is_admin');
