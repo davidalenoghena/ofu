@@ -94,7 +94,7 @@ ul > .dropdown-li > .dropdown-item {
 #search {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .filter > .btn-group {
@@ -117,7 +117,7 @@ ul.multiselect-container {
 
 .searchButton {
     border: 0;
-    padding: 0.2rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     border: 1.5px solid rgba(60, 100, 177, 0.5);
     background: #3c64b1;
     text-align: center;

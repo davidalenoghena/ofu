@@ -11,8 +11,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" /> -->
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('css/opportunities.css') }}" rel="stylesheet">
@@ -26,14 +24,16 @@
         <h1>SCHOLARSHIPS</h1>
     </section>
     <section id="search" class="my-5">
-        <form action="{{ route('opportunity.filter') }}" method="GET"> 
+        <!-- <form action="{{ route('opportunity.filter') }}" method="GET"> 
             @csrf   
             <div class="filter">
                 <h3>Filter</h3>
                 <select type="text" id="picker" name="picker[]" multiple="multiple"></select>
                 <button type="submit" class="btn btn-primary">Apply</button>
             </div>
-        </form>
+        </form> -->
+        <!-- Include Filter Partial -->
+        @include('partials.filter')
         <div class="search">
             <form action="{{ route('opportunity.search') }}" method="GET">
                 @csrf
@@ -162,50 +162,11 @@
 <!-- Bootstrap JS, PopperJS, jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 
-<!-- Flickity JS -->
+<!-- Boostrap Multiselect -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
 <script src="{{asset('js/nav.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        var options = [{
-                label: 'Eligibility',
-                children: [{
-                        label: '100 level',
-                        title: 'Option 1',
-                        value: '100 level'
-                    },
-                    {
-                        label: '200 level',
-                        title: 'Option 2',
-                        value: '200 level'
-                    },
-                    {
-                        label: '300 level',
-                        title: 'Option 3',
-                        value: '300 level'
-                    },
-                    {
-                        label: '400 level',
-                        title: 'Option 4',
-                        value: '400 level'
-                    },
-                    {
-                        label: '500 level',
-                        title: 'Option 5',
-                        value: '500 level'
-                    }
-                ]
-            },
-        ];
-
-        $('#picker').multiselect({
-            enableCollapsibleOptGroups: true
-        });
-
-        $('#picker').multiselect('dataprovider', options);
-    });
-</script>
+@push('js')
 
 @endsection
