@@ -1,4 +1,4 @@
-<form action="{{ route('opportunity.filter') }}" method="GET"> 
+<form action="{{ route('internship.filter') }}" method="GET"> 
             @csrf   
             <div class="filter">
                 <h3>Filter</h3>
@@ -6,6 +6,17 @@
                 <button type="submit" class="btn btn-primary">Apply</button>
             </div>
 </form>
+<div class="search">
+    <form action="{{ route('internship.search') }}" method="GET">
+        @csrf
+        <div class="search-wrap">
+            <input type="text" name="search" id="search" class="searchBox" placeholder="Search...">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </form>
+</div>
 <!-- Boostrap Multiselect JS -->
 @section ('js')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
@@ -48,6 +59,5 @@
 
         $('#picker').multiselect('dataprovider', options);
     });
-    console.log('hi')
 </script>
 @endsection

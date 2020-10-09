@@ -1,48 +1,31 @@
 @extends('layouts.home')
 @push('css')
+
 <head>
-  <title>OFU - Opportunities</title>
+    <title>OFU - Opportunities</title>
 
-  <!-- Favicons -->
-  <link href="{{ asset('about_assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('about_assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="{{ asset('about_assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('about_assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="{{ asset('css/opportunities.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('css/opportunities.css') }}" rel="stylesheet">
 
 </head>
 @endpush
 @section('content')
-    <div id="app" class = "container">
-        <section class="heading">
-            <!-- Heading -->
-            <h1>SCHOLARSHIPS</h1>
+<div id="app" class="container">
+    <section class="heading">
+        <!-- Heading -->
+        <h1>SCHOLARSHIPS</h1>
             <h1>Search results for {{ $your_search }}:</h1>
         </section>
         <section id="search" class = "my-5">
-            <form action="{{ route('opportunity.filter') }}" method="GET"> 
-                @csrf   
-                <div class="filter">
-                    <h3>Filter</h3>
-                    <select type="text" id="picker" name="picker[]" multiple="multiple"></select>
-                    <button type="submit" class="btn btn-primary">Apply</button>
-                </div>
-            </form>
-
-            <div class="search">
-                <form action="osearch" method="GET">
-                    @csrf
-                    <div class="search-wrap">
-                        <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
+        @include('partials.opfilter')
         </section>
 
         <section id = "accordion" class="table">
@@ -113,13 +96,14 @@
 @endsection
 
 @section('js')
-    <!-- Bootstrap JS, PopperJS, jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    
-    <!-- Flickity JS -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src= "{{asset('js/nav.js')}}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Bootstrap JS, PopperJS, jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+<!-- Boostrap Multiselect -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+<script src="{{asset('js/nav.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+@push('js')
+
 @endsection
