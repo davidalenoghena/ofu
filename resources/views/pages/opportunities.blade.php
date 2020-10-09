@@ -32,19 +32,8 @@
                 <button type="submit" class="btn btn-primary">Apply</button>
             </div>
         </form> -->
-        <!-- Include Filter Partial -->
-        @include('partials.filter')
-        <div class="search">
-            <form action="{{ route('opportunity.search') }}" method="GET">
-                @csrf
-                <div class="search-wrap">
-                    <input type="text" name="search" id="search" class="searchBox" placeholder="Search...">
-                    <button type="submit" class="searchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
+        <!-- Include Filter and Search Partial -->
+        @include('partials.opfilter')
     </section>
 
     <section id="accordion" class="table">

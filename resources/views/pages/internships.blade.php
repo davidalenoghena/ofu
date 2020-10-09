@@ -30,20 +30,7 @@
                     <button type="submit" class="btn btn-primary">Apply</button>
                 </div>
             </form> -->
-
-
-         @include('partials.filter')
-            <div class="search">
-                <form action="{{ route('internship.search') }}" method="GET">
-                    @csrf
-                    <div class="search-wrap">
-                        <input type="text" name="search" id="search" class = "searchBox" placeholder = "Search...">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
+         @include('partials.infilter')
         </section>
 
         <section id = "accordion" class="table">
