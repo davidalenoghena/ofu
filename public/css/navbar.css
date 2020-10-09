@@ -261,3 +261,20 @@ a:hover{
         margin-right: 1rem;
     }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+        .login-btns{
+            flex-direction: row;
+        }
+        .login-btns > li.nav-item{
+            margin: 0 2rem;
+        }
+        .login-btns > li.nav-item > a{
+            padding: .5rem 1rem;
+        }
+
+        #navbarmenu > ul.nav-links{
+            top: 8vh;
+            padding: 1rem;
+        }
+}
