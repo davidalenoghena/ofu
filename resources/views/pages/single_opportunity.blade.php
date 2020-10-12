@@ -13,6 +13,7 @@
 
     <!-- Template Main CSS File -->
 
+    <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('css/opportunities.css') }}" rel="stylesheet">
     <link href="{{ asset('css/opportunities-single.css') }}" rel="stylesheet">
 
@@ -210,29 +211,37 @@
         </ul>
     </section>
     @endif -->
-    <section>
-        <h4 class="my-3">Latest Blog Posts</h4>
+    <section id="blog-op">
+        <h4 class="my-3 text-center">Latest Blog Posts</h4>
         <div class="row">
-            <div class="col-12 my-2">
-                <div class="card mb-3">
-                    <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                    <div class="card-body">
-                        <small class="text-muted uppercase">26 sep 2020</small>
-                        <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                        <p class="text-body mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <div class="card-body">
+             <span class="topic">LifeStyle</span>
+              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
+              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+              <div class="flex">
+                <p class="author">David Alenoghena</p>
+                <span class="date">04 Jun 2018</span>
+              </div>
             </div>
-            <div class="col-12 my-2">
-                <div class="card mb-3">
-                    <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                    <div class="card-body">
-                        <small class="text-muted uppercase">26 sep 2020</small>
-                        <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                        <p class="text-body mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <div class="card-body">
+             <span class="topic">LifeStyle</span>
+              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
+              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+              <div class="flex">
+                <p class="author">David Alenoghena</p>
+                <span class="date">04 Jun 2018</span>
+              </div>
             </div>
+          </div>
+        </div>
         </div>
     </section>
 </div>
@@ -242,30 +251,38 @@
 <section class="blog-posts">
         <h4 class="my-5 text-center">Latest Blog Posts</h4>
         <div class="row">
-            <div class="col-6 my-2">
-                <div class="card mb-3">
-                    <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                    <div class="card-body">
-                        <small class="text-muted uppercase">26 sep 2020</small>
-                        <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                        <p class="text-body mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <div class="card-body">
+             <span class="topic">LifeStyle</span>
+              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
+              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+              <div class="flex">
+                <p class="author">David Alenoghena</p>
+                <span class="date">04 Jun 2018</span>
+              </div>
             </div>
-            <div class="col-6 my-2">
-                <div class="card mb-3">
-                    <img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
-                    <div class="card-body">
-                        <small class="text-muted uppercase">26 sep 2020</small>
-                        <h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-                        <p class="text-body mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <div class="card-body">
+             <span class="topic">LifeStyle</span>
+              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
+              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+              <div class="flex">
+                <p class="author">David Alenoghena</p>
+                <span class="date">04 Jun 2018</span>
+              </div>
             </div>
+          </div>
+        </div>
         </div>
     </section>
 
-<section id="subscribe">
+<!-- <section id="subscribe">
     <div class="container d-flex">
         <div class="subscribe-content">
             <div class="w__50 mb-4">
@@ -284,7 +301,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 @endsection
 
 @section('js')

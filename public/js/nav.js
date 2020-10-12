@@ -7,14 +7,14 @@ $(document).ready(function() {
     $('.one').css('background-color', '#3c64b1');
     $('.two').css('background-color', '#3c64b1');
     $('.three').css('background-color', '#3c64b1');
-  $('#blog_post').summernote();
 });
 
 
-const burger = document.querySelector('.navbar-toggler');
+const burger = document.querySelector('div.navbar-toggler');
 const navLinks1 = document.querySelector('.nav-links');
 const navLinks2 = document.querySelector('.login-btns');
 const body = document.querySelector('.content');
+
 
 const navSlide = () => {
     // Toggle Nav
