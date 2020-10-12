@@ -119,7 +119,7 @@ p{
 
 .cover{
     object-fit: cover;
-    height: 100%;
+    height: auto;
 }
  
 .card-text{
@@ -294,7 +294,7 @@ p{
 @media (max-width:768px){
     #title{
         padding: 4rem 1rem;
-    }
+    }=
     #icons{
         position: absolute;
         left: 0px;
