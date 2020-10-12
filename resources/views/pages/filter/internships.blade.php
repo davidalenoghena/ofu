@@ -20,7 +20,7 @@
         <section class="heading">
             <!-- Heading -->
             <h1>INTERNSHIPS</h1>
-            <h1>Search results for {{ $your_search }}:</h1>
+            <h4>Search results for {{ $your_search }}:</h4>
         </section>
         <section id="search" class = "my-5">
         @include('partials.infilter')

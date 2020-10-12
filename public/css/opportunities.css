@@ -6,7 +6,7 @@ body {
     color: #3c64b1;
 }
 
-#app {
+#app-opp {
     margin-top: 10vh;
 }
 
@@ -90,6 +90,9 @@ ul > .dropdown-li > .dropdown-item {
 }
 .accordion-show {
     background-color: #f3f6fa;
+}
+.card-body{
+    width: 100%;
 }
 #search {
     display: flex;
