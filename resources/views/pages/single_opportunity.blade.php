@@ -79,10 +79,6 @@
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="panel-body">
                             {!! $op_data->eligibility !!}
-                            <!-- <ul>
-                                    <li>Have a JAMB score of 200 and above</li>
-                                    <li>Have gained admission and have been properly enrolled in a Nigerian Federal or State University with relevant evidence</li>
-                                </ul> -->
                         </div>
                     </div>
                 </div>
@@ -191,26 +187,6 @@
             </form>
         </div>
     </section>
-    <!-- @if (count($op_ex)>0)
-    <section>
-        <ul class="posts__list">
-            <li>Expiring Scholarships</li>
-            @foreach ($op_ex as $opportunity)
-            <li><a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">{{ $opportunity->name }}</a></li>
-            @endforeach
-        </ul>
-    </section>
-    @endif
-    @if (count($op_av)>0)
-    <section>
-        <ul class="posts__list">
-            <li>Available Scholarships</li>
-            @foreach ($op_av as $opportunity)
-            <li><a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">{{ $opportunity->name }}</a></li>
-            @endforeach
-        </ul>
-    </section>
-    @endif -->
     <section id="blog-op">
         <h4 class="my-3 text-center">Latest Blog Posts</h4>
         <div class="row">
@@ -218,12 +194,12 @@
           <div class="card mb-3">
             <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
             <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+             <span class="topic">{{ $blog_first->category }}</span>
+              <h3 class="card-title my-3">{{ $blog_first->blog_title }}</h3>
+              <p>{{ $blog_first->blog_post }}</p>
               <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
+                <p class="author"><i>by <strong>{{ $blog_first->author }}</strong></i></p>
+                <span class="date">{{ \Carbon\Carbon::parse($blog_first->created_at)->diffForHumans() }}</span>
               </div>
             </div>
           </div>
@@ -232,12 +208,12 @@
           <div class="card mb-3">
             <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
             <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
+             <span class="topic">{{ $blog_second->category }}</span>
+              <h3 class="card-title my-3">{{ $blog_second->blog_title }}</h3>
+              <p>{{ $blog_first->blog_post }}</p>
               <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
+                <p class="author"><i>by <strong>{{ $blog_second->author }}</strong></i></p>
+                <span class="date">{{ \Carbon\Carbon::parse($blog_second->created_at)->diffForHumans() }}</span>
               </div>
             </div>
           </div>
@@ -247,41 +223,6 @@
 </div>
 
 </div>
-
-<section class="blog-posts">
-        <h4 class="my-5 text-center">Latest Blog Posts</h4>
-        <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-    </section>
-
 <!-- <section id="subscribe">
     <div class="container d-flex">
         <div class="subscribe-content">
