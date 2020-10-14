@@ -43,7 +43,7 @@
           <div class="width-45  p-4">
             <span class="topic">{{ $blog1->category }}</span>
             <h2>{{ $blog1->blog_title }}</h2>
-            <p>{{ $blog1->blog_post }}</p>
+            <p>{{ \Illuminate\Support\Str::limit($blog1->blog_post, 200, $end='...') }}</p>
             <div class="flex">
               <p class="author"><i>by <strong>{{ $blog1->author }}</strong></i></p>
               <span class="date">{{ \Carbon\Carbon::parse($blog1->created_at)->diffForHumans() }}</span>
@@ -57,7 +57,7 @@
             <div class="card-body">
               <span class="topic">{{ $blog2->category }}</span>
               <h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
-              <p>{{ $blog2->blog_post }}</p>
+              <p>{{ \Illuminate\Support\Str::limit($blog2->blog_post, 200, $end='...') }}</p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog2->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog2->created_at)->diffForHumans() }}</span>
@@ -72,7 +72,7 @@
             <div class="card-body">
               <span class="topic">{{ $blog3->category }}</span>
               <h3 class="card-title my-3">{{ $blog3->blog_title }}</h3>
-              <p>{{ $blog3->blog_post }}</p>
+              <p>{{ \Illuminate\Support\Str::limit($blog3->blog_post, 200, $end='...') }}</p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog3->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog3->created_at)->diffForHumans() }}</span>
@@ -115,7 +115,7 @@
             <div class="card-body">
              <span class="topic">{{ $blog->category }}</span>
               <h3 class="card-title my-3">{{ $blog->blog_title }}</h3>
-              <p>{{ $blog->blog_post }}</p>
+              <p>{{ \Illuminate\Support\Str::limit($blog->blog_post, 150, $end='...') }}</p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog->updated_at)->diffForHumans() }}</span>
