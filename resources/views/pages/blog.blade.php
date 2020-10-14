@@ -41,13 +41,12 @@
             <img src="{{ asset('images/bg-blog1.svg') }}" class="image cover" alt="job-illustration">
           </div>
           <div class="width-45  p-4">
-            <span class="topic">LifeStyle</span>
-            <h2>How to Land a Job in Your Dream Location? Ideas and Insider Stories</h2>
-            <p>Oh, the dreaded elevator pitch. Unless you’re one of the slick salesmen from Mad Men or the Wolf of Wall Street, you probably hate it.
-              Nothing wrong with that — a traditional elevator pitch is a lost cause. Here’s how to fix yours to make it actually work!</p>
+            <span class="topic">{{ $blog1->category }}</span>
+            <h2>{{ $blog1->blog_title }}</h2>
+            <p>{{ $blog1->blog_post }}</p>
             <div class="flex">
-              <p class="author">David Alenoghena</p>
-              <span class="date">04 Jun 2018</span>
+              <p class="author"><i>by <strong>{{ $blog1->author }}</strong></i></p>
+              <span class="date">{{ \Carbon\Carbon::parse($blog1->created_at)->diffForHumans() }}</span>
             </div>
           </div>
         </div>
@@ -56,13 +55,12 @@
           <div class="card mb-3">
             <img src="{{ asset('images/card-bg.svg') }}" class="card-img-top image" alt="...">
             <div class="card-body">
-              <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">How to Land a Job in Your Dream Location? Ideas and Insider Stories</h3>
-              <p>Oh, the dreaded elevator pitch. Unless you’re one of the slick salesmen from Mad Men or the Wolf of Wall Street, you probably hate it.
-                Nothing wrong with that — a traditional elevator pitch is a lost cause. Here’s how to fix yours to make it actually work!</p>
+              <span class="topic">{{ $blog2->category }}</span>
+              <h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
+              <p>{{ $blog2->blog_post }}</p>
               <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
+                <p class="author"><i>by <strong>{{ $blog2->author }}</strong></i></p>
+                <span class="date">{{ \Carbon\Carbon::parse($blog2->created_at)->diffForHumans() }}</span>
               </div>
             </div>
           </div>
@@ -72,111 +70,17 @@
           <div class="card mb-3">
             <img src="{{ asset('images/bg-blog2.svg') }}" class="card-img-top image" alt="...">
             <div class="card-body">
-              <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">How to Land a Job in Your Dream Location? Ideas and Insider Stories</h3>
-              <p>Oh, the dreaded elevator pitch. Unless you’re one of the slick salesmen from Mad Men or the Wolf of Wall Street, you probably hate it.
-                Nothing wrong with that — a traditional elevator pitch is a lost cause. Here’s how to fix yours to make it actually work!</p>
+              <span class="topic">{{ $blog3->category }}</span>
+              <h3 class="card-title my-3">{{ $blog3->blog_title }}</h3>
+              <p>{{ $blog3->blog_post }}</p>
               <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
+                <p class="author"><i>by <strong>{{ $blog3->author }}</strong></i></p>
+                <span class="date">{{ \Carbon\Carbon::parse($blog3->created_at)->diffForHumans() }}</span>
               </div>
             </div>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Latest Blogs -->
-  <section id="latest" class="container">
-    <div class="container">
-      <h2 class="text-center my-5">Latest Posts from <span class="yellow-text">Work Life</span></h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog4.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog5.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog4.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog5.svg') }}" alt="blog-illustration">
-            <div class="card-body">
-             <span class="topic">LifeStyle</span>
-              <h3 class="card-title my-3">Where To Look For Cheap Brochure Printing </h3>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-              <div class="flex">
-                <p class="author">David Alenoghena</p>
-                <span class="date">04 Jun 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -199,20 +103,30 @@
     </div>
   </section>
 
-  <!-- Pagination -->
-  <section id="pagination" class="container">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link prev" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">5</a></li>
-        <li class="page-item"><a class="page-link" href="#">6</a></li>
-        <li class="page-item"><a class="page-link next" href="#">Next</a></li>
-      </ul>
-    </nav>
+  <!-- Latest Blogs -->
+  <section id="latest" class="container">
+    <div class="container">
+      <h2 class="text-center my-5">Latest Posts from <span class="yellow-text">Work Life</span></h2>
+      <div class="row">
+      @foreach($blogs as $blog)
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <div class="card-body">
+             <span class="topic">{{ $blog->category }}</span>
+              <h3 class="card-title my-3">{{ $blog->blog_title }}</h3>
+              <p>{{ $blog->blog_post }}</p>
+              <div class="flex">
+                <p class="author"><i>by <strong>{{ $blog->author }}</strong></i></p>
+                <span class="date">{{ \Carbon\Carbon::parse($blog->updated_at)->diffForHumans() }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        @endforeach
+      </div>
+    </div>
+    {{ $blogs->links() }}
   </section>
 </div>
 
