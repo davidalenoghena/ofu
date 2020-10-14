@@ -192,11 +192,11 @@
         <div class="row">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/opportunity/'.$blog_first->img) }}" alt="{{ $blog_first->name }}">
+            <img class="card-img-top image cover" src="{{ asset('images/opportunity/'.$blog_first->img) }}" alt="{{ $blog_first->blog_title }}">
             <div class="card-body">
              <span class="topic">{{ $blog_first->category }}</span>
               <h3 class="card-title my-3">{{ $blog_first->blog_title }}</h3>
-              <p>{{ $blog_first->blog_post }}</p>
+              <p>{{ \Illuminate\Support\Str::limit($blog_first->blog_post, 50, $end='...') }}</p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog_first->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog_first->created_at)->diffForHumans() }}</span>
@@ -206,11 +206,11 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/opportunity/'.$blog_second->img) }}" alt="{{ $blog_second->name }}">
+            <img class="card-img-top image cover" src="{{ asset('images/opportunity/'.$blog_second->img) }}" alt="{{ $blog_second->blog_title }}">
             <div class="card-body">
              <span class="topic">{{ $blog_second->category }}</span>
               <h3 class="card-title my-3">{{ $blog_second->blog_title }}</h3>
-              <p>{{ $blog_first->blog_post }}</p>
+              <p>{{ \Illuminate\Support\Str::limit($blog_second->blog_post, 50, $end='...') }}</p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog_second->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog_second->created_at)->diffForHumans() }}</span>
