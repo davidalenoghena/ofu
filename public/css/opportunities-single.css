@@ -16,8 +16,8 @@
     place-items: start;
     align-items: flex-start;
     padding: 2rem 0;
-   
   }
+
 
 #blog-op .col-md-4{
   max-width: 100%;
@@ -173,6 +173,7 @@
   .navigate_text{
     display: flex;
     justify-content: space-between;  
+    align-items: center;
   }
 
   .navigate_text i{
