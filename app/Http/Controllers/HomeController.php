@@ -152,6 +152,7 @@ class HomeController extends Controller
     public function singleopportunity($opportunity){
         $op_data = Opportunity::find($opportunity);
         $count = DB::table('opportunities')->count();
+        $blog_count = DB::table('blogs')->count();
 
         $previous = Opportunity::where('id', '<', $opportunity)->max('id');
         $previous_data = Opportunity::find($previous);
@@ -179,6 +180,9 @@ class HomeController extends Controller
                             ->where('status_slug', 1)
                             ->orderBy('updated_at', 'desc')
                             ->get();
+
+        $blog_first = DB::table('blogs')->latest()->first();
+        $blog_second = DB::table('blogs')->latest()->skip(1)->first();
         return view('pages.single_opportunity',
         [
             'all_data' => $all_data,
@@ -187,7 +191,9 @@ class HomeController extends Controller
             'next_data' => $next_data,
             'op_data' =>  $op_data,
             'op_ex' =>  $op_ex,
-            'op_av' => $op_av
+            'op_av' => $op_av,
+            'blog_first' => $blog_first,
+            'blog_second' => $blog_second
         ]);
     }
     public function internships()
@@ -242,6 +248,8 @@ class HomeController extends Controller
                             ->where('status_slug', 1)
                             ->orderBy('updated_at', 'desc')
                             ->get();
+        $blog_first = DB::table('blogs')->latest()->first();
+        $blog_second = DB::table('blogs')->latest()->skip(1)->first();
         return view('pages.single_internship',
         [
             'all_data' => $all_data,
@@ -250,7 +258,9 @@ class HomeController extends Controller
             'next_data' => $next_data,
             'in_data' =>  $in_data,
             'in_cl' =>  $in_cl,
-            'in_av' => $in_av
+            'in_av' => $in_av,
+            'blog_first' => $blog_first,
+            'blog_second' => $blog_second
         ]);
     }
 }
