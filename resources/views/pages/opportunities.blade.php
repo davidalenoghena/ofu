@@ -18,7 +18,7 @@
 </head>
 @endpush
 @section('content')
-<div id="app-opp" class="container">
+<div id="app" class="container">
     <section class="heading">
         <!-- Heading -->
         <h1>SCHOLARSHIPS</h1>

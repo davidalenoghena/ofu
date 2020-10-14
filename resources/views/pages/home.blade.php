@@ -109,7 +109,7 @@
             <div class="blog-heading text-center">
                 <h2>Blogs and Updates</h2>
                 <p class="grey-text">
-                    I don't know what we will write in all these places o.
+                    Catch the latest blogs on how to receive scholarships available to you.
                 </p>
             </div>
             <div class="blog-content   pt-4 row">
