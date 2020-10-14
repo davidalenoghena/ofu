@@ -75,26 +75,20 @@ class HomeController extends Controller
     }
     public function blog()
     {
-        $blog_count = DB::table('blogs')->count();
         $ran_blogs = DB::table('blogs')
                             ->inRandomOrder()
                             ->paginate(6);
         $blogs = DB::table('blogs')
-                            ->paginate(6);
-                            // ->get();
-        $blog1 = DB::table('blogs')->find(($blog_count));
-        $blog2 = DB::table('blogs')->find(($blog_count - 1));
-        $blog3 = DB::table('blogs')->find(($blog_count - 2));
-        $blog4 = DB::table('blogs')->find(($blog_count - 3));
-        $blog5 = DB::table('blogs')->find(($blog_count - 4));
+                            ->paginate(9);
+        $blog1 = DB::table('blogs')->latest()->first();
+        $blog2 = DB::table('blogs')->latest()->skip(1)->first();
+        $blog3 = DB::table('blogs')->latest()->skip(2)->first();
         return view('pages.blog',
         [
             'blogs' => $blogs,
             'blog1' => $blog1,
             'blog2' => $blog2,
             'blog3' => $blog3,
-            'blog4' => $blog4,
-            'blog5' => $blog5,
             'ran_blogs' => $ran_blogs
         ]
     );

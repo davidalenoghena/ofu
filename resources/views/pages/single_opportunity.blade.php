@@ -192,7 +192,7 @@
         <div class="row">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <img class="card-img-top image cover" src="{{ asset('images/opportunity/'.$blog_first->img) }}" alt="{{ $blog_first->name }}">
             <div class="card-body">
              <span class="topic">{{ $blog_first->category }}</span>
               <h3 class="card-title my-3">{{ $blog_first->blog_title }}</h3>
@@ -206,7 +206,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <img class="card-img-top image cover" src="{{ asset('images/opportunity/'.$blog_second->img) }}" alt="{{ $blog_second->name }}">
             <div class="card-body">
              <span class="topic">{{ $blog_second->category }}</span>
               <h3 class="card-title my-3">{{ $blog_second->blog_title }}</h3>
