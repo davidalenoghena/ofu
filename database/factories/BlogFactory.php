@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(blog::class, function (Faker $faker) {
     return [
-        'img' => $faker->name(5),
+        'img' => 'testblog.png',
         'blog_title' => $faker->text(20),
         'blog_post' => $faker->text(2000),
         'author' => $faker->name,

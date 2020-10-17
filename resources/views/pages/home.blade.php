@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-12  blog col-lg-4">
                     <div class="blog-img">
-                        <img src="{{asset('images/blog/'.$blog2->img)}}" alt="{{ $blog2->blog_title }}">
+                        <img src="{{ asset('images/blog/'.$blog2->img) }}" alt="{{ $blog2->blog_title }}">
                     </div>
                     <h4 class="py-3">{{ $blog2->blog_title }}</h4>
                     <a href="{{ route('blog.single', $blog2->id) }}" class="small yellow-text">Learn more</a>

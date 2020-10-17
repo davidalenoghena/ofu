@@ -38,7 +38,7 @@
       <div class="row">
         <div class="col-md-12 card flex">
           <div class="width-45">
-            <img src="{{ asset('images/bg-blog1.svg') }}" class="image cover" alt="job-illustration">
+            <img src="{{ asset('images/blog/'.$blog1->img) }}" alt="{{ $blog1->blog_title }}" class="image cover">
           </div>
           <div class="width-45  p-4">
             <span class="topic">{{ $blog1->category }}</span>
@@ -53,7 +53,7 @@
 
         <div class="col-md-6 mt-card">
           <div class="card mb-3">
-            <img src="{{ asset('images/card-bg.svg') }}" class="card-img-top image" alt="...">
+            <img src="{{ asset('images/blog/'.$blog2->img) }}" alt="{{ $blog2->blog_title }}" class="card-img-top image">
             <div class="card-body">
               <span class="topic">{{ $blog2->category }}</span>
               <h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
@@ -68,7 +68,7 @@
 
         <div class="col-md-6 mt-card">
           <div class="card mb-3">
-            <img src="{{ asset('images/bg-blog2.svg') }}" class="card-img-top image" alt="...">
+            <img src="{{ asset('images/blog/'.$blog3->img) }}" alt="{{ $blog3->blog_title }}" class="card-img-top image">
             <div class="card-body">
               <span class="topic">{{ $blog3->category }}</span>
               <h3 class="card-title my-3">{{ $blog3->blog_title }}</h3>
@@ -111,7 +111,7 @@
       @foreach($blogs as $blog)
         <div class="col-md-4">
           <div class="card mb-3">
-            <img class="card-img-top image cover" src="{{ asset('images/bg-blog3.svg') }}" alt="blog-illustration">
+            <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog->img) }}" alt="{{ $blog->blog_title }}">
             <div class="card-body">
              <span class="topic">{{ $blog->category }}</span>
               <h3 class="card-title my-3">{{ $blog->blog_title }}</h3>

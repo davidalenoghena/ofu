@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Opportunity::class, function (Faker $faker) {
     return [
-        'img' => $faker->text(5),
+        'img' => 'shell.png',
         'name' => $faker->name(6),
         'worth' => $faker->randomNumber(6),
         'eligibility_slug' => $faker->text(10),

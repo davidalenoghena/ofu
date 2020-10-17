@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Internship::class, function (Faker $faker) {
     return [
-        'img' => $faker->text(5),
+        'img' => 'student.png',
         'name' => $faker->name(6),
         'location' => $faker->text(9),
         'eligibility_slug' => $faker->text(10),
