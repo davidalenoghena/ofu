@@ -23,20 +23,19 @@
         <div class="container">
 			<div class="row ">
 				<div class="col-md-6">
-					<h1 class="mb-5">How to Land a Job in Your Dream Location? Ideas and Insider Stories</h1>
+					<h1 class="mb-5">{{ $blog_data->blog_title }}</h1>
 					<div class="profile d-flex ">
 						<div>
 							<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 smaller-image" alt="grey-illustration">
 						</div>
 						<div>
-							<p><span class= "black">David Alenoghena</span><br>
-							<span class = "text-muted">Blogger and Certified Big-head</span><br>
-							<em>Updated  21/09/2020</em></p>
+							<p><span class= "black">by {{ $blog_data->author }}</span><br>
+							<em>Updated: {{ \Carbon\Carbon::parse($blog_data->updated_at)->diffForHumans() }}</em></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<img src="{{ asset('blog_assets/img/illustration.svg') }}" class="image" alt="blog-illustration">
+					<img src="{{ asset('images/blog/'.$blog_data->img) }}" alt="{{ $blog_data->blog_title }}" class="image">
 				</div>     
 			</div>
 		</div>	
@@ -58,36 +57,7 @@
 
 		<section id="content" class = "container">
 			<p class="blog-content">
-				Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
-				“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
-				Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
-				half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
-				leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
-				I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
-				an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
-				the world) can be your workplace:
-			</p>
-
-			<p class="blog-content">
-				Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
-				“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
-				Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
-				half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
-				leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
-				I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
-				an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
-				the world) can be your workplace:
-			</p>
-
-			<p class="blog-content">
-				Life’s short, so let’s jump right in— Do you really want to die as a nine-to-five desk jockey? With a headstone epitaph that reads: 
-				“Met Deadlines” at best? Even if you’re pretty happy with where you’re in right now, I’m guessing the answer is no. You’re going to the office. 
-				Maybe you’re coming home from the office. You might as well be at the office right now. Come lunch and you’ll be scrolling through your Instagram feed, 
-				half-smiling at random cat pictures, when you’ll see photos of your friends chilling out in amazing places. We both know that #jealous comment you’ll
-				leave will come from a dark, dark place of envy. Oh, I could really use a break—you’ll say and start counting days until your next vacation.
-				I’m going to stop you right there.What if you wouldn’t have to wait for holidays ever again? What if, every day, you’d wake up to the sight of 
-				an ever-blue ocean,wide sandy beaches, and palm trees slowly swaying in the delicate breeze? In just a few months’ time, this (or any other place in 
-				the world) can be your workplace:
+			{{ $blog_data->blog_post }}
 			</p>
 
 			<div class= "heading-number text-center">
@@ -100,11 +70,6 @@
 						It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
 					</p>
 				</div>
-				<div class="my-4 flex-center">
-					<img src="{{ asset('blog_assets/img/hero-bg.jpg') }}" class="image filter" alt="blog-illustration">
-				</div>
-
-
 				<div class= "heading-number mt-5 text-center">
 				<span>2</span>
 				</div>
@@ -114,94 +79,59 @@
 						Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
 						It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
 					</p>
-				</div>
-
-				<div class = "space-evenly">
-					<div>
-						<strong>Rate my article:</strong><br>
-						<p>How to land a job in your dream location</p>
-					</div>
-					<div class="text-muted">
-						<p class="mb-0">Average: 4.63 (88 votes)</p>
-					</div>
-					<div class="d-flex">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-				
+				</div>				
 		</section>
-
 		<!-- Featured Blogs -->
-		<section id="featured">
-			<div class="container profile d-flex ">
-				<div>
-					<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 small-image" alt="grey-illustration">
-				</div>
-				<div>
-					<h3>David Alenoghena</h3>
-					<p>Cursus suscipit egestas tellus luctus tincidunt lectus. Curabitur dui quam bibendum nulla. Felis elit, magna dictumst et mauris tellus aliquam. 
-					Sit et pellentesque vestibulum volutpat, aenean sollicitudin. Nec hendrerit eget sapien adipiscing.
-					</p>
-					<a href="#">
-						<img src="{{ asset('blog_assets/img/social.svg') }}" class="image linkedin small-image" alt="social-illustration">
-					</a>
-
-				</div>
-			</div>
-		</section>
+		@include('partials.subscribe')
 	</section>
 
 	<!-- Latest Blogs -->
 	<section id="latest" class= "container">
 			<div class="container">
-			<h2 class="text-center my-5">Similar Articles</h2>
+			<h2 class="text-center my-5">Other Articles</h2>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="card mb-3">
-					<img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
+			<div class="col-md-4">
+				<div class="card mb-3">
+					<img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog1->img) }}" alt="{{ $blog1->blog_title }}">
 					<div class="card-body">
-						<small class="text-muted uppercase">26 sep 2020</small>
-						<h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-						<p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-						<div class="card-text text-muted d-flex">
-						<i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-						<i class="far fa-eye"></i><small>45</small>
+						<span class="topic">{{ $blog1->category }}</span>
+						<h3 class="card-title my-3">{{ $blog1->blog_title }}</h3>
+						<p>{{ \Illuminate\Support\Str::limit($blog1->blog_post, 150, $end='...') }}</p>
+						<div class="flex">
+							<p class="author"><i>by <strong>{{ $blog1->author }}</strong></i></p>
+							<span class="date">{{ \Carbon\Carbon::parse($blog1->updated_at)->diffForHumans() }}</span>
 						</div>
 					</div>
-					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="card mb-3">
-					<img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
+        	</div>
+			<div class="col-md-4">
+				<div class="card mb-3">
+					<img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog2->img) }}" alt="{{ $blog2->blog_title }}">
 					<div class="card-body">
-						<small class="text-muted uppercase">26 sep 2020</small>
-						<h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-						<p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-						<div class="card-text text-muted d-flex">
-						<i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-						<i class="far fa-eye"></i><small>45</small>
+						<span class="topic">{{ $blog2->category }}</span>
+						<h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
+						<p>{{ \Illuminate\Support\Str::limit($blog2->blog_post, 150, $end='...') }}</p>
+						<div class="flex">
+							<p class="author"><i>by <strong>{{ $blog2->author }}</strong></i></p>
+							<span class="date">{{ \Carbon\Carbon::parse($blog2->updated_at)->diffForHumans() }}</span>
 						</div>
 					</div>
-					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="card mb-3">
-					<img class="card-img-top image cover" src="{{ asset('blog_assets/img/data.svg') }}" alt="blog-illustration">
+        	</div>
+			<div class="col-md-4">
+				<div class="card mb-3">
+					<img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog3->img) }}" alt="{{ $blog3->blog_title }}">
 					<div class="card-body">
-						<small class="text-muted uppercase">26 sep 2020</small>
-						<h5 class="card-title my-3">Where To Look For Cheap Brochure Printing </h5>
-						<p class="card-text mb-3">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.</p>
-						<div class="card-text text-muted d-flex">
-						<i class="far fa-comments"></i><small class="mr-3">7.4k</small>
-						<i class="far fa-eye"></i><small>45</small>
+						<span class="topic">{{ $blog3->category }}</span>
+						<h3 class="card-title my-3">{{ $blog3->blog_title }}</h3>
+						<p>{{ \Illuminate\Support\Str::limit($blog3->blog_post, 150, $end='...') }}</p>
+						<div class="flex">
+							<p class="author"><i>by <strong>{{ $blog3->author }}</strong></i></p>
+							<span class="date">{{ \Carbon\Carbon::parse($blog3->updated_at)->diffForHumans() }}</span>
 						</div>
 					</div>
-					</div>
 				</div>
+        	</div>
 			</div>
 			</div>
 	</section>

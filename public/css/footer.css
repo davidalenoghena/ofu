@@ -90,9 +90,7 @@ li>strong{
         display: flex;
         /* flex-direction: column; */
     }
-    .links{
-        /* border: none; */
-    }
+
     .copyright{
         order: 2;
         text-align: center;

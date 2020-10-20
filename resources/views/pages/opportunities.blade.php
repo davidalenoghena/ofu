@@ -127,24 +127,8 @@
     </section>
 
 </div>
-<section id="subscribe" class="mb-5">
-    <div class="container d-flex">
-        <div class="subscribe-content">
-            <div>
-                <h3>Subscribe for <span class="yellow-text">weekly updates</span></h3>
-            </div>
-            <div>
-                <form action="#" class="d-flex mb-3 row">
-                    <div class="form-group mr-0 col-9">
-                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
-                    </div>
+@include('partials.subscribe')
 
-                    <button class="p-0 col-3 btn"><a class="btn-blue new" href="#">Subscribe</a></button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 @endsection
 
 @section('js')

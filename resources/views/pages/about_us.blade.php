@@ -18,19 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link href="{{ asset('about_assets/css/style.css') }}" rel="stylesheet">
 
 </head>
 <section class="general">
     <header class="section-header">
         <h3>About Us</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
-        </p>
+        <br/>
     </header>
 
     <section id="about">
