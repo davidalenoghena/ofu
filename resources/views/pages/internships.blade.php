@@ -124,28 +124,8 @@
         </section>
 
     </div>
-    <section id="subscribe">
-        <div class="container d-flex">
-            <div class="subscribe-content">
-                <div>
-                    <h3>Subscribe to <span class = "yellow-text">daily updates</span></h3>
-                    <p class = " py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et unde maxime. Earum cupiditate quasi ullam laboriosam amet quae assumenda ut fugiat quaerat. Cum, tempora.</p>
-                    
-                </div>
-                <div>
-                <form action="#" class = "d-flex mb-3 row">
-                    <div class = "form-group mr-0 col-9">
-                        <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
-                    </div>
+@include('partials.subscribe')
 
-                    <button class="p-0 col-3 btn"><a class = "nav-link ml-0 m-top-neg  blue-border btn-blue" href="#">Subscribe</a></button>
-                </form>
-                <p class = "">By clicking “Subscribe” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
-           
-                </div>                
-             </div>
-        </div>
-    </section>
 @endsection
 
 @section('js')

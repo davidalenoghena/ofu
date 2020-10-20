@@ -52,21 +52,21 @@
                 <div class="info-box">
                   <i class="fa fa-map-marker"></i>
                   <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>University of Benin, Benin City, Edo State, Nigeria</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="fa fa-envelope-o"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <p>ofuapp@gmail.com<br>info@opportunitiesforundergraduates.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="fa fa-phone"></i>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                  <p>+234 (0)8107986162<br>+234 (0)8185879603</p>
                 </div>
               </div>
             </div>
@@ -79,9 +79,9 @@
                 {{ session()->get('message') }}
             </div>
           @endif
-          <form class="form-horizontal" id="contactform" method="post" action="{{ route('sendmail') }}">
+          <form class="php-email-form" id="contactform" method="post" action="{{ route('sendmail') }}">
             @csrf
-            <div class="contact-form">
+            <div class="form-row">
                 <div class="col-sm-6 ">
                     <label>Enter your full name <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                       <div class="section-field">
@@ -122,7 +122,7 @@
                         @enderror
                     </div>
                   
-                    <button id="submit" name="submit" type="submit" value="Send" class="button btn btn-primary  pull-right iq-mt-40 twoToneButton">Submit</button>
+                    <button id="submit" name="submit" type="submit" value="Send" class="button btn btn-blue">Submit</button>
                 
             </div>
 
