@@ -78,6 +78,15 @@ p{
     margin-bottom: 2rem;
 }
 
+#featured img{
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.card-img-top{
+    border-radius: 0px !important;
+}
+
 .width-45{
     width: 48%;
 }
@@ -132,6 +141,11 @@ p{
 
 #latest .col-md-4{
     margin: 2rem 0;
+}
+
+#latest img{
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .uppercase{
@@ -284,6 +298,10 @@ p{
     display: flex;
     justify-content: center;
 }
+#title img{
+    max-height: 300px;
+    object-fit: cover;
+}
 
 @media (min-width:1500px){
     #icons div{
@@ -294,6 +312,11 @@ p{
 @media (max-width:768px){
     #title{
         padding: 4rem 1rem;
+    }
+    #title img{
+        max-height: 300px;
+        object-fit: cover;
+        margin-top: 1.5rem;
     }
     #icons{
         position: absolute;
@@ -307,6 +330,7 @@ p{
         left: 0;
         top: 50rem;
         z-index: 2;
+        visibility: hidden;
     }
     #content img{
         width: 80%;
