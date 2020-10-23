@@ -76,7 +76,41 @@ li{
 } 
 
 /* Hero-Section */
-.carousel{
+#hero{
+    background-image: linear-gradient( rgba(43, 43, 43, 0.219), rgba(34, 33, 33, 0.116) ),url('../images/bg-hero.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 20%;
+    height: 95vh;
+    display: grid;
+    place-items: center normal;
+}
+
+.heading h1{
+    color: #3c64b1;
+    max-width: 700px;
+}
+.heading > .grey-text{
+    max-width: 600px;
+}
+.home-subscribe-content{
+    max-width: 600px;
+    flex-direction: column;
+}
+.home.form-control{
+    padding: 1.5rem .75rem;
+}
+.home-btn{
+    background-color: #e59500;
+    padding: .5rem 1rem;
+}
+.home-btn:hover{
+    background-color: #b17505;
+    color: #fff !important;
+}
+
+
+/* .carousel{
     height: auto;
 }
 
@@ -97,10 +131,10 @@ li{
 
 .carousel-inner > .item{
     /*disables white flash*/
-    -webkit-transition: -webkit-transform .5s ease-in-out;
+    /* -webkit-transition: -webkit-transform .5s ease-in-out;
     -o-transition: -o-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
- }
+ } */
 
 .carousel-indicators li.active{
     background: white;
@@ -164,53 +198,50 @@ li{
 }
 
 /* About Section */
-
-#about, #blog{
-    background-color: #f3f6fa;
-
-}
-
 #about > .container{
-    padding: 7rem 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-video{
-    width: 45%;
-    height: auto;
-    margin: 0 3rem;
-    padding: 7rem;
-    border: 1px solid #373F41;
+.stats{
+    width: 50%;
     align-items: center;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
+    padding: 0 1.5rem;
 }
 
-.about-video i{
-    font-size: 3rem;
-    font-weight: 400;
-    color: #3c64b1;
+.stats div{
+    text-align: center;
+    color: #3C64B1;
+    margin: 1rem .5rem;
 }
 
-.about-content{
-    width: 45%;
+
+.statement{
+    width: 50%;
+    padding: 0 2.5rem;
+
+    margin: 1rem 0rem;
 }
 
-.about-content h2{
-    color: #373F41;;
+.statement h2{
+    color: #3C64B1;;
+}
+
+.red-btn{
+    margin-top: 2.5rem;
+    color: #FF8364 !important;
+    font-size: 14px;
 }
 
 .grey-text{
     color: #737b7d;
 }
 
-.stats{
-    background-color: #3c64b1;
-    padding: 3rem 0;
-    color: #fff;
-}
 .checked{
     color: #e59500;
 }
@@ -220,14 +251,16 @@ li{
 
 #opportunities{
     background: #fff;
-    color: #000;
 }
 
 #opportunities > .container{
-    padding: 5rem 0 ;
+    padding: 2rem 0 ;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
 }
 
-.opportunities-content{
+/* .opportunities-content{
     display: flex;
     justify-content: space-evenly;
     margin-top: 4rem;
@@ -267,8 +300,27 @@ li{
     height: 23rem;
     top: 15px;
     left: 15px;
+} */
+.scholarships{
+    background-color: #f3f6fa;
+}
+.scholarships, .internships{
+    width: 50%;
+    padding: 5rem 2rem;
+    text-align: center;
 }
 
+#opportunities .img{ 
+    width: 130px;
+}
+
+#opportunities h2{
+    margin: 1.5rem 0;
+}
+
+.img{
+    margin:0 auto 2rem auto;
+}
 
 .yellow-text{
     color: #ffbf43;
@@ -283,6 +335,61 @@ li{
 }
 .blog-img img{
     width: 100%;
+}
+.card.flex{
+    flex-direction: row;
+    margin: 0 15px ;
+}
+
+.card{
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+    transition: all .5s ease;
+    transform: scale(1.02);
+}
+
+.cover{
+    object-fit: cover;
+    height: auto;
+}
+ 
+.card-text{
+    font-size: 16px;
+}
+
+.card-body{
+    padding: 1.25rem 2.5rem;
+}
+.author{
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.topic,.date{
+    text-transform: uppercase;
+    font-size: 12px;
+    color:#616161;
+}
+
+.topic{
+    margin-bottom: 1rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#read-more{
+    font-size: 14px;
+}
+
+#blog .row{
+    margin-top: 4rem;
 }
 
 /* Testimonial Section */
@@ -373,6 +480,18 @@ button > a.nav-link.subscribe{
 .ml{
     margin-left: 0;
 }
+.subscribe-grey-text{
+    padding-left: 1rem;
+}
+.home.form-control{
+    padding: 1.25rem .75rem;
+}
+.home-subscribe-content{
+    width: 95% ;
+}
+.home-btn{
+    padding: .5rem;
+}
 .mobile-left{
     margin-left: 3rem !important;
 }
@@ -406,6 +525,9 @@ button > a.nav-link.subscribe{
 .blog-content,.collapse{
     flex-direction: column;
 }
+#opportunities > .container{
+    flex-direction: column;
+}
 .small{
     font-size: 12px;
 }
@@ -428,14 +550,23 @@ button > a.nav-link.subscribe{
     width: 90%;
     margin-left: 0 !important;
 }
-.about-video,.about-content, .subscribe{
-    width: 90%;
+.statement, .stats{
+    width: 98%;
+    padding: 0 1rem;
+    margin: 1.5rem 0;
+}
+.scholarships,.internships{
+    margin: 1.5rem 0;
+    width: 100%;
+    padding: 2rem;
 }
 .about-video{
     margin: 0 1rem;
 }
-#about > .container, #subscribe > .container{
+#about > .container{
     flex-direction: column;
+    padding-top: 3rem ;
+    padding-bottom: 1rem;
 }
 .footer-sect{
     flex-direction: column-reverse;

@@ -114,18 +114,17 @@
                 <div class="col-sm-6">
                     <div class="section-field textarea">
                         <label>Enter your message <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
-                        <textarea class="input-message col-12" rows="7" name="message" @error('message') is-invalid @enderror></textarea>
+                        <textarea class="input-message col-12" rows="9" name="message" @error('message') is-invalid @enderror></textarea>
                         @error('message')
                         <span class="invalid-feedback" role="alert">
                             <strong><a class="text-danger">{{ $message }}</a></strong>
                         </span>
                         @enderror
                     </div>
-                  
-                    <button id="submit" name="submit" type="submit" value="Send" class="button btn btn-blue">Submit</button>
-                
-            </div>
-
+              </div>
+             <div class="center col-sm-12">
+              <button id="submit" name="submit" type="submit" value="Send" class="button btn btn-blue">Submit</button>
+             </div>
           </form>
           </div>
 

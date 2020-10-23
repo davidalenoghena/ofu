@@ -1276,6 +1276,13 @@ section {
   border-radius: 4px;
 }
 
+.center{
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin-top: .75rem;
+}
+
 .contact .info-box i {
   font-size: 1.5rem;
   color: #3c64b1;
