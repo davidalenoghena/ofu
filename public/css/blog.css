@@ -63,10 +63,6 @@ p{
     margin-bottom: 1rem;
 }
 
-
-
-
-
 .flex{
     display: flex;
     justify-content: space-between;
@@ -203,6 +199,10 @@ p{
     margin:3rem 0 ;
     padding: 0 1rem;
     line-height: 2.5;
+}
+
+#read-more{
+    font-size: 14px;
 }
 
 .filter{
