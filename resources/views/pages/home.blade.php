@@ -118,34 +118,6 @@
                 </div>
             </div>
         </div> -->
-        <div class="container ">
-            <div class="stats">
-                <div>
-                    <h4>7200+</h4>
-                    <p>Students reginstered</p>
-                </div>
-                <div>
-                    <h4>120+</h4>
-                    <p>Countries Reached</p>
-                </div>
-                <div>
-                    <h4>20+</h4>
-                    <p>Years of impeacable services</p>
-                </div>
-                <div>
-                    <h4>450+</h4>
-                    <p>Local and International awards for our clinic</p>
-                </div>
-            </div>
-            <div class="statement">
-                <h2>Opportunities can come more than once</h2>
-                <p class="grey-text">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. 
-                   At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
-                </p>
-                <a href="#" class="red-btn">Learn More<img src="{{asset('images/Arrow-Right.svg')}}" class="ml-2" alt="arrow-right"></a>
-
-            </div>
-        </div>
     </section>
 
     <section id="opportunities">
@@ -156,7 +128,7 @@
                 </div>
                 <h2>Scholarships</h2>
                 <p class="grey-text">There are number of instructions to be followed at the time of refilling an inkjet cartridge. So whenever your printer ink runs dry you need to follow the below steps for inkjet cartridge refill.</p>
-                <a href="#" class="red-btn">Find Now<img src="{{asset('images/Arrow-Right.svg')}}" class="ml-2" alt="arrow-right"></a>
+                <a href="{{ route('opportunities') }}" class="red-btn">Find Now<img src="{{asset('images/Arrow-Right.svg')}}" class="ml-2" alt="arrow-right"></a>
             </div>
             <div class="internships">
             <div class="img">
@@ -164,7 +136,7 @@
                 </div>
                 <h2>Internships</h2>
                 <p class="grey-text">If you are looking for a new way to promote your business that won’t cost you more money, maybe printing is one of the options you won’t resist. Printing is a widely use process in making printed</p>
-                <a href="#" class="red-btn">Find Now<img src="{{asset('images/Arrow-Right.svg')}}" class="ml-2" alt="arrow-right"></a>
+                <a href="{{ route('internships') }}" class="red-btn">Find Now<img src="{{asset('images/Arrow-Right.svg')}}" class="ml-2" alt="arrow-right"></a>
             </div>
         </div>
     </section>
@@ -224,8 +196,8 @@
                         <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog2->img) }}" alt="{{ $blog2->blog_title }}">
                         <div class="card-body">
                             <span class="topic">{{ $blog2->category }}</span>
-                            <h3 class="card-title my-3">{{ $blog1->blog_title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($blog1->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $blog2->id) }}"><em>Read more</em></a></p>
+                            <h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
+                            <p>{{ \Illuminate\Support\Str::limit($blog2->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $blog2->id) }}"><em>Read more</em></a></p>
                             <div class="flex">
                                 <p class="author"><i>by <strong>{{ $blog2->author }}</strong></i></p>
                                 <span class="date">{{ \Carbon\Carbon::parse($blog2->updated_at)->diffForHumans() }}</span>
@@ -237,12 +209,12 @@
                     <div class="card mb-3">
                         <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog1->img) }}" alt="{{ $blog1->blog_title }}">
                         <div class="card-body">
-                            <span class="topic">{{ $blog1->category }}</span>
-                            <h3 class="card-title my-3">{{ $blog1->blog_title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($blog1->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $blog1->id) }}"><em>Read more</em></a></p>
+                            <span class="topic">{{ $ran_blog->category }}</span>
+                            <h3 class="card-title my-3">{{ $ran_blog->blog_title }}</h3>
+                            <p>{{ \Illuminate\Support\Str::limit($ran_blog->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $ran_blog->id) }}"><em>Read more</em></a></p>
                             <div class="flex">
-                                <p class="author"><i>by <strong>{{ $blog1->author }}</strong></i></p>
-                                <span class="date">{{ \Carbon\Carbon::parse($blog1->updated_at)->diffForHumans() }}</span>
+                                <p class="author"><i>by <strong>{{ $ran_blog->author }}</strong></i></p>
+                                <span class="date">{{ \Carbon\Carbon::parse($ran_blog->updated_at)->diffForHumans() }}</span>
                             </div>
                         </div>
                     </div>
