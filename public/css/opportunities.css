@@ -6,13 +6,20 @@ body {
     color: #3c64b1;
 }
 
-#app {
-    margin-top: 12vh;
-}
-
 a.btn-link:hover {
     text-decoration: none;
 }
+
+#title-heading{
+    color: #fff;
+    background-image:linear-gradient(0deg, rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.2)), url('../images/scholarship-bg.svg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    place-items: center left;
+    display: grid;
+}
+
 
 .table-data p > strong > a {
     background-color: transparent !important;
@@ -158,7 +165,6 @@ a.blue-border {
 
 
 #subscribe {
-    background-color: transparent;
     color: #3c64b1;
 }
 .subscribe-content button {

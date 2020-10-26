@@ -18,12 +18,12 @@
 </head>
 @endpush
 @section('content')
-<div id="app" class="container">
-    <section class="heading">
+<div id="app" class="">
+    <section id="title-heading">
         <!-- Heading -->
-        <h1>SCHOLARSHIPS</h1>
+        <h1 class= "container">Scholarships</h1>
     </section>
-    <section id="search" class="my-5">
+    <section id="search" class="my-5 container">
         <!-- <form action="{{ route('opportunity.filter') }}" method="GET"> 
             @csrf   
             <div class="filter">
@@ -36,7 +36,7 @@
         @include('partials.opfilter')
     </section>
 
-    <section id="accordion" class="table">
+    <section id="accordion" class="table container">
         <div class="table-header">
             <p>Name</p>
             <p>Worth</p>
@@ -120,7 +120,7 @@
         @endforeach
     </section>
 
-    <section>
+    <section class="container">
         <nav aria-label="Page navigation example" class="pagination-body">
             {{ $op_not_av->links() }}
         </nav>
