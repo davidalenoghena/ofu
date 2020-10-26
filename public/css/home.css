@@ -18,6 +18,7 @@ body{
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    height: 100%;
 
 }
 
@@ -49,6 +50,10 @@ li{
 
 .btn-reg:hover{
     background-color: #171f2d;
+}
+
+header .navbar-dark .navbar-nav .btn-blue a.nav-link {
+    color: #fff;
 }
 
 .nav-link{
