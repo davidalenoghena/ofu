@@ -58,11 +58,20 @@
                 Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.
             </p>
             <div class="home-subscribe-content">
-                <form action="#" class="d-flex row">
-                    <div class="form-group mr-0 col-9">
-                        <input type="email" class="form-control home blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                @if(session()->has('success'))
+                    <div class="alert alert-success" role="alert ">
+                        {{ session()->get('success') }}
                     </div>
-                    <a class="nav-link col-3 btn text-white ml-0 m-top-neg home-btn " href="#">Subscribe</a>
+                @endif
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                <form action="{{ route('subscribe') }}" class="d-flex row" method="POST">
+                    @csrf
+                    <div class="form-group mr-0 col-9">
+                        <input type="email" name="email" class="form-control home blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+                    </div>
+                    <button class="nav-link col-3 btn text-white ml-0 m-top-neg home-btn">Subscribe</button>
                 </form>
 
                 <p class="grey-text mt-2 small">We would send them directly to your mail to avoid spamming</p>

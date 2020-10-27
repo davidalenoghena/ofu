@@ -39,9 +39,14 @@ Route::get('/isearch', 'SearchController@internshipssearch')->name('internship.s
 Route::get('/op_filter', 'SearchController@op_filtersearch')->name('opportunity.filter');
 Route::get('/in_filter', 'SearchController@in_filtersearch')->name('internship.filter');
 
+Route::post('/subcribe', 'HomeController@storeSubscribe')->name('subscribe');
+
 //Admin section
 Route::get('/admin', 'AdminController@index')->name('admin.home')->middleware('is_admin');
-Route::get('/admin/users', 'AdminController@users')->name('admin.users');
+
+//Subscribers
+Route::get('/admin/subscribers', 'NewsletterController@index')->name('admin.letter'); 
+Route::get('/admin/subscriber/delete/{newsletter}', 'NewsletterController@destroy');
 
 //Admin.Blog
 Route::get('/admin/blog', 'BlogController@index')->name('admin.blog');
@@ -50,9 +55,9 @@ Route::post('admin/blog/store', 'BlogController@store')->name('store.blog');
 Route::get('/admin/blog/{id}', 'BlogController@show')->name('show.blog');
 Route::get('admin/blog/edit/{id}', 'BlogController@edit')->name('edit.blog');
 Route::post('admin/blog/update/{id}', 'BlogController@update')->name('update.blog');
-Route::get('admin/blog/disable/{id}', 'BlogController@disableBlog')->name('disable.blog');
 Route::get('admin/blog/enable/{id}', 'BlogController@enableBlog')->name('enable.blog');
-Route::get('/admin/blog_unpublished', 'BlogController@disabledBlogList')->name('admin.unpublish');
+Route::get('/admin/blog/delete/{blog}', 'BlogController@destroy');
+
 
 //Admin.Opportunities 
 Route::get('/admin/opportunities', 'OpportunityController@index')->name('admin.opportunity'); 
