@@ -53,7 +53,7 @@
                                         <td>{{ \Illuminate\Support\Str::limit($row->name, 24, $end='...') }}</td>
                                         <td>{{ $row->location }}</td>
                                         <td>{!! $row->eligibility !!}</td>
-                                        <td>{{ $row->created_at }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</td>
                                         <td><a href="{{ route('show.intern', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a></td>
                                         <td><a href="{{ route('edit.intern', ['id' => $row->id]) }}" class="btn btn-link text-info">Edit</a></td>
                                         <td><a href="/admin/internship/delete/{{ $row->id }}"  onclick="return confirm('Are you sure?')" class="btn btn-link text-danger">Delete</a></td>

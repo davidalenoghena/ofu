@@ -167,9 +167,12 @@ class BlogController extends Controller
     }
 
 
-    public function destroy(blog $blog)
+    public function destroy($id)
     {
-        //
+        blog::where('id', $id)->delete();   
+
+
+     return redirect('/admin/blog')->with('success', 'Blog Deleted successfully');
     }
 
 }

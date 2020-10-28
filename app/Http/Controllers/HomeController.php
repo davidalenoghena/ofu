@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\blog;
 use App\Opportunity;
 use App\Internship;
+use App\Newsletter;
 use App\Mail\SendMailable;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -256,5 +257,18 @@ class HomeController extends Controller
             'blog_first' => $blog_first,
             'blog_second' => $blog_second
         ]);
+    }
+
+     public function storeSubscribe(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required',
+        ]);
+        $subscribe = new Newsletter;
+        $subscribe->email = $request->email;
+
+        $subscribe->save(); 
+
+         return back()->with('success', 'Subscription Sucessfull!');  
     }
 }
