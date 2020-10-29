@@ -68,8 +68,34 @@
 
                     </div>
                 </div>
+
+                 <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="{{ asset('images/admin.jpg')}}" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+
+                            <a class="nav-link" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();"><i class="ti-power-off text-primary"></i>
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
             </div>
 
         </header><!-- /header -->
         <!-- Header-->
         
+
+              
