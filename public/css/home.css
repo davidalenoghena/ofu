@@ -715,6 +715,19 @@ width: 233px;
         margin-top: 0; 
         /* // remove the gap so it doesn't close */
      }
+     .dropdown-menu{
+         display: block;
+         border: 0;
+     }
+     .dropdown-menu ul{
+         margin-left: -2rem;
+     }
+     li.nav-item.dropdown{
+         padding: 0 1rem;
+     }
+     .dropdown-li{
+         padding: 0;
+     }
      .dropdown-menu ul > li:after{
          top: 2em;
      }
