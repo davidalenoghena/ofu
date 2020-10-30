@@ -16,8 +16,8 @@
         </div>
         <div class="navbar-collapse " id="navbarmenu">
             <ul class="navbar-nav nav-links">
-                <li class="nav-item active">
-                        <a class="nav-link  switch" href="{{ route('home') }}">HOME</a>
+                <li class="nav-item ">
+                        <a class="nav-link nav-grey" href="{{ route('home') }}">HOME</a>
                 </li>
                 <li class="nav-item  ">
                     <a class="nav-link nav-grey" href = "{{ route ('opportunities') }}" >SCHOLARSHIPS</a>
