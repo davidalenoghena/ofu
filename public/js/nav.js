@@ -14,7 +14,7 @@ const burger = document.querySelector('div.navbar-toggler');
 const navLinks1 = document.querySelector('.nav-links');
 const navLinks2 = document.querySelector('.login-btns');
 const body = document.querySelector('.content');
-
+console.log(burger);
 
 const navSlide = () => {
     // Toggle Nav

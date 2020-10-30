@@ -22,8 +22,14 @@
                 <li class="nav-item  ">
                     <a class="nav-link nav-grey" href = "{{ route ('opportunities') }}" >SCHOLARSHIPS</a>
                 </li>
-                <li class="nav-item  ">
-                    <a class="nav-link nav-grey" href = "{{ route ('internships') }}" >INTERNSHIPS</a>
+                <li class="nav-item dropdown ">
+                    <span class="nav-link nav-grey dropdown-toggle " id="dropdown08" aria-haspopup="true" aria-expanded="false">OPPORTUNITIES</span>
+                    <div class="dropdown-menu" aria-labelledby="dropdown08">
+                        <ul>
+                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('opportunities') }}" >SCHOLARSHIPS</a></li>
+                            <li class = "dropdown-li"><a class="dropdown-item"  href = "{{ route ('internships') }}" >INTERNSHIPS</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav-item  ">
                     <a class="nav-link nav-grey" href="{{ route ('blog')}}">BLOG</a>

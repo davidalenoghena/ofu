@@ -67,6 +67,11 @@
     padding: .25rem .75rem;
   }
 
+
+.cover{
+  height: 200px;
+}
+
   .opp-single{
     display: flex;
     justify-content: space-between;
