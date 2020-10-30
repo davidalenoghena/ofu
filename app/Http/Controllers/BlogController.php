@@ -15,6 +15,13 @@ class BlogController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    
     public function index()
     {
         $blogs = DB::table('blogs')->where('status', 1)->orderBy('created_at', 'desc')->get();
@@ -167,9 +174,12 @@ class BlogController extends Controller
     }
 
 
-    public function destroy(blog $blog)
+    public function destroy($id)
     {
-        //
+        blog::where('id', $id)->delete();   
+
+
+     return redirect('/admin/blog')->with('success', 'Blog Deleted successfully');
     }
 
 }

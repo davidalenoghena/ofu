@@ -15,6 +15,13 @@ class InternshipController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    
     public function index()
     {
         $intern = DB::table('internships')->orderBy('created_at', 'desc')->get();

@@ -23,14 +23,6 @@
         <h1 class="container">Internships</h1>
     </section>
     <section id="search" class="my-5 container">
-        <!-- <form action="{{ route('internship.filter') }}" method="GET"> 
-                @csrf   
-                <div class="filter">
-                    <h3>Filter</h3>
-                    <select type="text" id="picker" name="picker[]" multiple="multiple"></select>
-                    <button type="submit" class="btn btn-primary">Apply</button>
-                </div>
-            </form> -->
         @include('partials.infilter')
     </section>
 
