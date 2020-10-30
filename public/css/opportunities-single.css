@@ -114,8 +114,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     float: right;
-    transition: transform .25s linear;
-    -webkit-transition: -webkit-transform .25s linear;
+    transition: transform .1s linear;
+    -webkit-transition: -webkit-transform .1s linear;
   }
 
   .posts__list li > a{

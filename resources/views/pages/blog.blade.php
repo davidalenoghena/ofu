@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-md-6">
           <h1 class="mb-3">Blog</h1>
-          <p>Welcome to our blog! You’ll find the best job search, resume writing, and career advice here. With the help of our experts, you’ll not only create a job-winning resume for any position but breeze through your job interview.</p>
+          <p>Welcome to our blog! Get in touch with us if you wish to have your article posted</p>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
   <!-- Latest Blogs -->
   <section id="latest" class="container">
     <div class="container">
-      <h2 class="text-center my-5">Latest Posts from <span class="yellow-text">Work Life</span></h2>
+      <h2 class="text-center my-5">Other <span class="yellow-text">Posts</span></h2>
       <div class="row">
       @foreach($blogs as $blog)
         <div class="col-md-4">

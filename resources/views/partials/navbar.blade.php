@@ -34,8 +34,6 @@
                 <li class="nav-item mr ">
                     <a class="nav-link nav-grey " href="{{ route('contact') }}" >CONTACT</a>
                 </li>
-                <!-- <li class = "nav-item"><a class = "nav-link" href="{{ route('login') }}">LOGIN</a></li>
-                <li class = "nav-item btn-blue"><a class = "nav-link" href="{{ route('register') }}" >REGISTER</a></li> -->
             </ul>
         </div>
     </div>
