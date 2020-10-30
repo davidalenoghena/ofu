@@ -485,9 +485,7 @@ button > a.nav-link.subscribe{
 .ml{
     margin-left: 0;
 }
-.subscribe-grey-text{
-    padding-left: 1rem;
-}
+
 .home.form-control{
     padding: 1.25rem .75rem;
 }
@@ -679,7 +677,6 @@ width: 233px;
     }
     .subscribe-content h3{
         margin-bottom: 1rem;
-        padding-left: 1rem;
     }
     #testimonial .carousel{
         height: 400px;
