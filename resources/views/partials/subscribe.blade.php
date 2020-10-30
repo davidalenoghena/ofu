@@ -2,8 +2,8 @@
     <div class="container d-flex">
         <div class="subscribe-content">
             <div>
-                <h3 class="w-100">Subscribe to <span class="yellow-text">daily updates</span></h3>
-                <p class="subscribe-grey-text">We would send them directly to your mail to avoid spamming</p>  
+                <h3 class="w-100">Subscribe for <span class="yellow-text">weekly updates</span></h3>
+                <p class="subscribe-grey-text">We will send you a list of all available opportunities</p>  
             </div>
             <form action="#" class="d-flex row">
                 <div class="form-group mr-0 col-9">

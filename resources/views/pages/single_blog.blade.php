@@ -46,12 +46,7 @@
 	<section class = "relative">
 		<section id="icons">
 			<div>
-				<i class="fas fa-thumbs-up"><small class="mt-2"><br>286</small></i>
-				<i class="fa fa-twitter"></i></li>
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-google-plus"></i>
-				<i class="fa fa-linkedin"></i>
-				<i class="far fa-comments"></i>
+
 			</div>
 		</section>
 
@@ -63,21 +58,19 @@
 			<div class= "heading-number text-center">
 				<span>1</span>
 			</div>
-				<h3 class="text-center">Get All Dramatic</h3>
+				<h3 class="text-center">Did you know?</h3>
 				<div>
 					<p class="blog-content">
-						Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
-						It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
+						<center>You can contact us if you have any article or information you would like to be posted on our site</center>
 					</p>
 				</div>
 				<div class= "heading-number mt-5 text-center">
 				<span>2</span>
 				</div>
-				<h3 class="text-center">Get All Dramatic</h3>
+				<h3 class="text-center">You should know</h3>
 				<div>
 					<p class="blog-content">
-						Anyone can get a job in a tropical paradise— Sell your stuff, quit your job, and move to Asia to start teaching English.
-						It’s just that, unless you have a firm plan, you’ll probably come back beaten after a few months, only to hear all your friends’ patronizing pep talks about how you almost made it work.
+						<center>Anyone is capable of being awarded a scholarship. No connection is needed</center>
 					</p>
 				</div>				
 		</section>

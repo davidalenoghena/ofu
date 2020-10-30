@@ -103,7 +103,6 @@ class HomeController extends Controller
                             ->paginate(6);
         $blogs = DB::table('blogs')
                             ->paginate(6);
-                            // ->get();
         $blog1 = DB::table('blogs')->find(($blog_count));
         $blog2 = DB::table('blogs')->find(($blog_count - 1));
         $blog3 = DB::table('blogs')->find(($blog_count - 2));
