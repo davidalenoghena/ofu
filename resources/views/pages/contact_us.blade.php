@@ -79,10 +79,10 @@
                 {{ session()->get('message') }}
             </div>
           @endif
-          <form class="php-email-form" id="contactform" method="post" action="{{ route('sendmail') }}">
+          <form class="form-horizontal" id="contactform" method="post" action="{{ route('sendmail') }}">
             @csrf
-            <div class="form-row">
-                <div class="col-sm-6 ">
+            <div class="contact-form">
+                <div class="col-sm-6">
                     <label>Enter your full name <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                       <div class="section-field">
                         <input id="name" type="text" class=" pull-right form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -92,7 +92,7 @@
                         </span>
                         @enderror
                     </div>
-                    <div class="my-3 section-field">
+                    <div class="section-field">
                         <label>Email <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                         <input  id="email" type="email"  class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
                         @error('email')
@@ -101,7 +101,7 @@
                         </span>
                         @enderror
                     </div>
-                    <div class="section-field my-3">
+                    <div class="section-field">
                         <label>Enter your phone number <span class="text-danger"></span></label>
                         <input id="phone_number" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" autocomplete="phone_number">
                         @error('phone_number')
@@ -114,23 +114,22 @@
                 <div class="col-sm-6">
                     <div class="section-field textarea">
                         <label>Enter your message <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
-                        <textarea class="input-message col-12" rows="9" name="message" @error('message') is-invalid @enderror></textarea>
+                        <textarea class="input-message" rows="5" name="message" @error('message') is-invalid @enderror></textarea>
                         @error('message')
                         <span class="invalid-feedback" role="alert">
                             <strong><a class="text-danger">{{ $message }}</a></strong>
                         </span>
                         @enderror
                     </div>
-              </div>
-             <div class="center col-sm-12">
-              <button id="submit" name="submit" type="submit" value="Send" class="button btn btn-blue">Submit</button>
-             </div>
+                  
+                    <button id="submit" name="submit" type="submit" value="Send" class="button btn btn-blue">Submit</button>
+
+            </div>
+
           </form>
           </div>
 
         </div>
-
-      </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
