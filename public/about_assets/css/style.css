@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+html,body{
+  height: 100%;
+}
+
 
 body {
   background: #fff;
@@ -129,10 +133,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 20px 20px 20px;
 }
 
-section {
-  overflow: hidden;
-}
-
 /* Sections Header
 --------------------------------*/
 header .section-header{
@@ -140,6 +140,10 @@ header .section-header{
   flex-direction: row;
   position:absolute;
   top: 20%;
+}
+
+#footer{
+  background-color: #f3f6fa;
 }
 
 .section-header h3 {
@@ -190,7 +194,7 @@ header .section-header{
 }
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
-@media (max-width:768px){
+@media (max-width:769px){
   .general{
     padding-top: 1.75rem;
   }
@@ -200,8 +204,9 @@ header .section-header{
     place-items: center;
   }
 
-  .col-md-4{
+  .about-cols > .col-md-4{
     width: 90% !important;
     padding: 0 1rem;
+    max-width: 80%;
   }
 }

@@ -35,18 +35,14 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="about-col">
                         <div class="img">
-                            <img src='{{asset('images/about-mission.jpg')}}' alt="" class="img-fluid" />
+                            <img src="{{ asset('images/about-mission.jpg') }}" alt="" class="img-fluid" />
                             <div class="icon">
                                 <i class="fa fa-rocket"></i>
                             </div>
                         </div>
-                        <h2 class="title"><a href="#">Our Mission</a></h2>
+                        <h2 class="title"><a href="#"></a></h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur elit,
-                            sed do eiusmod tempor ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex
-                            ea commodo consequat.
+                            We ensure every student gets access to any available opportunity
                         </p>
                     </div>
                 </div>
@@ -54,18 +50,14 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="about-col">
                         <div class="img">
-                            <img src='{{asset('images/about-plan.jpg')}}' alt="" class="img-fluid" />
+                            <img src="{{ asset('images/about-plan.jpg') }}" alt="" class="img-fluid" />
                             <div class="icon">
                                 <i class="fa fa-pencil-square-o"></i>
                             </div>
                         </div>
-                        <h2 class="title"><a href="#">Our Plan</a></h2>
+                        <h2 class="title"><a href="#"></a></h2>
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error
-                            sit voluptatem doloremque laudantium, totam rem
-                            aperiam, eaque ipsa quae ab illo inventore
-                            veritatis et quasi architecto beatae vitae dicta
-                            sunt explicabo.
+                            Ensure information about opportunities is easily accessible
                         </p>
                     </div>
                 </div>
@@ -73,18 +65,14 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="about-col">
                         <div class="img">
-                            <img src='{{asset('images/about-vision.jpg')}}' alt="" class="img-fluid" />
+                            <img src="{{ asset('images/about-mission.jpg') }}" alt="" class="img-fluid" />
                             <div class="icon">
-                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-rocket"></i>
                             </div>
                         </div>
-                        <h2 class="title"><a href="#">Our Vision</a></h2>
+                        <h2 class="title"><a href="#"></a></h2>
                         <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit aut
-                            odit aut fugit, sed quia magni dolores eos qui
-                            ratione voluptatem sequi nesciunt Neque porro
-                            quisquam est, qui dolorem ipsum quia dolor sit
-                            amet.
+                            Open to offer assistance to any student concerning any scholarship or internship questions or problems
                         </p>
                     </div>
                 </div>

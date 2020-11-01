@@ -10,7 +10,7 @@
     font-size: 13px;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: rgb(55, 63, 65);
 }
 
 .navbar-brand a{
@@ -63,6 +63,7 @@
 
 .switch{
     font-weight: 600;
+    color: #3c64b1 !important;;
 }
 
 .caption{

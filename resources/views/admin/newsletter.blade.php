@@ -10,9 +10,7 @@
             </div>
         </div>
     </div>
-   
 </div>
-
 <div class="content mt-3">
     <br>
     <br>
@@ -22,7 +20,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Blog Posts</strong>
+                            <strong class="card-title">Subscribers</strong>
                         </div>
                         <div class="card-body">
                             @if(Session::has('success'))
@@ -31,15 +29,13 @@
                             </div>
                             @endif
 
-                            @if($blogs->count() > 0)
+                            @if($letter->count() > 0)
                             <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Blog Post</th>
+                                        <th scope="col">Email</th>
                                         <th scope="col">Created</th>
-                                        <th></th>
                                         <th scope="col">Actions</th>
                                         <th></th>
                                     </tr>
@@ -48,21 +44,19 @@
                                     @php
                                      $count = 1;
                                     @endphp
-                                    @foreach($blogs as $blog_item)
+                                    @foreach($letter as $row)
                                     <tr>
                                         <th scope="row">{{ $count++ }}</th>
-                                        <td>{!! \Illuminate\Support\Str::limit($blog_item->blog_title, 24, $end='...') !!}</td>
-                                        <td>{{ \Illuminate\Support\Str::limit($blog_item->blog_post, 34, $end='...') }}</td>
-                                        <td>{{ \Carbon\Carbon::parse($blog_item->created_at)->diffForHumans() }}</td>
-                                        <td><a href="{{ route('show.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Read</a></td>
-                                        <td><a href="{{ route('edit.blog', ['id' => $blog_item->id]) }}" class="btn btn-link text-info">Edit</a></td>
-                                        <td><a href="/admin/blog/delete/{{ $blog_item->id }}"  onclick="return confirm('Are you sure?')" class="btn btn-link text-danger">Delete</a></td>
+                                        <td>{{ $row->email }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</td>
+                                        <td><a href="/admin/subscriber/delete/{{ $row->id }}"  onclick="return confirm('Are you sure?')" class="btn btn-link text-danger">Delete</a></td>
+                                        
                                     </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                             @else
-                                <h6 class="text-center text-danger">0 BLog in this category</h6>
+                                <h6 class="text-center text-danger">0 Subscribers in this category</h6>
                             @endif
                         </div>
                     </div>

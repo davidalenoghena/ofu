@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\blog;
 use App\Opportunity;
 use App\Internship;
+use App\Newsletter;
 use App\Mail\SendMailable;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -102,7 +103,6 @@ class HomeController extends Controller
                             ->paginate(6);
         $blogs = DB::table('blogs')
                             ->paginate(6);
-                            // ->get();
         $blog1 = DB::table('blogs')->find(($blog_count));
         $blog2 = DB::table('blogs')->find(($blog_count - 1));
         $blog3 = DB::table('blogs')->find(($blog_count - 2));
@@ -256,5 +256,18 @@ class HomeController extends Controller
             'blog_first' => $blog_first,
             'blog_second' => $blog_second
         ]);
+    }
+
+     public function storeSubscribe(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required',
+        ]);
+        $subscribe = new Newsletter;
+        $subscribe->email = $request->email;
+
+        $subscribe->save(); 
+
+         return back()->with('success', 'Subscription Sucessfull!');  
     }
 }

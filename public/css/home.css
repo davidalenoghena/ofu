@@ -18,6 +18,7 @@ body{
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    height: 100%;
 
 }
 
@@ -49,6 +50,10 @@ li{
 
 .btn-reg:hover{
     background-color: #171f2d;
+}
+
+header .navbar-dark .navbar-nav .btn-blue a.nav-link {
+    color: #fff;
 }
 
 .nav-link{
@@ -480,9 +485,7 @@ button > a.nav-link.subscribe{
 .ml{
     margin-left: 0;
 }
-.subscribe-grey-text{
-    padding-left: 1rem;
-}
+
 .home.form-control{
     padding: 1.25rem .75rem;
 }
@@ -674,7 +677,6 @@ width: 233px;
     }
     .subscribe-content h3{
         margin-bottom: 1rem;
-        padding-left: 1rem;
     }
     #testimonial .carousel{
         height: 400px;
@@ -712,6 +714,19 @@ width: 233px;
         display: none;
         margin-top: 0; 
         /* // remove the gap so it doesn't close */
+     }
+     .dropdown-menu{
+         display: block;
+         border: 0;
+     }
+     .dropdown-menu ul{
+         margin-left: -2rem;
+     }
+     li.nav-item.dropdown{
+         padding: 0 1rem;
+     }
+     .dropdown-li{
+         padding: 0;
      }
      .dropdown-menu ul > li:after{
          top: 2em;
