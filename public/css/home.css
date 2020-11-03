@@ -247,6 +247,10 @@ header .navbar-dark .navbar-nav .btn-blue a.nav-link {
     color: #737b7d;
 }
 
+.white-text{
+    color: #fff;
+}
+
 .checked{
     color: #e59500;
 }

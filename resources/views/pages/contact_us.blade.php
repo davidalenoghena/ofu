@@ -151,7 +151,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('contact_assets/js/main.js') }}"></script>
-  <script src= "{{asset('js/nav.js')}}"></script>
+  <script src= "{{asset('js/nav.js')}}" defer></script>
 </body>
 
 </html>
