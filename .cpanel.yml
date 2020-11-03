@@ -1,5 +1,7 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/oppoldcx/public_html/
+ - export DEPLOYPATH=/home/#oppoldcx/public_html/
  - /bin/cp -R * $DEPLOYPATH
+ 
+#  Admin, remove the hash in front of the username to enable deployment in cpanel

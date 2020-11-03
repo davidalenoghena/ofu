@@ -32,6 +32,8 @@ class HomeController extends Controller
         $ran_blog = DB::table('blogs')
                             ->inRandomOrder()
                             ->first();
+        $blogs = DB::table('blogs')
+                            ->paginate(3);
 
         $blog1 = DB::table('blogs')->find(($blog_count));
         $blog2 = DB::table('blogs')->find(($blog_count - 1));
@@ -50,7 +52,8 @@ class HomeController extends Controller
             'in_first' => $in_first,
             'blog1' => $blog1,
             'blog2' => $blog2,
-            'ran_blog' => $ran_blog
+            'ran_blog' => $ran_blog,
+            'blogs' => $blogs
         ]);
     }
        public function about_us()

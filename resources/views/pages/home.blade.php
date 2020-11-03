@@ -61,48 +61,22 @@
                 </p>
             </div>
             <div class="row ">
+                @foreach($blogs as $blog)
                 <div class="col-md-6 col-lg-4">
                     <div class="card mb-3">
-                        <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog1->img) }}" alt="{{ $blog1->blog_title }}">
+                        <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog->img) }}" alt="{{ $blog1->blog_title }}">
                         <div class="card-body">
-                            <span class="topic">{{ $blog1->category }}</span>
-                            <h3 class="card-title my-3">{{ $blog1->blog_title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($blog1->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $blog1->id) }}"><em>Read more</em></a></p>
+                            <span class="topic">{{ $blog->category }}</span>
+                            <h3 class="card-title my-3">{{ $blog->blog_title }}</h3>
+                            <p>{{ \Illuminate\Support\Str::limit($blog->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $blog1->id) }}"><em>Read more</em></a></p>
                             <div class="flex">
-                                <p class="author"><i>by <strong>{{ $blog1->author }}</strong></i></p>
-                                <span class="date">{{ \Carbon\Carbon::parse($blog1->updated_at)->diffForHumans() }}</span>
+                                <p class="author"><i>by <strong>{{ $blog->author }}</strong></i></p>
+                                <span class="date">{{ \Carbon\Carbon::parse($blog->updated_at)->diffForHumans() }}</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card mb-3">
-                        <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog2->img) }}" alt="{{ $blog2->blog_title }}">
-                        <div class="card-body">
-                            <span class="topic">{{ $blog2->category }}</span>
-                            <h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($blog2->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $blog2->id) }}"><em>Read more</em></a></p>
-                            <div class="flex">
-                                <p class="author"><i>by <strong>{{ $blog2->author }}</strong></i></p>
-                                <span class="date">{{ \Carbon\Carbon::parse($blog2->updated_at)->diffForHumans() }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card mb-3">
-                        <img class="card-img-top image cover" src="{{ asset('images/blog/'.$blog1->img) }}" alt="{{ $blog1->blog_title }}">
-                        <div class="card-body">
-                            <span class="topic">{{ $ran_blog->category }}</span>
-                            <h3 class="card-title my-3">{{ $ran_blog->blog_title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($ran_blog->blog_post, 150, $end='...') }} <a id="read-more" href="{{ route('blog.single', $ran_blog->id) }}"><em>Read more</em></a></p>
-                            <div class="flex">
-                                <p class="author"><i>by <strong>{{ $ran_blog->author }}</strong></i></p>
-                                <span class="date">{{ \Carbon\Carbon::parse($ran_blog->updated_at)->diffForHumans() }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
