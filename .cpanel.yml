@@ -2,5 +2,5 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/oppoldcx/cprepo/
- - /bin/cp -r public/ $DEPLOYPATH
+ - /bin/cp -r public/images $DEPLOYPATH
  
