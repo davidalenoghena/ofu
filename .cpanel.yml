@@ -2,5 +2,5 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/oppoldcx/cprepo/
- - /bin/cp /public/* $DEPLOYPATH
+ - /bin/cp server.php $DEPLOYPATH
  
