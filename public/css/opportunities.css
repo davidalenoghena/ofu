@@ -12,7 +12,7 @@ a.btn-link:hover {
 
 #title-heading{
     color: #fff;
-    background-image:linear-gradient(0deg, rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.2)), url('../images/scholarship-bg.svg');
+    background-image:linear-gradient(63deg, rgba(149,148,141,.2) 0%, rgba(149,148,142,.2) 100%), url('../images/scholarship-bg.svg');
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -221,6 +221,12 @@ strong > a {
     place-content: center;
     margin: 2rem 0;
     font-weight: 600;
+}
+
+.table-main-2 img{
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .table-bg {

@@ -13,17 +13,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-a {
-  color: #18d26e;
-  transition: 0.5s;
-}
-
-a:hover, a:active, a:focus {
-  color: #18d36e;
-  outline: none;
-  text-decoration: none;
-}
-
 p {
   padding: 0;
   margin: 0 0 20px 0;
@@ -52,12 +41,12 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0.92);
-  z-index: 9;
+  z-index: 2;
 }
 
 #about .container {
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
 #about .about-col {
@@ -114,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-size: 20px;
   padding: 0;
+  background: rgba(255, 255, 255, 0.92);
   margin: 40px 0 12px 0;
 }
 
@@ -142,8 +132,15 @@ header .section-header{
   top: 20%;
 }
 
+body{
+  position: relative;
+}
+
 #footer{
   background-color: #f3f6fa;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .section-header h3 {
@@ -208,5 +205,35 @@ header .section-header{
     width: 90% !important;
     padding: 0 1rem;
     max-width: 80%;
+  }
+  body{
+    position: unset;
+  }
+  footer{
+    position: unset;
+  }
+}
+
+
+@media (max-width:1200px){
+  body{
+    position: unset;
+  }
+  #footer{
+    margin: 2rem 0 0;
+    position: unset ;
+  }
+  #about::before {
+    content: '';
+    position: unset;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .4;
+    z-index: 1;
+  }
+  #about{
+    background: linear-gradient(63deg, rgba(149,148,141,.4) 0%, rgba(149,148,142,.6) 100%),url("../about_us_images/about-bg.jpg") center top no-repeat fixed;
   }
 }
