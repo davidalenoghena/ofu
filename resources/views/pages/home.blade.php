@@ -56,7 +56,7 @@
             <div class="blog-heading text-center">
                 <h2>Blog and Updates</h2>
                 <p class="grey-text">
-                    Read relevant posts and <a href="{{ route('contact') }}">contact us</a> if you wish to have your article posted
+                    Read relevant posts and <a class="yellow-text" href="{{ route('contact') }}">contact us</a> if you wish to have your article posted
                 </p>
             </div>
             <div class="row ">

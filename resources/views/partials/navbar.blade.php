@@ -14,8 +14,8 @@
             <a href="/" ><span><strong class = "switch">Opportunities for Undergraduates</strong></span></a>
             <div class="caption switch">NEVER MISS AN OPPORTUNITY</div>
         </div>
-        <div class="navbar-collapse " id="navbarmenu">
-            <ul class="navbar-nav nav-links">
+        <div class="navbar-collapse  " id="navbarmenu">
+            <ul class="navbar-nav nav-links ml-auto">
                 <li class="nav-item ">
                         <a class="nav-link nav-grey" href="{{ route('home') }}">HOME</a>
                 </li>
@@ -31,7 +31,7 @@
                 <li class="nav-item ">
                     <a class="nav-link nav-grey" href="{{ route ('about')}}">ABOUT</a>
                 </li>
-                <li class="nav-item mr ">
+                <li class="nav-item ">
                     <a class="nav-link nav-grey " href="{{ route('contact') }}" >CONTACT</a>
                 </li>
             </ul>

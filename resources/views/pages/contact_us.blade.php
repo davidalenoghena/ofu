@@ -83,8 +83,8 @@
             @csrf
             <div class="contact-form">
                 <div class="col-sm-6">
-                    <label>Enter your full name <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                       <div class="section-field">
+                        <label>Enter your full name <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                         <input id="name" type="text" class=" pull-right form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                         @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="section-field textarea">
+                    <div class="section-field  textarea">
                         <label>Enter your message <span class="text-danger"><i class="fa fa-exclamation-circle text-danger pull-left"></i></span></label>
                         <textarea class="input-message" rows="5" name="message" @error('message') is-invalid @enderror></textarea>
                         @error('message')

@@ -76,6 +76,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 4.5rem;
+  }
+
+  .opp-single img{
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .opp-single div{
+    width: 45%;
   }
   
   .panel-default{
@@ -168,11 +179,15 @@
     width: 50%;
   }
 
+  .subscribe-grey-text, .card-body p{
+    color: #55595a;
+  }
   .navigate{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2rem 0;
   }
 
   .navigate_text{

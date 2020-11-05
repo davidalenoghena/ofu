@@ -18,7 +18,6 @@
                             <li><a href = "{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="vertical_line"> </div>
                     <div class = " links ">
                         <ul class = "d-flex">
                             <li><i class="fa fa-twitter"></i></li>

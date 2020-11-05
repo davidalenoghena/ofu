@@ -118,6 +118,9 @@ a:hover{
 .navbanner{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     color: #fff;
 }
 
@@ -181,6 +184,9 @@ a:hover{
 @media only screen and (max-width: 1000px){
     .navbar-brand span{
         font-size: 18px;
+    }
+    .navbanner{
+        width: auto;
     }
      .nav-links{
         position: absolute;
