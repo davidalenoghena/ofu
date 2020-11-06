@@ -53,7 +53,7 @@
                                     <tr>
                                         <th scope="row">{{ $count++ }}</th>
                                         <td>{{ \Illuminate\Support\Str::limit($row->name, 24, $end='...') }}</td>
-                                        <td>{{ $row->status }}</td>
+                                        <td>{!! $row->status !!}</td>
                                         <td>{!! $row->eligibility !!}</td>
                                         <td>{{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</td>
                                         <td><a href="{{ route('show.opportunity', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a></td>

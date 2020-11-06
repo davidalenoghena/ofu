@@ -100,7 +100,7 @@
                     <div class="table-main-2">
                         <img src="{{ asset('images/opportunity/'.$opportunity->img) }}" alt="{{ $opportunity->name }}">
                         <div>
-                            <p>{{ $opportunity->detail }}</p>
+                            <p>{!! $opportunity->detail !!}</p>
                             <a class="btn-link" href="{{ route('opportunities.single', $opportunity->id) }}">See Full Details</a>
                         </div>
                     </div>
