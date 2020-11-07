@@ -33,7 +33,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-graduation-cap"></i>Scholarships</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-graduation-cap"></i><a href="{{ route('admin.opportunity') }}">Scholarships</a></li>
-                            <li><i class="fa fa-graduation-cap"></i><a href="{{ route('admin.opportunity.create') }}">Create Scholarships</a></li>
+                            <li><i class="fa fa-graduation-cap"></i><a href="{{ route('admin.opportunity.create') }}">Create Scholarship</a></li>
                             
                         </ul>
                     </li>

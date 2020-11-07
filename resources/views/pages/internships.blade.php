@@ -50,7 +50,7 @@
                     <div class="table-main-2">
                         <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                         <div>
-                            <p>{{ $internship->detail }}</p>
+                            <p>{!! $internship->detail !!}</p>
                             <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     <div class="table-main-2">
                         <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                         <div>
-                            <p>{{ $internship->detail }}</p>
+                            <p>{!! $internship->detail !!}</p>
                             <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <div class="table-main-2">
                         <img src="{{ asset('images/internship/'.$internship->img) }}" alt="{{ $internship->name }}">
                         <div>
-                            <p>{{ $internship->detail }}</p>
+                            <p>{!! $internship->detail !!}</p>
                             <a class="btn-link" href="{{ route('internships.single', $internship->id) }}">See Full Details</a>
                         </div>
                     </div>

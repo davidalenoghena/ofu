@@ -36,7 +36,7 @@
                 </div>
                 <hr>
                 <div class="card-text text-sm">
-                    <strong>Detail:</strong>{{ $intern_data->detail }}
+                    <strong>Detail:</strong>{!! $intern_data->detail !!}
                 </div>
                 <hr>
                 <div class="card-text text-sm">

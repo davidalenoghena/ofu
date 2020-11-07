@@ -65,7 +65,7 @@
                                 </tbody>
                             </table>
                             @else
-                                <h6 class="text-center text-danger">0 Opprotunity in this category</h6>
+                                <h6 class="text-center text-danger">0 Opportunity in this category</h6>
                             @endif
                         </div>
                     </div>

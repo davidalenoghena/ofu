@@ -40,17 +40,17 @@
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status Slug</label></div>
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status (0|1|2)</label></div>
                             <div class="col-12 col-md-9"><input type="text" id="status_slug" name="status_slug" placeholder="status_slug" class="form-control" value="{{ old('status_slug') }} " required></div>
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility Slug</label></div>
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility (100 level)</label></div>
                             <div class="col-12 col-md-9"><input type="text" id="eligibility_slug" name="eligibility_slug" placeholder="Eligibility" class="form-control" value="{{ old('eligibility_slug') }} " required></div>
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Word</label></div>
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Word (no_space)</label></div>
                             <div class="col-12 col-md-9"><input type="text" id="word" name="word" placeholder="Status" class="form-control" value="{{ old('word') }} " required></div>
                     </div>
 
