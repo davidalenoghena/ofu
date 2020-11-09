@@ -61,7 +61,7 @@
                         <h4 class="mb-0">
                             <span class="count">{{$opportunity->count() }} </span>
                         </h4>
-                        <p class="text-light">Number of Scholaships</p>
+                        <p class="text-light">Number of Scholarships</p>
 
                     </div>
 

@@ -39,17 +39,17 @@
                             <div class="col-12 col-md-9"><input type="text" id="worth" name="worth" value="{{ $opportunity->worth }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status Slug
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status (0|1|2)
                         </label></div>
                             <div class="col-12 col-md-9"><input type="text" id="status_slug" name="status_slug" value="{{ $opportunity->status_slug }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility Slug
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility (100 level)
                         </label></div>
                             <div class="col-12 col-md-9"><input type="text" id="eligibility" name="eligibility_slug" value="{{ $opportunity->eligibility_slug }}" class="form-control" required></div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Word
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Word (no_space)
                         </label></div>
                             <div class="col-12 col-md-9"><input type="text" id="word" name="word" value="{{ $opportunity->word }}" class="form-control" required></div>
                     </div>

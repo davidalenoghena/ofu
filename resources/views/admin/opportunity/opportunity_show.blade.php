@@ -36,7 +36,7 @@
                 </div>
                 <hr>
                 <div class="card-text text-sm">
-                    <strong>First detail:</strong>{!! $opportunity_data->detail !!}
+                    <strong>Detail:</strong>{!! $opportunity_data->detail !!}
                 </div>
                 <hr>
                 <div class="card-text text-sm">
