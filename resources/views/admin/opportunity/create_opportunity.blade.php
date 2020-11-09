@@ -18,7 +18,7 @@
     <div class="col-md-11">
         <div class="card">
             <div class="card-header">
-                <strong>Create New Opportunitiy</strong>
+                <strong>Create New Scholarships</strong>
             </div>
             <div class="card-body card-block">
                 <ul>

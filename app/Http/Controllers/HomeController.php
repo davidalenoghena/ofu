@@ -6,6 +6,7 @@ use App\blog;
 use App\Opportunity;
 use App\Internship;
 use App\Newsletter;
+use Image;
 use App\Mail\SendMailable;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;

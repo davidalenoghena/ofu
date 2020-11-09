@@ -22,7 +22,7 @@
             <div class="card-body">
                 <div class="mx-auto d-block" align="center">
                     <img class="" src="{{ asset('images/opportunity/'.$opportunity_data->img) }}" alt="opportunity image" height="400" width="400">
-                    <h5 class="text-sm-center mt-2 mb-1">{{$opportunity_data ->status}}</h5>
+                    <h5 class="text-sm-center mt-2 mb-1">{!!$opportunity_data ->status!!}</h5>
                     <div class="location text-sm-center"><i class="fa fa-map-marker"></i> {{$opportunity_data->worth}}</div>
                 </div>
                 <hr>
@@ -55,7 +55,7 @@
                 <div class="card-text text-sm"><strong>Note:</strong>
                     {!! $opportunity_data->note !!}
                 </div>
-                <div class="card-text text-sm">
+                <div class="card-text text-sm"><strong>Word:</strong>
                     {!! $opportunity_data->word !!}
                 </div>
 
