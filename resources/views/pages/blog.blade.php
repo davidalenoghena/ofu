@@ -43,7 +43,7 @@
           <div class="width-45  p-4">
             <span class="topic">{{ $blog1->category }}</span>
             <h2>{{ $blog1->blog_title }}</h2>
-            <p>{!! \Illuminate\Support\Str::limit($blog1->blog_post, 200, $end='...') !!}  <a id="read-more" href="{{ route('blog.single', $blog1->id) }}"><em>Read more</em></a></p>
+            <a id="read-more" href="{{ route('blog.single', $blog1->id) }}"><em>Read more</em></a></p>
             <div class="flex">
               <p class="author"><i>by <strong>{{ $blog1->author }}</strong></i></p>
               <span class="date">{{ \Carbon\Carbon::parse($blog1->created_at)->diffForHumans() }}</span>
@@ -57,7 +57,7 @@
             <div class="card-body">
               <span class="topic">{{ $blog2->category }}</span>
               <h3 class="card-title my-3">{{ $blog2->blog_title }}</h3>
-              <p>{!! \Illuminate\Support\Str::limit($blog2->blog_post, 200, $end='...') !!}  <a id="read-more" href="{{ route('blog.single', $blog2->id) }}"><em>Read more</em></a></p>
+              <a id="read-more" href="{{ route('blog.single', $blog2->id) }}"><em>Read more</em></a></p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog2->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog2->created_at)->diffForHumans() }}</span>
@@ -72,7 +72,7 @@
             <div class="card-body">
               <span class="topic">{{ $blog3->category }}</span>
               <h3 class="card-title my-3">{{ $blog3->blog_title }}</h3>
-              <p>{!! \Illuminate\Support\Str::limit($blog3->blog_post, 200, $end='...') !!}  <a id="read-more" href="{{ route('blog.single', $blog3->id) }}"><em>Read more</em></a></p>
+              <a id="read-more" href="{{ route('blog.single', $blog3->id) }}"><em>Read more</em></a></p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog3->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog3->created_at)->diffForHumans() }}</span>
@@ -100,7 +100,7 @@
             <div class="card-body">
              <span class="topic">{{ $blog->category }}</span>
               <h3 class="card-title my-3">{{ $blog->blog_title }}</h3>
-              <p>{!! \Illuminate\Support\Str::limit($blog->blog_post, 150, $end='...') !!} <a id="read-more" href="{{ route('blog.single', $blog->id) }}"><em>Read more</em></a></p>
+              <a id="read-more" href="{{ route('blog.single', $blog->id) }}"><em>Read more</em></a></p>
               <div class="flex">
                 <p class="author"><i>by <strong>{{ $blog->author }}</strong></i></p>
                 <span class="date">{{ \Carbon\Carbon::parse($blog->updated_at)->diffForHumans() }}</span>
