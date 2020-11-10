@@ -43,14 +43,7 @@
                     </div>
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="select" class=" form-control-label">Category</label></div>
-                            <div class="col-12 col-md-9">
-                                <select name="category" id="category" class="form-control" value="{{ $blog->category }} ">
-                                    <option value="0">Please select</option>
-                                    <option value="1">Option #1</option>
-                                    <option value="2">Option #2</option>
-                                    <option value="3">Option #3</option>
-                                </select>
-                            </div>
+                        <div class="col-12 col-md-9"><input type="text" id="category" name="category" value="{{ $blog->category }}" class="form-control" required></div>
                     </div>
                 
                     <div class="row form-group">
