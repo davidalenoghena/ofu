@@ -228,7 +228,7 @@
                     <div class="card-body">
                         <span class="topic">{{ $blog_first->category }}</span>
                         <h3 class="card-title my-3">{{ $blog_first->blog_title }}</h3>
-                        <p>{!! \Illuminate\Support\Str::limit($blog_first->blog_post, 150, $end='...') !!} <a id="read-more" href="{{ route('blog.single', $blog_first->id) }}"><em>Read more</em></a></p>
+                        <a id="read-more" href="{{ route('blog.single', $blog_first->id) }}"><em>Read more</em></a></p>
                         <div class="flex">
                             <p class="author"><i>by <strong>{{ $blog_first->author }}</strong></i></p>
                             <span class="date">{{ \Carbon\Carbon::parse($blog_first->created_at)->diffForHumans() }}</span>
@@ -242,7 +242,7 @@
                     <div class="card-body">
                         <span class="topic">{{ $blog_second->category }}</span>
                         <h3 class="card-title my-3">{{ $blog_second->blog_title }}</h3>
-                        <p>{!! \Illuminate\Support\Str::limit($blog_second->blog_post, 150, $end='...') !!} <a id="read-more" href="{{ route('blog.single', $blog_second->id) }}"><em>Read more</em></a></p>
+                        <a id="read-more" href="{{ route('blog.single', $blog_second->id) }}"><em>Read more</em></a></p>
                         <div class="flex">
                             <p class="author"><i>by <strong>{{ $blog_second->author }}</strong></i></p>
                             <span class="date">{{ \Carbon\Carbon::parse($blog_second->created_at)->diffForHumans() }}</span>
