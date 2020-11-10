@@ -52,7 +52,7 @@
 
 		<section id="content" class = "container">
 			<p class="blog-content">
-			{{ $blog_data->blog_post }}
+			{!! $blog_data->blog_post !!}
 			</p>
 
 			<div class= "heading-number text-center">
