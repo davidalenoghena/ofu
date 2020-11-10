@@ -90,7 +90,7 @@
 						<div class="card-body">
 							<span class="topic">{{ $blog->category }}</span>
 							<h3 class="card-title my-3">{{ $blog->blog_title }}</h3>
-							<p>{!! \Illuminate\Support\Str::limit($blog->blog_post, 150, $end='...') !!}</p> <a id="read-more" href="{{ route('blog.single', $blog->id) }}"><em>Read more</em></a>
+							<a id="read-more" href="{{ route('blog.single', $blog->id) }}"><em>Read more</em></a>
 							<div class="flex">
 								<p class="author"><i>by <strong>{{ $blog->author }}</strong></i></p>
 								<span class="date">{{ \Carbon\Carbon::parse($blog->updated_at)->diffForHumans() }}</span>
