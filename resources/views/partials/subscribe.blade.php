@@ -6,10 +6,10 @@
                 <p class="subscribe-grey-text">We will send you a list of all available opportunities</p>  
             </div>
             <form action="#" class="d-flex row">
-                <div class="form-group mr-0 col-9">
+                <div class="form-group mr-0 pl-0 col-8">
                     <input type="email" class="form-control blue-border " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
                 </div>
-                <a class="nav-link col-3 btn text-white ml-0 m-top-neg  blue-border" href="#">Subscribe</a>
+                <a class="nav-link col-4 btn text-white ml-0 m-top-neg  blue-border" href="#">Subscribe</a>
             </form>
         </div>
     </div>

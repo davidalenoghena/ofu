@@ -84,7 +84,7 @@ p{
 }
 
 .card-img-top{
-    border-radius: 0px !important;
+    border-radius: 0px ;
 }
 
 .width-45{
@@ -111,6 +111,10 @@ p{
 
 .card{
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card img {
+    border-radius: 10px 10px 0 0;
 }
 
 .card:hover{
@@ -172,7 +176,7 @@ p{
 }
 
 .page-link{
-    background: #f3f6fa;
+    background: #dde7f5;
     padding: .5rem 1.2rem;
     border-radius: 8px;
     border: 0;
@@ -187,7 +191,7 @@ p{
 /* Single Blog Page*/
 
 #title{
-    padding: 4rem 0;
+    padding: 3rem 0;
     background-color: #f3f6fa;
 }
 
@@ -196,7 +200,7 @@ p{
 }
 
 .profile{
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
 }
 
@@ -248,7 +252,7 @@ p{
 }
 
 #content{
-    padding: 3rem 0;
+    padding: 3rem 1rem;
 }
 
 .heading-number:before,.heading-number:after {
@@ -311,7 +315,7 @@ p{
 
 @media (max-width:768px){
     #title{
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
     }
     #title img{
         max-height: 300px;
@@ -370,7 +374,7 @@ p{
         margin: 2rem 0;
     }
     .profile{
-        align-items: flex-start;
+        align-items: baseline;
     }
     .profile h3{
         font-size: 16px;

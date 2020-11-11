@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    $('#ofu-navbar').css('background','#E7ECFF');
+    $('#ofu-navbar').css('background','#fff');
     $('.switch').css('color', '#3C64B1');
     $('.nav-grey').css('color', '#373f41');
     $('.one').css('background-color', '#3c64b1');

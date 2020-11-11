@@ -23,7 +23,7 @@
         <div class="container">
 			<div class="row ">
 				<div class="col-md-6">
-					<h1 class="mb-5">{{ $blog_data->blog_title }}</h1>
+					<h1 class="mb-3">{{ $blog_data->blog_title }}</h1>
 					<div class="profile d-flex ">
 						<div>
 							<img src="{{ asset('blog_assets/img/grey.png') }}" class="image mr-4 smaller-image" alt="grey-illustration">
@@ -55,24 +55,7 @@
 			{!! $blog_data->blog_post !!}
 			</p>
 
-			<div class= "heading-number text-center">
-				<span>1</span>
-			</div>
-				<h3 class="text-center">Did you know?</h3>
-				<div>
-					<p class="blog-content">
-						<center>You can contact us if you have any article or information you would like to be posted on our site</center>
-					</p>
-				</div>
-				<div class= "heading-number mt-5 text-center">
-				<span>2</span>
-				</div>
-				<h3 class="text-center">You should know</h3>
-				<div>
-					<p class="blog-content">
-						<center>Anyone is capable of being awarded a scholarship. No connection is needed</center>
-					</p>
-				</div>				
+			
 		</section>
 		<!-- Featured Blogs -->
 		@include('partials.subscribe')

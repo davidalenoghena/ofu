@@ -31,12 +31,15 @@ h2,
 h3,
 h4,
 h5{
-    font-family: 'Mulish', sans-serif;
-    
+    font-family: 'Mulish', sans-serif;  
 }
 
 h2{
     color: #373F41;
+}
+
+h3{
+    font-size: 20px;
 }
 
 li{
@@ -302,7 +305,7 @@ header .navbar-dark .navbar-nav .btn-blue a.nav-link {
 }
 
 .card-body{
-    padding: 1.25rem 2.5rem;
+    padding: 1.25rem 1.5rem;
 }
 .author{
     color: #000;
