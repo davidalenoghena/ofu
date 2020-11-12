@@ -288,11 +288,16 @@ header .navbar-dark .navbar-nav .btn-blue a.nav-link {
 
 .card{
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .card:hover{
     transition: all .5s ease;
     transform: scale(1.02);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0 !important;
 }
 
 .cover{

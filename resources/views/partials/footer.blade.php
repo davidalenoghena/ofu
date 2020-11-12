@@ -18,14 +18,14 @@
                             <li><a href = "{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
-                    <div class = " links ">
+                    <!-- <div class = " links ">
                         <ul class = "d-flex">
                             <li><i class="fa fa-twitter"></i></li>
                             <li><i class="fa fa-facebook"></i></li>
                             <li><i class="fa fa-google-plus"></i></li>
                             <li><i class="fa fa-linkedin"></i></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
