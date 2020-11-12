@@ -56,7 +56,7 @@
   }
 
   #blog_search{
-    margin: 0 1rem;
+    margin: 1rem;
   }
   #scholarship{
     width: 90%;
@@ -80,8 +80,8 @@
   }
 
   .opp-single img{
-    max-height: 200px;
-    object-fit: cover;
+    max-height: 180px;
+    object-fit: contain;
     width: 100%;
   }
 

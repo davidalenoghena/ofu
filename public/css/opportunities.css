@@ -25,14 +25,6 @@ a.btn-link:hover {
     background-color: transparent !important;
 }
 
-.navbar,
-.nav-links,
-.login-btns,
-.navbar-toggler,
-.dropdown-menu {
-    background-color: #f3f6fa !important;
-    color: #3c64b1 !important;
-}
 
 .navbar-brand a,
 .dropdown > a {
@@ -224,8 +216,8 @@ strong > a {
 }
 
 .table-main-2 img{
-    max-height: 200px;
-    object-fit: cover;
+    max-height: 180px;
+    object-fit: contain;
     width: 100%;
 }
 
