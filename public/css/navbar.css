@@ -98,6 +98,7 @@ a:hover{
     background: #eee;
     transition: transparent 1s ease 0s;
     box-shadow: 0 0 20px rgba(0, 0, 0, .12);
+    padding: .75rem 1.25rem;
 }
 
 .solid{
