@@ -23,7 +23,7 @@ class CreateOpportunitiesTable extends Migration
             $table->string('detail');
             $table->text('about');
             $table->string('status');
-            $table->string('eligibility');
+            $table->text('eligibility');
             $table->text('how_to_apply');
             $table->text('requirements');
             $table->text('note');

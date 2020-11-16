@@ -63,13 +63,13 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Details</label></div>
                             <div class="col-12 col-md-9">
-                                <textarea name="detail" id="elm1" rows="5" placeholder="Eligibility" class="form-control">{{ old('detail') }}</textarea required></div>
+                                <textarea name="detail" id="elm1" rows="5" placeholder="Details" class="form-control">{{ old('detail') }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">About</label></div>
                             <div class="col-12 col-md-9">
-                                <textarea name="about" id="elm1" rows="5" placeholder="Eligibility" class="form-control">{{ old('about') }}</textarea required></div>
+                                <textarea name="about" id="elm1" rows="5" placeholder="About" class="form-control">{{ old('about') }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">
@@ -93,7 +93,7 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Status</label></div>
                             <div class="col-12 col-md-9">
-                                <textarea name="status" id="elm1" rows="5" placeholder="status" class="form-control">{{ old('status') }}</textarea required></div>
+                                <textarea name="status" id="elm1" rows="5" placeholder="Status" class="form-control">{{ old('status') }}</textarea required></div>
                     </div>
 
                     <div class="row form-group">

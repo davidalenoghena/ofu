@@ -23,7 +23,7 @@ class CreateInternshipsTable extends Migration
             $table->string('detail');
             $table->text('about');
             $table->string('status');
-            $table->string('eligibility');
+            $table->text('eligibility');
             $table->text('how_to_apply');
             $table->text('description');
             $table->text('note');
