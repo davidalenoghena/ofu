@@ -38,11 +38,26 @@
                         </label></div>
                             <div class="col-12 col-md-9"><input type="text" id="location" name="location" value="{{ $intern->location }}" class="form-control" required></div>
                     </div>
-                    <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status (0|1|2)
-                        </label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="status_slug" name="status_slug" value="{{ $intern->status_slug }}" class="form-control" required></div>
+                     <div class="row form-group">
+                        <div class="col col-md-3"><label for="status_slug" class=" form-control-label">Status</label></div>
+                        <div class="col-12 col-md-9" required>
+                            <select name="status_slug" id="status_slug" class="form-control-sm form-control" required>
+                                <option value="{{ $intern->status_slug }}">
+                                    @if($intern->status_slug =='0')
+                                    Expiring Soon
+                                    @elseif($intern->status_slug =='1')
+                                    Available
+                                    @elseif($intern->status_slug =='2')
+                                    Not Available
+                                    @endif
+                                </option>
+                                <option value="0">Expiring Soon</option>
+                                <option value="1">Available</option>
+                                <option value="2">Not Available</option>
+                            </select>
+                        </div>
                     </div>
+
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility (100 level)
                         </label></div>

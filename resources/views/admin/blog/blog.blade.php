@@ -26,7 +26,8 @@
                         </div>
                         <div class="card-body">
                             @if(Session::has('success'))
-                            <div class="alert alert-success">
+                            <div class="alert  alert-success alert-dismissible fade show">
+                                <span class="badge badge-pill badge-success">Success</span>
                                 {{ Session::get('success') }}
                             </div>
                             @endif

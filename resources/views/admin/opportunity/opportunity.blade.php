@@ -22,11 +22,12 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">Opportunity</strong>
+                            <strong class="card-title">Scholarships</strong>
                         </div>
                         <div class="card-body">
                             @if(Session::has('success'))
-                            <div class="alert alert-success">
+                            <div class="alert  alert-success alert-dismissible fade show">
+                                <span class="badge badge-pill badge-success">Success</span>
                                 {{ Session::get('success') }}
                             </div>
                             @endif
@@ -53,7 +54,15 @@
                                     <tr>
                                         <th scope="row">{{ $count++ }}</th>
                                         <td>{{ \Illuminate\Support\Str::limit($row->name, 24, $end='...') }}</td>
-                                        <td>{!! $row->status_slug !!}</td>
+                                        <td>
+                                            @if($row->status_slug =='0')
+                                            Expiring Soon
+                                            @elseif($row->status_slug =='1')
+                                            Available
+                                            @elseif($row->status_slug =='2')
+                                            Not Available
+                                            @endif
+                                        </td>
                                         <td>{!! $row->eligibility_slug !!}</td>
                                         <td>{{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</td>
                                         <td><a href="{{ route('show.opportunity', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a></td>

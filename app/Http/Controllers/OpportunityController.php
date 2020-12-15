@@ -85,7 +85,7 @@ class OpportunityController extends Controller
 
         $opportunity->save(); 
 
-        $request->session()->flash('success', 'Scholarships created successfully');
+        $request->session()->flash('success', 'Scholarship created successfully');
         return redirect()->route('admin.opportunity');  
     }
 
@@ -164,7 +164,7 @@ class OpportunityController extends Controller
         $opportunity->word = $request->word;
         $opportunity->save();
 
-        return redirect('/admin/opportunities')->with('success', 'Scholarships updated successfully'); 
+        return redirect('/admin/opportunities')->with('success', 'Scholarship updated successfully'); 
     }
 
     /**
@@ -178,6 +178,6 @@ class OpportunityController extends Controller
         opportunity::where('id', $id)->delete();   
 
 
-     return redirect('/admin/opportunities')->with('success', 'Scholarships deleted successfully');
+     return redirect('/admin/opportunities')->with('success', 'Scholarship deleted successfully');
     }
 }

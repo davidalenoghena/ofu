@@ -18,7 +18,7 @@
     <div class="col-md-11">
         <div class="card">
             <div class="card-header">
-                <strong>Create New Scholarships</strong>
+                <strong>Create New Scholarship</strong>
             </div>
             <div class="card-body card-block">
                 <ul>
@@ -40,9 +40,17 @@
                     </div>
 
                     <div class="row form-group">
-                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Status (0|1|2)</label></div>
-                            <div class="col-12 col-md-9"><input type="text" id="status_slug" name="status_slug" placeholder="status_slug" class="form-control" value="{{ old('status_slug') }} " required></div>
+                        <div class="col col-md-3"><label for="status_slug" class=" form-control-label">Status</label></div>
+                        <div class="col-12 col-md-9" required>
+                            <select name="status_slug" id="status_slug" class="form-control-sm form-control" required>
+                                <option value="" disabled selected hidden>Please select</option>
+                                <option value="0">Expiring Soon</option>
+                                <option value="1">Available</option>
+                                <option value="2">Not Available</option>
+                            </select>
+                        </div>
                     </div>
+                   
 
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Eligibility (100 level)</label></div>
